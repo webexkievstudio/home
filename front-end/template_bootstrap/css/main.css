@@ -1,30 +1,8 @@
-*::-webkit-input-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*::-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-ms-input-placeholder {
-	color: #666;
-	opacity: 1;
+a {
+	text-decoration: none;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-	
-}
-body input:required:valid,
-body textarea:required:valid {
-	
-}
-
-.wrapper {	
+main {
 	background-image: url(../img/header_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -32,28 +10,28 @@ body textarea:required:valid {
 	position: relative;
 }
 
-.wrapper .header {
+main header {
 	margin: auto;
 	width: 1325px;
 	height: 100vh;
 	padding: 30px 40px;
 }
 
-.wrapper .header .logo {
+main header .logo {
 	float: left;
 }
 
-.wrapper .header .nav {
+main header nav {
 	float: right;
 	margin-top: 10px;
 }
 
-.wrapper .header .nav ul li {
+main header nav ul li {
 	display: inline-block;
 	margin-left: 20px;
 }
 
-.wrapper .header .nav a {
+main header nav a {
 	color: #fff;
 	padding: 5px;
 	font-size: 16px;
@@ -61,18 +39,18 @@ body textarea:required:valid {
 	text-transform: uppercase;
 }
 
-.wrapper .header .nav a:hover {
+main header nav a:hover {
 	border-bottom: 3px solid #fff;
 }
 
 
-.wrapper .header .title {
+main header .title {
 	height: 580px;
 	width: 596px;
 	margin: 130px auto 0 340px;
 }
 
-.wrapper .header .title h1 {
+main header .title h1 {
 	font-size: 46px;
 	color: #fff;
 	font-family: 'DinLight';
@@ -81,7 +59,7 @@ body textarea:required:valid {
 	padding-top: 140px;
 }
 
-.wrapper .header .title h1 span {
+main header .title h1 span {
 	font-family: 'DinRegular';
 	font-weight: bold;
 	letter-spacing: 10px;
@@ -95,7 +73,7 @@ body textarea:required:valid {
 	margin: 30px auto;
 }
 
-.wrapper .header .title .studio p {
+main header .title .studio p {
 	color: #fff;
 	font-size: 20px;
 	font-family: 'DinRegular';
@@ -103,7 +81,7 @@ body textarea:required:valid {
 	line-height: 30px;
 }
 
-.wrapper .header .title .viewbtn {
+main header .title .viewbtn {
 	margin-top: 50px;
 }
 
@@ -117,11 +95,11 @@ body textarea:required:valid {
 	margin: 170px 125px;
 }
 
-.content {
+section {
 	background-color: #eee;
 }
 
-.content .portfolio {
+section .portfolio {
 	z-index: 999;
 	top: -100px;
 	position: relative;
@@ -132,30 +110,30 @@ body textarea:required:valid {
 	box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
 }
 
-.content .title {
+section .title {
 	text-align: center;
 	padding-top: 65px;
 	color: #212121;
 }
 
-.content .title h2 {
+section .title h2 {
 	text-transform: uppercase;
 	font-size: 64px;
 	font-family: 'DinBold';
 }
 
-.content .title .divider {
+section .title .divider {
 	background-color: #212121;
 }
 
-.content .title h3 {
+section .title h3 {
 	font-size: 20px;
 	font-family: 'DinRegular';
 	line-height: 26px;
 	margin-bottom: 65px;
 }
 
-.next_button, 
+.next_button,
 .prev_button {
 	color: #eee;
 	background-color: #212121;
@@ -204,12 +182,12 @@ body textarea:required:valid {
 }
 
 
-.content .portfolio .viewbtn {
+section .portfolio .viewbtn {
 	margin: 60px;
   text-align: center;
 }
 
-.content .portfolio .viewbtn .btn {
+section .portfolio .viewbtn .btn {
 	color: #1b1b1b;
 	border: 1px solid #1b1b1b;
 }
