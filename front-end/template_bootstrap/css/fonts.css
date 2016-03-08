@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'DinBold';
+	src: url('../fonts/PFDinTextcondproBold/pfdintextcondpro-bold.ttf')
+}
+
+@font-face {
+	font-family: 'DinLight';
+	src: url('../fonts/PFDinTextcondproLight/PFDinTextCondPro-Light.ttf')
+}
+
+@font-face {
+	font-family: 'DinRegular';
+	src: url('../fonts/PFDinTextcondproRegular/PFDinTextCondPro-Regular.ttf')
+}
+
+@font-face {
+	font-family: 'DinMedium';
+	src: url('../fonts/PFDinTextcondproMedium/PFDinTextCondPro-Medium.ttf')
+}
+
+@font-face {
+	font-family: 'DinBlack';
+	src: url('../fonts/PFDinTextcondproBlack/PFDinTextCondPro-XBlack.ttf')
+}
+
