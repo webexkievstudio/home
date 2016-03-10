@@ -1,0 +1,366 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: auto;
+    height: 100vh;
+    padding: 30px 300px;
+    background-size: cover;
+    background: url(../img/header_bg.jpg) no-repeat center;
+    position: relative;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'DinBold', sans-serif;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+header .title {
+    height: 580px;
+    margin: 130px auto 0;
+}
+
+header .title h1 {
+    font-size: 46px;
+    color: #fff;
+    font-family: 'DinLight', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 140px;
+}
+
+header .title h1 span {
+    font-family: 'DinRegular', sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: 100px;
+}
+
+header .divider {
+    background-color: #fff !important;
+}
+
+.divider {
+    width: 70px;
+    height: 2px;
+    margin: 30px auto;
+}
+
+header .title .studio p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'DinRegular', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+header .title .viewbtn {
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 15px 87px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'DinBold', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.viewportfoliobtn {
+    text-align: center;
+}
+
+section {
+    background-color: #eee;
+}
+
+section .portfolio {
+    z-index: 999;
+    top: -100px;
+    position: relative;
+    height: 1250px;
+    width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
+}
+
+section .title {
+    text-align: center;
+    padding-top: 65px;
+    color: #212121;
+}
+
+section .carousel {
+    margin-top: 50px;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-family: 'DinBold', sans-serif;
+}
+
+.title .divider {
+    background-color: #212121;
+}
+
+.title h3 {
+    font-size: 20px;
+    font-family: 'DinRegular', sans-serif;
+    line-height: 26px;
+}
+
+.next_button,
+.prev_button {
+    color: #eee;
+    background-color: #212121;
+    font-size: 50px;
+    margin-top: 590px;
+    padding: 18px 35px;
+    z-index: 999;
+    border-radius: 10em;
+    box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
+}
+
+.next_button {
+    float: left;
+    margin-left: 135px;
+}
+
+.prev_button {
+    float: right;
+    margin-right: 135px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.owl-theme .owl-controls .owl-page span:active {
+    background: #000;
+}
+
+.slider-divider {
+    width: 900px;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: auto;
+}
+
+section .portfolio .viewbtn {
+    margin: 60px;
+    text-align: center;
+}
+
+section .portfolio .viewbtn .btn {
+    color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+}
+
+section .team .members {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+section .pricelist {
+    margin: 0 auto 0;
+    width: 1000px;
+    height: 1390px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
+    box-sizing: border-box;
+    padding: 30px 70px;
+    position: relative;
+    top: 100px;
+}
+
+section .pricelist,
+.top-block,
+.bottom-block {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 30px 0 30px;
+    height: 400px; /*del*/
+}
+
+section .pricelist,
+.landing,
+.corporate,
+.catalog,
+.shop {
+    width: 50%;
+    height: 200px;
+}
+
+section .pricelist,
+.landing,
+.catalog {
+    float: left;
+}
+
+section .pricelist,
+.corporate,
+.shop {
+    float: right;
+}
+
+.landing,
+.corporate,
+.catalog,
+.shop, h2:last-child {
+    text-align: left;
+    font-size: 40px !important;
+}
+
+section .btn {
+    color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    margin: 0;
+}
+
+section .pricelist .description h3 {
+    font-size: 20px;
+    color: #212121;
+    font-family: 'DinRegular', sans-serif;
+    padding: 30px 0 30px;
+}
+
+section .pricelist .price h3 {
+    font-size: 40px;
+    color: #212121;
+    font-family: 'DinRegular', sans-serif;
+    margin-bottom: 30px;
+}
+
+section .pricelist .development {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px 0 30px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 20px;
+    font-family: 'DinRegular', sans-serif;
+    color: #212121;
+}
+
+.learnmorebtn {
+    text-align: center;
+}
+
+main {
+    height: 1300px;
+    background-color: #fff;
+}
+
+main .composition {
+    width: 1400px;
+    margin: auto;
+    height: 40%;
+}
+
+main .title {
+    text-align: center;
+}
+
+.copywriter,
+.designer,
+.frontend,
+.backend,
+.projectmanager,
+.unknowndeveloper {
+    width: 33.33%;
+    height: 200px;
+    outline: 1px solid #000;
+    float: left;
+    margin-top: 30px;
+}
+
+main .contacts {
+    margin-top: 200px;
+    border-top: 1px solid #bdbdbd;
+}
+
+main .contacts .title {
+    padding-top: 50px;
+}
+
+/*footer*/
+
+footer {
+    height: 250px;
+    background-color: #212121;
+}
+
+footer .topbtn {
+    position: relative;
+    top: -14%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: #2196f3;
+    box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
+}
+
+footer .topbtn .fa {
+    font-size: 50px;
+    padding: 8px 19px;
+    color: #fff;
+}
+
+footer .company {
+    width: 1400px;
+    margin: auto;
+}
+
+footer .company .webextitle {
+    border-bottom: 1px solid #616161;
+}
+
+footer .company .webextitle h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'DinBold', sans-serif;
+    font-weight: bold;
+    font-size: 43px;
+    padding: 30px;
+}
+
+footer .company .production {
+    padding-top: 30px;
+}
+
+footer .company .production h3 {
+    color: #616161;
+    font-family: 'DinLight', sans-serif;
+    font-size: 16px;
+}
