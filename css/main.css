@@ -3,24 +3,21 @@ a {
 }
 
 header {
-    margin: auto;
-    height: 100vh;
-    padding: 30px 300px;
-    background-size: cover;
+    height: 850px;
     background: url(../img/header_bg.jpg) no-repeat center;
-    position: relative;
 }
 
-header .logo {
-    float: left;
+header .top {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 header nav {
-    float: right;
-    margin-top: 10px;
+    line-height: 26px;
 }
 
-header nav ul li {
+header nav menu li {
     display: inline-block;
     margin-left: 20px;
 }
@@ -38,8 +35,7 @@ header nav a:hover {
 }
 
 header .title {
-    height: 580px;
-    margin: 130px auto 0;
+
 }
 
 header .title h1 {
@@ -58,13 +54,14 @@ header .title h1 span {
     font-size: 100px;
 }
 
-header .divider {
-    background-color: #fff !important;
-}
-
-.divider {
+.divider-black {
+    border: 1px solid black;
     width: 70px;
-    height: 2px;
+    margin: 30px auto;
+}
+.divider-white {
+    border: 1px solid white;
+    width: 70px;
     margin: 30px auto;
 }
 
@@ -76,7 +73,7 @@ header .title .studio p {
     line-height: 30px;
 }
 
-header .title .viewbtn {
+header .title .view-btn {
     margin-top: 50px;
 }
 
@@ -87,9 +84,10 @@ header .title .viewbtn {
     font-family: 'DinBold', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
-.viewportfoliobtn {
+.view-portfolio-btn {
     text-align: center;
 }
 
@@ -102,7 +100,7 @@ section .portfolio {
     top: -100px;
     position: relative;
     height: 1250px;
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
@@ -172,17 +170,17 @@ section .carousel {
 
 .slider-divider {
     width: 900px;
-    height: 1px;
-    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    border-width: 1px 0 0 0;
     margin: auto;
 }
 
-section .portfolio .viewbtn {
-    margin: 60px;
+section .portfolio .view-btn {
+    margin: 60px 0;
     text-align: center;
 }
 
-section .portfolio .viewbtn .btn {
+section .portfolio .view-btn .btn {
     color: #1b1b1b;
     border: 1px solid #1b1b1b;
 }
@@ -281,9 +279,6 @@ main {
 }
 
 main .composition {
-    width: 1400px;
-    margin: auto;
-    height: 40%;
 }
 
 main .title {
@@ -337,8 +332,6 @@ footer .topbtn .fa {
 }
 
 footer .company {
-    width: 1400px;
-    margin: auto;
 }
 
 footer .company .webextitle {
@@ -363,4 +356,10 @@ footer .company .production h3 {
     color: #616161;
     font-family: 'DinLight', sans-serif;
     font-size: 16px;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }

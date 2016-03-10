@@ -10,6 +10,8 @@ Kiev, 2016
 
 # Config local machine:
 
+- npm install
+
 In case of 128 error:
 - git config --global user.email "you@example.com"
 - git config --global user.name "Your Name"
