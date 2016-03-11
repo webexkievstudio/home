@@ -5,6 +5,7 @@ a {
 header {
     height: 850px;
     background: url(../img/header_bg.jpg) no-repeat center;
+    background-size: cover;
 }
 
 header .top {
@@ -32,6 +33,8 @@ header nav a {
 
 header nav a:hover {
     border-bottom: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
 }
 
 header .title {
@@ -80,22 +83,23 @@ header .title .view-btn {
 .btn {
     padding: 15px 87px;
     border: 1px solid #fff;
-    color: #fff;
+    color: #fff !important;
     font-family: 'DinBold', sans-serif;
-    font-size: 16px;
+    font-size: 16px !important;
     text-transform: uppercase;
-    display: inline-block;
+    display: inline-block !important;
+    border-radius: 0 !important;
 }
 
 .view-portfolio-btn {
     text-align: center;
 }
 
-section {
+.sectioncolor {
     background-color: #eee;
 }
 
-section .portfolio {
+.portfolio {
     z-index: 999;
     top: -100px;
     position: relative;
@@ -106,13 +110,13 @@ section .portfolio {
     box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
 }
 
-section .title {
+ .title {
     text-align: center;
     padding-top: 65px;
     color: #212121;
 }
 
-section .carousel {
+.carousel {
     margin-top: 50px;
 }
 
@@ -175,57 +179,163 @@ section .carousel {
     margin: auto;
 }
 
-section .portfolio .view-btn {
+.portfolio .view-btn {
     margin: 60px 0;
     text-align: center;
 }
 
-section .portfolio .view-btn .btn {
-    color: #1b1b1b;
+.portfolio .view-btn .btn {
+    color: #1b1b1b !important;
     border: 1px solid #1b1b1b;
 }
 
-section .team .members {
-    width: 1200px;
-    margin: 100px auto;
+.team .members {
+    max-width: 1200px;
+    margin: 100px auto 0;
 }
 
-section .pricelist {
-    margin: 0 auto 0;
-    width: 1000px;
-    height: 1390px;
+
+.team .members h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.team .members h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.team .members .project-manager {
+    background: url('../img/project-manager.jpg') no-repeat, center;
+    background-size: cover;
+    height: 400px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.team .members .project-manager .title {
+    display: none;
+}
+
+.team .members .project-manager:hover .title {
+    display: block;
+    background: rgba(0,0,0,0.5);
+    transition: all 350ms;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.team .members .designer-uxui {
+    background: url('../img/designer.jpg') no-repeat, center;
+    background-size: cover;
+    height: 400px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.team .members .designer-uxui .title {
+    display: none;
+}
+
+.team .members .designer-uxui:hover .title {
+    display: block;
+    background: rgba(0,0,0,0.5);
+    transition: all 350ms;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.team .members .front-end {
+    background: url('../img/front-end.jpg') no-repeat, center;
+    background-size: cover;
+    height: 400px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.team .members .fa {
+    border-radius: 50%;
+    margin: 0.90em;
+    font-size: 2em;
+    background: #fff;
+    color: #333;
+    padding: 0.60em 0.80em;
+}
+
+.team .members .front-end .title {
+    display: none;
+}
+
+.team .members .front-end:hover .title {
+    display: block;
+    background: rgba(0,0,0,0.5);
+    transition: all 350ms;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.team .members .back-end {
+    background: url('../img/back-end.jpg') no-repeat, center;
+    background-size: cover;
+    height: 400px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.team .members .back-end .title {
+    display: none;
+}
+
+.team .members .back-end:hover .title {
+    display: block;
+    background: rgba(0,0,0,0.5);
+    transition: all 350ms;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.pricelist {
+    margin: 0 auto;
+    top: 100px;
+    max-width: 1000px;
+    height: 1465px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
     box-sizing: border-box;
     padding: 30px 70px;
     position: relative;
-    top: 100px;
 }
 
-section .pricelist,
 .top-block,
 .bottom-block {
     border-bottom: 1px solid #e0e0e0;
     padding: 30px 0 30px;
-    height: 400px; /*del*/
 }
 
-section .pricelist,
+.top-block {
+    height: 470px;
+}
+
+.bottom-block {
+    height: 450px;
+}
+
 .landing,
 .corporate,
 .catalog,
 .shop {
-    width: 50%;
-    height: 200px;
+    height: 400px;
 }
 
-section .pricelist,
 .landing,
 .catalog {
     float: left;
 }
 
-section .pricelist,
 .corporate,
 .shop {
     float: right;
@@ -239,27 +349,25 @@ section .pricelist,
     font-size: 40px !important;
 }
 
-section .btn {
-    color: #1b1b1b;
-    border: 1px solid #1b1b1b;
-    margin: 0;
+.pricelist .btn {
+    color: #1b1b1b !important;
+    border: 1px solid #1b1b1b !important;
+    margin: 0 !important;
 }
 
-section .pricelist .description h3 {
+.pricelist .description h3 {
     font-size: 20px;
     color: #212121;
-    font-family: 'DinRegular', sans-serif;
-    padding: 30px 0 30px;
+    font-family: 'DinRegular', sans-serif;.
 }
 
-section .pricelist .price h3 {
+.pricelist .price h3 {
     font-size: 40px;
     color: #212121;
     font-family: 'DinRegular', sans-serif;
-    margin-bottom: 30px;
 }
 
-section .pricelist .development {
+.pricelist .development {
     margin-bottom: 50px;
     text-align: center;
     padding: 30px 0 30px;
@@ -273,38 +381,54 @@ section .pricelist .development {
     text-align: center;
 }
 
-main {
+.composition {
+    max-width: 1070px;
+    margin-left: auto !important;
+    margin-right: auto !important;
     height: 1300px;
-    background-color: #fff;
 }
 
-main .composition {
+.command {
+    border-bottom: 1px solid #bdbdbd;
+    height: 430px;
+    margin-top: 80px;
 }
 
-main .title {
+.command-h2 {
+    font-size: 40px;
+    font-family: 'DinRegular', sans-serif;
+    color: #212121;
+    font-weight: bold;
+}
+
+.command-h3 {
+    font-size: 20px;
+    font-family: 'DinRegular', sans-serif;
+    color: #212121;
+}
+
+.contacts .title {
+    padding-top: 50px;
+}
+
+.contacts .communications {
+    height: 100px;
+    max-width: 800px;
+    margin: auto;
     text-align: center;
 }
 
-.copywriter,
-.designer,
-.frontend,
-.backend,
-.projectmanager,
-.unknowndeveloper {
-    width: 33.33%;
-    height: 200px;
-    outline: 1px solid #000;
-    float: left;
-    margin-top: 30px;
+.pbold {
+    font-size: 40px;
+    color: #212121;
+    font-family: 'DinRegular', sans-serif;
+    font-weight: bold;
+    line-height: 36px;
 }
 
-main .contacts {
-    margin-top: 200px;
-    border-top: 1px solid #bdbdbd;
-}
-
-main .contacts .title {
-    padding-top: 50px;
+.spanlight {
+  font-size: 24px; 
+  font-weight: 100; 
 }
 
 /*footer*/
@@ -349,7 +473,7 @@ footer .company .webextitle h2 {
 }
 
 footer .company .production {
-    padding-top: 30px;
+
 }
 
 footer .company .production h3 {
