@@ -143,6 +143,25 @@ header .title .view-btn {
     margin-top: 65px;
 }
 
+.owl-pagination {
+    margin: 25px 0 15px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    position: relative;
+    top: -450px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    float: left;
+    right: 17%;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+    float: right;
+    left: 17%;
+}
+
 .title h2 {
     text-transform: uppercase;
     font-size: 64px;
@@ -191,6 +210,10 @@ header .title .view-btn {
 .portfolio .view-btn {
     padding: 30px 0 30px;
     text-align: center;
+}
+
+.reset {
+    padding-top: 0;
 }
 
 .team .members {
@@ -358,6 +381,10 @@ header .title .view-btn {
     font-size: 20px;
     font-family: 'DinRegular', sans-serif;
     color: #212121;
+}
+
+.pricelist .development p {
+    margin: 0;
 }
 
 .learnmore-btn {
