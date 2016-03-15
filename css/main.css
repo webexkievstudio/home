@@ -3,9 +3,9 @@ a {
 }
 
 header {
-    height: 850px;
     background: url(../img/header_bg.jpg) no-repeat center;
     background-size: cover;
+    height: 880px;
 }
 
 header .top {
@@ -37,17 +37,13 @@ header nav a:hover {
     text-decoration: none;
 }
 
-header .title {
-
-}
-
 header .title h1 {
     font-size: 46px;
     color: #fff;
     font-family: 'DinLight', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 140px;
+    padding-top: 40px;
 }
 
 header .title h1 span {
@@ -80,19 +76,47 @@ header .title .view-btn {
     margin-top: 50px;
 }
 
-.btn {
-    padding: 15px 87px;
+.button-white {
     border: 1px solid #fff;
-    color: #fff !important;
+    color: #fff;
     font-family: 'DinBold', sans-serif;
-    font-size: 16px !important;
+    font-size: 16px;
     text-transform: uppercase;
-    display: inline-block !important;
-    border-radius: 0 !important;
+    display: inline-block;
+    border-radius: 0;
+    text-align: center;
 }
 
-.view-portfolio-btn {
+.button-white:hover {
+    background-color: #fff;
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+.button-black {
+    border: 1px solid #212121;
+    color: #212121;
+    font-family: 'DinBold', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 0;
     text-align: center;
+}
+
+.big-button {
+    padding: 14px 110px;
+}
+
+.small-button {
+    padding: 15px 60px;
+}
+
+.button-black:hover {
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+    color: #fff;
+    text-decoration: none;
 }
 
 .sectioncolor {
@@ -103,7 +127,6 @@ header .title .view-btn {
     z-index: 999;
     top: -100px;
     position: relative;
-    height: 1250px;
     max-width: 1000px;
     margin: auto;
     background-color: #fff;
@@ -116,8 +139,8 @@ header .title .view-btn {
     color: #212121;
 }
 
-.carousel {
-    margin-top: 50px;
+#owl-demo {
+    margin-top: 65px;
 }
 
 .title h2 {
@@ -158,35 +181,16 @@ header .title .view-btn {
     margin-right: 135px;
 }
 
-.owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin: 5px 7px;
-    opacity: 0.5;
-    border: 1px solid black;
-    border-radius: 20px;
-}
-
-.owl-theme .owl-controls .owl-page span:active {
-    background: #000;
-}
-
 .slider-divider {
-    width: 900px;
+    max-width: 900px;
     border: 1px solid #e0e0e0;
     border-width: 1px 0 0 0;
     margin: auto;
 }
 
 .portfolio .view-btn {
-    margin: 60px 0;
+    padding: 30px 0 30px;
     text-align: center;
-}
-
-.portfolio .view-btn .btn {
-    color: #1b1b1b !important;
-    border: 1px solid #1b1b1b;
 }
 
 .team .members {
@@ -311,24 +315,9 @@ header .title .view-btn {
 
 .top-block,
 .bottom-block {
-    border-bottom: 1px solid #e0e0e0;
     padding: 30px 0 30px;
 }
 
-.top-block {
-    height: 470px;
-}
-
-.bottom-block {
-    height: 450px;
-}
-
-.landing,
-.corporate,
-.catalog,
-.shop {
-    height: 400px;
-}
 
 .landing,
 .catalog {
@@ -348,12 +337,6 @@ header .title .view-btn {
     font-size: 40px !important;
 }
 
-.pricelist .btn {
-    color: #1b1b1b !important;
-    border: 1px solid #1b1b1b !important;
-    margin: 0 !important;
-}
-
 .pricelist .description h3 {
     font-size: 20px;
     color: #212121;
@@ -370,13 +353,14 @@ header .title .view-btn {
     margin-bottom: 50px;
     text-align: center;
     padding: 30px 0 30px;
+    border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     font-size: 20px;
     font-family: 'DinRegular', sans-serif;
     color: #212121;
 }
 
-.learnmorebtn {
+.learnmore-btn {
     text-align: center;
 }
 
@@ -385,7 +369,6 @@ header .title .view-btn {
     max-width: 1070px;
     margin-left: auto !important;
     margin-right: auto !important;
-    height: 1300px;
 }
 
 .command {
@@ -412,13 +395,12 @@ header .title .view-btn {
 }
 
 .contacts .communications {
-    height: 100px;
     max-width: 800px;
-    margin: auto;
+    margin: 60px auto 60px;
     text-align: center;
 }
 
-.pbold {
+.p-bold {
     font-size: 40px;
     color: #212121;
     font-family: 'DinRegular', sans-serif;
@@ -426,7 +408,7 @@ header .title .view-btn {
     line-height: 36px;
 }
 
-.spanlight {
+.span-light {
   font-size: 24px; 
   font-weight: 100; 
 }
@@ -434,13 +416,12 @@ header .title .view-btn {
 /*footer*/
 
 footer {
-    height: 250px;
     background-color: #212121;
 }
 
 footer .top-btn {
+    top: -35px;
     position: relative;
-    top: -14%;
     width: 70px;
     height: 70px;
     margin: auto;
@@ -457,14 +438,14 @@ footer .top-btn .fa {
 
 footer .company {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1070px;
 }
 
-footer .company .webextitle {
+footer .company .webex-title {
     border-bottom: 1px solid #616161;
 }
 
-footer .company .webextitle h2 {
+footer .company .webex-title h2 {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -474,14 +455,12 @@ footer .company .webextitle h2 {
     padding: 30px;
 }
 
-footer .company .production {
-
-}
-
-footer .company .production h3 {
+footer .company .production p {
     color: #616161;
     font-family: 'DinLight', sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 30px 0 65px;
 }
 
 #owl-demo .item img{
