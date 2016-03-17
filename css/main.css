@@ -148,18 +148,25 @@ header .title .view-btn {
 }
 
 .owl-theme .owl-controls .owl-buttons div {
-    position: relative;
-    top: -450px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 0 !important;
 }
 
 .owl-theme .owl-controls .owl-buttons .owl-prev {
-    float: left;
-    right: 17%;
+    right: 0;
 }
-
+.owl-theme .owl-controls .owl-buttons .owl-prev:after {
+    content: '>';
+    font-size: 20px;
+}
 .owl-theme .owl-controls .owl-buttons .owl-next {
-    float: right;
-    left: 17%;
+    left: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next:after {
+    content: '<';
+    font-size: 20px;
 }
 
 .title h2 {
@@ -232,12 +239,14 @@ header .title .view-btn {
     font-size: 30px;
 }
 
-.team .members .project-manager {
-    background: url('../img/project-manager.jpg') no-repeat, center;
-    background-size: cover;
+.team .members .member {
     height: 400px;
     padding-right: 0;
     padding-left: 0;
+}
+
+.team .members .project-manager {
+    background: url('../img/project-manager.jpg') no-repeat center center;
 }
 
 .team .members .project-manager .title {
@@ -254,11 +263,7 @@ header .title .view-btn {
 }
 
 .team .members .designer-uxui {
-    background: url('../img/designer.jpg') no-repeat, center;
-    background-size: cover;
-    height: 400px;
-    padding-right: 0;
-    padding-left: 0;
+    background: url('../img/designer.jpg') no-repeat center center;
 }
 
 .team .members .designer-uxui .title {
@@ -275,11 +280,7 @@ header .title .view-btn {
 }
 
 .team .members .front-end {
-    background: url('../img/front-end.jpg') no-repeat, center;
-    background-size: cover;
-    height: 400px;
-    padding-right: 0;
-    padding-left: 0;
+    background: url('../img/front-end.jpg') no-repeat center center;
 }
 
 .team .members .fa {
@@ -305,11 +306,7 @@ header .title .view-btn {
 }
 
 .team .members .back-end {
-    background: url('../img/back-end.jpg') no-repeat, center;
-    background-size: cover;
-    height: 400px;
-    padding-right: 0;
-    padding-left: 0;
+    background: url('../img/back-end.jpg') no-repeat center center;
 }
 
 .team .members .back-end .title {
@@ -400,8 +397,7 @@ header .title .view-btn {
 
 .command {
     border-bottom: 1px solid #bdbdbd;
-    height: 430px;
-    margin-top: 80px;
+    margin: 80px 0 0 0;
 }
 
 .command-h2 {
@@ -494,4 +490,14 @@ footer .company .production p {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/*tablet portrait*/
+@media only screen and (min-width : 768px) and (max-width : 959px) {
+
+}
+
+/*mobile*/
+@media only screen and (max-width : 767px) {
+
 }
