@@ -1,3 +1,8 @@
+body {
+    color: #212121;
+    font-family: 'DinRegular', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -94,8 +99,8 @@ header .title .view-btn {
 }
 
 .button-black {
-    border: 1px solid #212121;
     color: #212121;
+    border: 1px solid #212121;
     font-family: 'DinBold', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -133,10 +138,9 @@ header .title .view-btn {
     box-shadow: 0 10px 20px rgba(27, 27, 27, 0.35);
 }
 
- .title {
+.title {
     text-align: center;
     padding-top: 65px;
-    color: #212121;
 }
 
 #owl-demo {
@@ -245,43 +249,42 @@ header .title .view-btn {
     padding-left: 0;
 }
 
-.team .members .project-manager {
-    background: url('../img/project-manager.jpg') no-repeat center center;
-}
-
-.team .members .project-manager .title {
-    display: none;
-}
-
-.team .members .project-manager:hover .title {
+.designer-uxui:hover .title,
+.project-manager:hover .title,
+.front-end:hover .title,
+.back-end:hover .title {
     display: block;
     background: rgba(0,0,0,0.5);
     transition: all 350ms;
-    cursor: pointer;
     width: 100%;
-    height: 100%;
+    height: 100%; 
+}
+
+.front-end .title,
+.back-end .title,
+.designer-uxui .title,
+.project-manager .title {
+    display: none;
+}
+
+
+.team .members .project-manager {
+    background: url('../img/project-manager.jpg') no-repeat center center;
 }
 
 .team .members .designer-uxui {
     background: url('../img/designer.jpg') no-repeat center center;
 }
 
-.team .members .designer-uxui .title {
-    display: none;
-}
-
-.team .members .designer-uxui:hover .title {
-    display: block;
-    background: rgba(0,0,0,0.5);
-    transition: all 350ms;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
-
 .team .members .front-end {
     background: url('../img/front-end.jpg') no-repeat center center;
 }
+
+.team .members .back-end {
+    background: url('../img/back-end.jpg') no-repeat center center;
+}
+
+
 
 .team .members .fa {
     border-radius: 50%;
@@ -290,36 +293,6 @@ header .title .view-btn {
     background: #fff;
     color: #333;
     padding: 0.60em 0.80em;
-}
-
-.team .members .front-end .title {
-    display: none;
-}
-
-.team .members .front-end:hover .title {
-    display: block;
-    background: rgba(0,0,0,0.5);
-    transition: all 350ms;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
-
-.team .members .back-end {
-    background: url('../img/back-end.jpg') no-repeat center center;
-}
-
-.team .members .back-end .title {
-    display: none;
-}
-
-.team .members .back-end:hover .title {
-    display: block;
-    background: rgba(0,0,0,0.5);
-    transition: all 350ms;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
 }
 
 .pricelist {
@@ -337,7 +310,6 @@ header .title .view-btn {
 .bottom-block {
     padding: 30px 0 30px;
 }
-
 
 .landing,
 .catalog {
@@ -359,13 +331,11 @@ header .title .view-btn {
 
 .pricelist .description h3 {
     font-size: 20px;
-    color: #212121;
-    font-family: 'DinRegular', sans-serif;.
+    font-family: 'DinRegular', sans-serif;
 }
 
 .pricelist .price h3 {
     font-size: 40px;
-    color: #212121;
     font-family: 'DinRegular', sans-serif;
 }
 
@@ -377,7 +347,6 @@ header .title .view-btn {
     border-bottom: 1px solid #e0e0e0;
     font-size: 20px;
     font-family: 'DinRegular', sans-serif;
-    color: #212121;
 }
 
 .pricelist .development p {
@@ -403,14 +372,12 @@ header .title .view-btn {
 .command-h2 {
     font-size: 40px;
     font-family: 'DinRegular', sans-serif;
-    color: #212121;
     font-weight: bold;
 }
 
 .command-h3 {
     font-size: 20px;
     font-family: 'DinRegular', sans-serif;
-    color: #212121;
 }
 
 .contacts .title {
