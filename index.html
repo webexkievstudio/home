@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Webex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/owlcarousel-pre/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="node_modules/owlcarousel-pre/owl-carousel/owl.theme.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/owlcarousel-pre/owl-carousel/owl.carousel.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="top row">
+        <div class="col-md-2 col-xs-6 logo">
+            <a href="#"><img src="img/logo.png" height="23" width="93" alt="logo"></a>
+        </div>
+        <nav class="col-md-10 col-xs-6 text-right">
+            <menu>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Услуги и цены</a></li>
+                <li><a href="#">Контакты</a></li>
+            </menu>
+        </nav>
+    </div>
+    <div class="title">
+        <h1>Студия веб-дизайна <br><span>Webex</span></h1>
+        <hr class="divider-white">
+        <div class="studio">
+            <p>Мы - креативная студия дизайна в Киеве.
+                <br> Мы специализируемся на разработке веб-дизайна и визуальной айдентики.
+                <br> Приглашаем Вас посмотреть наше портфолио.</p>
+        </div>
+        <div class="view-btn view-portfolio-btn">
+            <a class="button-white big-button" href="#">Посмотреть портфолио</a>
+        </div>
+    </div>
+</header>
+<section class="sectioncolor">
+    <div class="portfolio">
+        <div class="title">
+            <h2>Портфолио</h2>
+            <hr class="divider-black">
+            <h3>Мы не просто создаем сайты. Мы решаем бизнес-задачи клиента. <br>
+                Приглашаем Вас посмотреть примеры готовых проектов</h3>
+        </div>
+
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="img/slider.jpg" alt="Project 1"></div>
+            <div class="item"><img src="img/slider.jpg" alt="Project 2"></div>
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                $("#owl-demo").owlCarousel({
+
+                    navigation: true, // Show next and prev buttons
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true
+
+                    // "singleItem:true" is a shortcut for:
+                    // items : 1,
+                    // itemsDesktop : false,
+                    // itemsDesktopSmall : false,
+                    // itemsTablet: false,
+                    // itemsMobile : false
+
+                });
+
+            });
+        </script>
+
+        <hr class="slider-divider">
+
+        <div class="view-btn">
+            <a class="button-black big-button" href="#">Больше проектов</a>
+        </div>
+    </div>
+    <div class="team">
+        <div class="title reset">
+            <h2>Команда</h2>
+            <hr class="divider-black">
+            <h3>Мы - команда профессионалов, которые любят свою работу <br>
+                и получают удовольствие от совместной работы
+            </h3>
+        </div>
+        <div class="members row">
+            <div class="project-manager member col-md-3">
+                <div class="title">
+                    <h2>Олег <br> Суворов</h2>
+                    <hr class="divider-white">
+                    <h3>Project Manager</h3>
+                    <a href="https://www.facebook.com/oleg.suvorov" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="designer-uxui member col-md-3">
+                <div class="title">
+                    <h2>Андрей <br> Штыка</h2>
+                    <hr class="divider-white">
+                    <h3>UI/UX Designer</h3>
+                    <a href="https://www.facebook.com/andrii.shtyka.5" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="front-end member col-md-3">
+                <div class="title">
+                    <h2>Виталий <br> Брайчук</h2>
+                    <hr class="divider-white">
+                    <h3>Front-end Developer</h3>
+                    <a href="https://www.facebook.com/imvetali" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="back-end member col-md-3">
+                <div class="title">
+                    <h2>Александр <br> Шпикуляк</h2>
+                    <hr class="divider-white">
+                    <h3>Front-end Developer</h3>
+                    <a href="https://www.facebook.com/profile.php?id=100006135914765" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pricelist">
+        <div class="title">
+            <h2>Услуги и цены</h2>
+            <hr class="divider-black">
+            <h3>Мы разрабатываем сайты для компаний любого масштаба. <br>
+                Просто выберите нужный Вам формат
+            </h3>
+        </div>
+        <div class="top-block row">
+            <div class="landing col-md-6 col-sm-6 col-xs-12">
+                <div class="title">
+                    <h2>Лендинг пейдж</h2>
+                </div>
+                <div class="description">
+                    <h3>Лучший способ запустить продажу <br>
+                        отдельного товара или услуги <br>
+                        в интернете.</h3>
+                </div>
+                <div class="price">
+                    <h3> от 14 дней <br>
+                        от 300 $</h3>
+                </div>
+                <div class="viewbtn">
+                    <a class="button-black small-button" href="#">Заказать</a>
+                </div>
+            </div>
+            <div class="corporate col-md-6 col-sm-6 col-xs-12">
+                <div class="title">
+                    <h2>Корпоративный сайт</h2>
+                </div>
+                <div class="description">
+                    <h3>Ваше лицо в интернете. От него <br>
+                        зависит имидж и визуальное <br>
+                        восприятие компании.</h3>
+                </div>
+                <div class="price">
+                    <h3> от 30 дней <br>
+                        от 1000 $</h3>
+                </div>
+                <div class="viewbtn">
+                    <a class="button-black small-button" href="#">Заказать</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-block row">
+            <div class="catalog col-md-6 col-sm-6 col-xs-12">
+                <div class="title">
+                    <h2>Сайт-каталог</h2>
+                </div>
+                <div class="description">
+                    <h3>Перенесите свой бизнес в онлайн <br>
+                        среду. Покажите миру свой продукт.</h3>
+                </div>
+                <div class="price">
+                    <h3> от 30 дней <br>
+                        от 1200 $</h3>
+                </div>
+                <div class="viewbtn">
+                    <a class="button-black small-button" href="#">Заказать</a>
+                </div>
+            </div>
+            <div class="shop col-md-6 col-sm-6 col-xs-12">
+                <div class="title">
+                    <h2>Интернет-магазин</h2>
+                </div>
+                <div class="description">
+                    <h3>Продавайте товары в интернете. <br>
+                        Выйдите на новый уровень прибыли.</h3>
+                </div>
+                <div class="price">
+                    <h3> от 30 дней <br>
+                        от 1500 $</h3>
+                </div>
+                <div class="viewbtn">
+                    <a class="button-black small-button" href="#">Заказать</a>
+                </div>
+            </div>
+        </div>
+        <div class="development">
+            <p>за разработку адаптивного или мобильного сайта + 30% к стоимости</p>
+        </div>
+        <div class="viewbtn learnmore-btn">
+            <a class="button-black big-button" href="#">Узнать больше</a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="composition">
+        <div class="title">
+            <h2>Из чего состоит стоимость сайта?</h2>
+            <hr class="divider-black">
+            <h3>Качественный сайт - это работа специалистов, которые вкладывают в разработку продукта <br>
+                весь свой профессионализм и драгоценное время
+            </h3>
+        </div>
+        <div class="command row">
+            <div class="copywriter col-md-4 col-sm-6 col-xs-12">
+                <h2 class="command-h2">Copywriter</h2>
+                <h3 class="command-h3">Создает основной контент, наполняет <br>
+                    сайт уникальной информацией. <br>
+                    Он грамотно формулирует текстовый <br>
+                    посыл, ориентированный на ЦА сайта.</h3>
+            </div>
+            <div class="designer col-md-4 col-sm-6 col-xs-12">
+                <h2 class="command-h2">UI/UX Designer</h2>
+                <h3 class="command-h3">Разрабатывает визуальную оболочку <br>
+                    сайта. Вначале создает прототип сайта, <br>
+                    на основе которого рисует мокап <br>
+                    для дальнейшей передачи его <br>
+                    Front-end разработчику.</h3>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="frontend col-md-4 col-sm-6 col-xs-12">
+                <h2 class="command-h2">Front-end Developer</h2>
+                <h3 class="command-h3">Занимается версткой сайта, нарисованного <br>
+                    веб-дизайнером. Проводит последующее <br>
+                    тестирование продукта на различных <br>
+                    платформах - от смартфонов <br>
+                    до полноценных десктопов.</h3>
+            </div>
+            <div class="backend col-md-4 col-sm-6 col-xs-12">
+                <h2 class="command-h2">Back-end Developer</h2>
+                <h3 class="command-h3">Пишет содержательную часть <br>
+                    сайта - прорабатывает логику <br>
+                    взаемодействий его активных <br>
+                    элементов.</h3>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="projectmanager col-md-4 col-sm-6 col-xs-12">
+                <h2 class="command-h2">Project Manager</h2>
+                <h3 class="command-h3">Контролирует процесс разработки сайта <br>
+                    на всех этапах. Взаимодействует между <br>
+                    участниками команды разработчиков. <br>
+                    Контактирует с заказчиком от имени студии.</h3>
+            </div>
+            <div class="qaengineer col-md-4 col-sm-6 col-xs-12">
+                <h2 class="command-h2">QA Engineer</h2>
+                <h3 class="command-h3">Занимается тестированием сайта, <br>
+                    ищет баги, передает разработчику для исправления <br>
+                </h3>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="title">
+                <h2>Контакты</h2>
+                <hr class="divider-black">
+                <h3>Мы готовы создать условия для роста Вашего бизнеса в интернете. <br>
+                    Позвоните или напишите нам
+                </h3>
+            </div>
+            <div class="communications row">
+                <div class="phone col-md-4 col-sm-4 col-xs-12">
+                    <p class="p-bold">Телефон <br> <span class="span-light">+38 (097) 123 45 67</span></p>
+                </div>
+                <div class="business col-md-4 col-sm-4 col-xs-12">
+                    <p class="p-bold">Новый бизнес <br> <span class="span-light">info@gregorzamza.com</span></p>
+                </div>
+                <div class="address col-md-4 col-sm-4 col-xs-12">
+                    <p class="p-bold">Адрес <br> <span class="span-light">Киев</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="top-btn">
+        <a href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <div class="company">
+        <div class="webex-title">
+            <h2>Webex</h2>
+        </div>
+        <div class="production">
+            <p>© 2016 Webex</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
