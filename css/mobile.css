@@ -1,0 +1,83 @@
+nav ul {
+	display: none;
+}
+body {
+	font-size: 20px;
+}
+#open-menu {
+	float: right;
+	display: block;
+}
+#logo-in-nav a {
+	line-height: normal;
+}
+#uncol-menu {
+	background-color: white;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	color: black;
+	z-index: 100;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 25px;
+}
+#close-menu {
+	position: absolute;
+	right: 15px;
+	top:20px;
+	width: 40px;
+}
+#uncol-menu ul {
+	padding: 0;
+}
+#uncol-menu ul li {
+	list-style-type: none;
+	padding: 5% 0;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+#uncol-menu ul li:hover {
+	border: 1px solid black;
+}
+#uncol-menu ul li a {
+	color: black;
+}
+#logo {
+	margin: 10% 0 25% 0;
+}
+#entire-team {
+	display: none;
+}
+#myTeamCarousel {
+	margin: 5% 0;
+	position: relative;
+	display: block;
+}
+
+.carousel-control.left {
+	background-image: url(../img/leftArr.png);
+}
+.carousel-control.right {
+	background-image: url(../img/rightArr.png);
+}
+.carousel-control {
+	top:45%;
+	background-size: contain;
+	width: 15%;
+}
+.left {
+	left: -2%;
+}
+.right {
+	right: -2%!important;
+}
+.item img{
+	margin: 0 auto;
+}
+
+footer {
+	margin-top: 5%;
+}

@@ -1,0 +1,395 @@
+@font-face {
+    font-family: pfd; /* Гарнитура шрифта */
+    src: url(../fonts/PFDinTextCondPro-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: pfd-Bold; /* Гарнитура шрифта */
+    src: url(../fonts/PFDinTextCondPro-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+body {
+    font-family: pfd, 'Verdana', cursive;
+    font-size: 17px;
+  	margin:  0 ;
+  	min-width: 481px;
+  	word-wrap:break-word;
+   }
+
+.bold {
+	font-family: pfd-Bold;
+}
+h1,h2,h3 {
+	font-family: pfd-Bold;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+.container{
+	width: 100%;
+}
+header {
+	background-image: url(../img/header_bg_sqr.png);
+	background-position: center;
+	background-size:  cover;
+	background-repeat: no-repeat;
+}
+a, a:hover, a:active, a:visited{
+	text-decoration: none;
+	color: white;
+}
+.top {
+	padding: 2%;
+}
+nav {
+	background: transparent!important;
+	width: 100%;
+
+}
+nav ul{
+	float: right;
+	padding: 0;
+	text-align: justify;
+	width: 80%;
+}
+nav ul li {
+	display: inline-block;
+	padding: 0 2%;
+	float: right;
+}
+#logo-in-nav {
+	float: left;
+	font-size: 2em;
+	line-height: 0.4em;
+}
+/*logo*/
+
+#logo {
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 7% 0 22% 0;
+	padding: 10%;
+	text-align: center;
+	color: white;
+	
+}
+#logo p {
+	font-size: 0.8em;
+}
+#pre-name {
+	font-size: 1.5em!important;
+	margin-bottom: 0;
+	line-height: 0.5em;
+	margin-top: 11%;
+	text-transform: uppercase;
+}
+#name {
+	font-size: 4em;
+	margin-top :0;
+	line-height: 0.9em;
+}
+
+.button {
+	font-family: pfd-Bold;
+	padding: 3% 2%;
+	border: 1px solid white;
+	cursor: pointer;
+	margin: 0 auto;
+	width: 80%;
+
+}
+.button-black {
+	border: 1px solid black;
+	background: white;
+}
+.white {
+	background-color: white;
+}
+
+hr {
+	  border: none;
+	  background-color: #282828 ;
+	  height: 2px;
+	  width: 70px; 
+}
+
+@media(max-width: 1200px) {
+	#pre-name {
+		margin-top: 5%;
+	}
+}
+@media(max-width: 990px) {
+	body {
+		font-size: 17px;
+	}
+	#pre-name {
+		margin-top: 11%;
+	}
+}
+
+/*main part*/
+.about {
+	background: #eeeeee;
+}
+.white-realm {
+	width: 100%;
+	color: black;
+	text-align: center;
+	padding:5% 0;
+	background: white;
+	position: relative;
+	bottom:50px;
+	-webkit-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+}
+
+
+.black-bg {
+	background: black;
+}
+/*slider in file slider.css*/
+#myCarousel {
+	margin: 5% 0;
+	position: relative;
+}
+
+.carousel-control.left {
+	background-image: url(../img/leftArr.png);
+}
+.carousel-control.right {
+	background-image: url(../img/rightArr.png);
+}
+.carousel-control {
+	top:45%;
+	background-size: contain;
+	width: 8%;
+}
+.left {
+	left: -20%;
+}
+.right {
+	right: -20%!important;
+}
+.white-realm .button {
+	width: 60%;
+	margin: 5% auto;
+}
+.project{
+	width: 100%;
+}
+#staticPortfolio {
+	display: none;
+}
+
+#team {
+	text-align: center;
+}
+.photo {
+	background-size: contain!important;
+	padding: 0;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.photo:hover .about_person {
+	display: block;
+}
+.about_person {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(33, 33, 33, 0.7);
+	color: white;
+	padding: 20% 5%;
+}
+.name {
+	font-size: 1.75em;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+@media(max-width: 990px) {
+	.name {
+		font-size: 2.5em;
+	}
+	.about_person {
+		padding: 20% 10%;
+	}
+}
+@media(max-width: 810px) {
+	.name {
+		font-size: 1.7em;
+	}
+}
+
+.about_person hr {
+	margin: 10% auto;
+}
+.position {
+	font-size: 1.3em;
+}
+.fb {
+	background-image: url(../img/fb.png);
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	margin: 10% auto;
+}
+#oleg {
+	background-image: url(../img/oleg.jpg);
+}
+#andriy {
+	background-image: url(../img/andrii.jpg);
+}
+#tetiana {
+	background-image: url(../img/tanya.jpg);
+}
+#alex {
+	background-image: url(../img/sanya.jpg);
+}
+#vitaliy {
+	background-image: url(../img/vetal.jpg);
+}
+.breeds {
+	text-align: left;
+	padding: 5% 10%;
+}
+.breeds h3 {
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	min-height: 50px;
+}
+.breeds p {
+	margin: 8% 0;
+}
+.breedsDescr {
+	height: 4em;
+}
+
+.breeds .price {
+	font-size: 1.5em;
+}
+.breeds .button {
+	width: 100%;
+	text-align: center;
+}
+.greyHr {
+	background: #e0e0e0;
+	height: 1px;
+	width: 90%!important;
+}
+.price-table {
+	top: 50px;
+}
+.descript {
+	padding-top: 60px;
+}
+.descript h2 {
+	font-family: pfd;
+	text-align: center;
+}
+.descript .center{
+	text-align: center;
+}
+.worker {
+	text-align: left;
+	padding: 2% 1%;
+}
+.worker h3,.contacts h3 {
+	font-size: 1.7em;
+	margin-bottom: 10%;
+}
+
+.contacts {
+	text-align: center;
+	padding: 5% 0;
+}
+
+.contacts h4 {
+	font-size: 2em;
+}
+input {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid black;
+	width: 70%;
+}
+.write-us {
+	text-align: left;
+
+}
+form {
+	margin-left: 10%;
+}
+#sendInfo {
+	margin: 0 auto;
+	text-align: center;
+}
+label {
+	margin-left: 0;
+}
+footer {
+	background: #212121;
+
+}
+footer #upArr {
+	position: relative;
+	top:-25px;
+	margin: 0 auto;
+	width:50px;
+	height: 50px;
+	background-image:url(../img/upArr.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	 cursor: pointer;
+}
+footer h3 {
+	color: white;
+	text-align: center;
+	margin-top: 0;
+	font-size: 2em;
+}
+footer hr {
+	width: 100%!important;
+	background: #616161;
+	height: 1px;
+}
+small {
+	color: #616161;
+}
+/*убираем карусельку для проектов*/
+@media (max-width: 1200px) {
+	#myCarousel {
+		display: none;
+	}
+	#staticPortfolio {
+		display: block;
+	}
+
+}
+@media (max-width: 990px) {
+	.breeds {
+		padding: 5% 5%;
+	}
+}
+@media (max-width: 765px) {
+	.breeds {
+		padding: 3% 20%;
+	}
+}
+
+/*for mobile version <580px*/
+#open-menu {
+	display: none;
+}
+#uncol-menu {
+	display: none;
+}
+#myTeamCarousel {
+	display: none;
+}
