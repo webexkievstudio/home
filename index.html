@@ -1,352 +1,370 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Webex studio</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css"  media="handheld,only screen and (max-width:580px)"/>
-	<!--<script src="js/less.min.js"></script>-->
-	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webex studio</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="handheld,only screen and (max-width:580px)"/>
+    <!--<script src="js/less.min.js"></script>-->
+
 </head>
-<body onResize="make_sqrt()">
-	<div class="container">
-<!-- header -->
-		<header class="row">
-	<!-- nav -->
-			<div class="col-md-2 col-xs-1"></div>
-			<div class="col-md-8 col-xs-10 top">
-				<nav> 
-					<div id="logo-in-nav" class="bold"><a href="#">Webex</a></div>
-					<ul class="bold">
-						<li><a href="#">Портфолио</a>
-						</li><li><a href="#">Команда</a>
-						</li><li><a href="#">Услуги и цены</a>
-						</li><li><a href="#">Контакты</a>
-						</li>
-					</ul>
-					<div id="open-menu"><img src="img/open-menu.png">></div>
-					<div class="clearfix"></div>
-				</nav>
-	<!-- uncollapsed menu -->
-					<div id="uncol-menu">
-						<p class="bold">Меню</p>
-						<img src="img/close-menu.png" class="pull-right" id="close-menu">
-						<br>
-						<ul>
-						<li><a href="#">Портфолио</a>
-						</li><li><a href="#">Команда</a>
-						</li><li><a href="#">Услуги и цены</a>
-						</li><li><a href="#">Контакты</a>
-						</li><li><a href="#">Все проекты</a>
-						</li><li><a href="#">Наши услуги</a>
-						</li>
-					</ul>
-					</div>
+<body>
+<div class="container">
+    <!-- header -->
+    <header class="row">
+        <!-- nav -->
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10 top">
+            <nav>
+                <div id="logo-in-nav" class="bold"><a href="#">Webex</a></div>
+                <ul class="bold">
+                    <li><a href="#">Портфолио</a>
+                    </li>
+                    <li><a href="#">Команда</a>
+                    </li>
+                    <li><a href="#">Услуги и цены</a>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div id="open-menu"><img src="img/open-menu.png">></div>
+                <div class="clearfix"></div>
+            </nav>
+            <!-- uncollapsed menu -->
+            <div id="uncol-menu">
+                <p class="bold">Меню</p>
+                <img src="img/close-menu.png" class="pull-right" id="close-menu">
+                <br>
+                <ul>
+                    <li><a href="#">Портфолио</a>
+                    </li>
+                    <li><a href="#">Команда</a>
+                    </li>
+                    <li><a href="#">Услуги и цены</a>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                    </li>
+                    <li><a href="#">Все проекты</a>
+                    </li>
+                    <li><a href="#">Наши услуги</a>
+                    </li>
+                </ul>
+            </div>
 
-	<!-- end of uncollapsed menu -->
-				
-			</div>
-			<div class="col-md-2 col-xs-1"></div>
-			<div class="clearfix"></div>
-	<!-- end of nav -->
-	<!-- row with logo -->
-			<div class="col-lg-4 col-sm-3 col-xs-1"></div> 
-			<div class="col-lg-4 col-sm-6 col-xs-10">
-				<div id="logo">
-					<p id="pre-name">Студия веб-дизайна<p>
-					<h1 id='name' class="bold">WEBEX</h1>
-					<hr class="white">
-					<p>Мы - креативная студия дизайна в Киеве.<br>
-						Специализируемся на разработке веб-дизайна и визульной айдентики.<br>
-						Приглашаем Вас посмотреть наше портфолио.
-					</p>
-					<div class='button'>Посмотреть портфолио</div>
-				</div>
-				
-			</div>
-			<div class="col-lg-4 col-sm-3 col-xs-1"></div>
-			<div class="clearfix"></div>
-	<!-- end of row with logo -->
-		</header>
-<!-- end of header -->
-<!-- about us -->
-		<div class="row about">
-			<div class="col-lg-3 col-md-1 col-sm-2 col-xs-0">
-			</div>
-			<div class="col-lg-6 col-md-10 col-sm-8 col-xs-12">
-				<div class="white-realm">
-					<h2>Портфолио</h2>
-					<hr class="black-bg">
-					<p>
-						Мы не просто создаем сайты.Мы решаем бизнес-задачи клаента.<br>
-						Приглашаем Вас посмореть примеры готовых продуктов.
-					</p>
-					<div class="clearfix"></div>
-	<!-- slider --> 
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-						<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						</ol>
-				      <!-- Carousel items -->
-				     	<div class="carousel-inner" role="listbox">
-					        <div class="active item"><img src="img/project.png"></div>
-					        <div class="item"><img src="img/project.png"></div>
-					        <div class="item"><img src="img/project.png"></div>
-				     	</div>
-				     	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						    <span  aria-hidden="true"></span>
-						    <span class="sr-only">Previous</span>
-						  </a>
-						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						    <span  aria-hidden="true"></span>
-						    <span class="sr-only">Next</span>
-						  </a>
-    				</div>
-    				<div class="clearfix"></div>
-	<!-- end of slider -->
-	<!-- portfolio <1200px -->
-					<div class="row" id="staticPortfolio">
-						<div class="col-xs-12"><img class="project" src="img/project.png"></div>
-						<div class="col-xs-12"><img class="project" src="img/project.png"></div>
-						<div class="col-xs-12"><img class="project" src="img/project.png"></div>
-					</div>
+            <!-- end of uncollapsed menu -->
 
-	<!-- end of  portfolio <1200px -->
-					<div class="button button-black">Большое проектов</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-1 col-sm-2 col-xs-0">
-			</div>
-			<div class="clearfix"></div>
-	<!-- row with team -->
-			<div class="col-md-2 col-sm-2 col-xs-0"></div>
-			<div class="col-md-8 col-sm-8 col-xs-12">
-				<div id="team">
-					<h2>Команда</h2>
-					<hr class="black-bg">
-					<p>Мы - команда профессионалов, которые любят свою работу и получают удовольствие от совместной работы.</p>
-		<!-- photos -->
-					<div class="row" id="entire-team">
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="oleg" >
-							<div class="about_person">
-								<p class="name bold">Олег <br>Суворов</p>
-								<hr class="white">
-								<p class="position">Project manager</p>
-								<div class="fb"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="andriy"  >
-							<div class="about_person">
-								<p class="name bold">Андрей <br>Штыка</p>
-								<hr class="white">
-								<p class="position">UI/UX Design</p>
-								<div class="fb"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="vitaliy" >
-							<div class="about_person">
-								<p class="name bold">Виталий <br> Беск</p>
-								<hr class="white">
-								<p class="position">Front-end Developer</p>
-								<div class="fb"></div>
-							</div>
-						</div>	
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="alex" >
-							<div class="about_person">
-								<p class="name bold">Александр <br>Шпикуляк</p>
-								<hr class="white">
-								<p class="position">Back-end Developer</p>
-								<div class="fb"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="tetiana" >
-							<div class="about_person">
-								<p class="name bold">Татьяна <br>Карпенко</p>
-								<hr class="white">
-								<p class="position">Front-end Developer</p>
-								<div class="fb"></div>
-							</div>
-						</div>
-					</div> <!-- end of row -->
-	<!-- carousel with team -->
-					<div class="col-xs-12">
-						<div id="myTeamCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-							<ol class="carousel-indicators">
-							<li data-target="#myTeamCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myTeamCarousel" data-slide-to="1"></li>
-							<li data-target="#myTeamCarousel" data-slide-to="2"></li>
-							<li data-target="#myTeamCarousel" data-slide-to="3"></li>
-							<li data-target="#myTeamCarousel" data-slide-to="4"></li>
-							</ol>
-					      <!-- Carousel items -->
-					     	<div class="carousel-inner" role="listbox">
-						        <div class="active item"><img src="img/oleg.jpg"></div>
-						        <div class="item">
-						        	<img src="img/andrii.jpg">
-						        </div>
-						        <div class="item"><img src="img/vetal.jpg"></div>
-						        <div class="item"><img src="img/sanya.jpg"></div>
-						        <div class="item"><img src="img/tanya.jpg"></div>
-					     	</div>
-					     	  <a class="left carousel-control" href="#myTeamCarousel" role="button" data-slide="prev">
-							    <span  aria-hidden="true"></span>
-							    <span class="sr-only">Previous</span>
-							  </a>
-							  <a class="right carousel-control" href="#myTeamCarousel" role="button" data-slide="next">
-							    <span  aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  </a>
-	    				</div>
-					</div>
-	<!-- end of carousel with team -->
-				</div>
-			</div>
-			<div class="col-md-2 col-sm-2 col-xs-0"></div>
-			<div class='clearfix'></div>
-	<!-- prices -->
-			<div class="col-lg-3  col-md-1 col-sm-2 col-xs-0">
-			</div>
-			<div class="col-lg-6 col-md-10 col-sm-8 col-xs-12">
-				<div class="white-realm price-table">
-					<h2>Услуги и цены</h2>
-					<hr class="black-bg">
-					<p>Мы разрабатываем сайты для компаний любого масштаба.<br>Просто выберите нужный Вам формат</p>
-					<div class="row">
-						<div class="col-sm-6 col-xs-12 breeds">
-							<h3>Лендинг пейдж</h3>
-							<p class="breedsDescr">Лучший способ запустить продажу товаров или услуг в интернете.</p>
-							<p class="price">от 30 дней<br> от 300$<br></p>
-							<div class="button button-black">Заказать</div>
-						</div>
-						<div class="col-sm-6 col-xs-12 breeds">
-							<h3>Корпоративный сайт</h3>
-							<p class="breedsDescr">Ваше лица в интернете.От него зависит имидж и визульное восприятие компании.</p>
-							<p class="price">от 30 дней<br> от 1000$<br></p>
-							<div class="button button-black">Заказать</div>
-						</div>
-						<div class="col-sm-6 col-xs-12 breeds">
-							<h3>Сайт-каталог</h3>
-							<p class="breedsDescr">Перенесите свой бизнес в онлайн среду.Покажите миру свой продукт.</p>
-							<p class="price">от 30 дней<br> от 1200$<br></p>
-							<div class="button button-black">Заказать</div>
-						</div>
-						<div class="col-sm-6 col-xs-12 breeds">
-							<h3>Интернет-магазин</h3>
-							<p class="breedsDescr">Продавайте товары в интернете.Выйдите на новый уровень прибыли</p>
-							<p class="price">от 30 дней<br> от 1500$<br></p>
-							<div class="button button-black">Заказать</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<hr class="greyHr">
-					<p>За разработку адаптивной и мобильной версии +30% к цене</p>
-					<hr class="greyHr">
-					<div class="button button-black">Узнать больше</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-1 col-sm-2 col-xs-0">
-			</div>
-			<div class="clearfix"></div>
-		</div> <!-- end of row about -->
-	<!-- description about prices -->
-		<div class="row descript">
-			<div class="col-lg-2 col-md-1 col-sm-2 col-xs-0"></div>
-			<div class="col-lg-8 col-md-10 col-sm-8 col-xs-12">
-				<h2>Из чего состоит стоимость сайта?</h2>
-				<hr class="black-bg">
-				<p class="center">Качественный сайт - это работа профессионалов, которые вкладывают в сайт свое драгоценное время</p>
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12 worker">
-						<h3>Copywriter</h3>
-						<p>Создает основной контент, наполняет сайт уникальной информацией.Он грамотно формулирует текстовый посыл, ориентированный на ЦА сайта.</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 worker">
-						<h3>UI/UX Design</h3>
-						<p>Разрабатывает визуальную оболочку сайта.Вначале создает прототип сайта, на основе которого рисует мокап для дальнейшей передачи его Front-end разработчику.</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 worker">
-						<h3>Front-end Developer</h3>
-						<p>Занимается верткой сайта, нарисованного веб-дизайнером.Проводит послудеющее тестирование продукта на различных платформах - от смартфонов до полноценных десктопов.</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 worker">
-						<h3>Back-end Developer</h3>
-						<p>Пишет содержательную часть сайта - прорабатывает логику взаимодействий его активных элементов.</p>
-					</div>
-					<div class="clearfix hidden-lg hidden-md visible-sm visible-xs"></div>
-					<div class="col-md-4 col-sm-6 col-xs-12 worker">
-						<h3>Project Manager</h3>
-						<p>Контролирует процесс разработки сайта на всех этапах. Взаимодействует между учасниками команды разработчиков. Контактирует с заказчиком от имени студии.</p>
-					</div>
-				</div> <!-- end of row -->
-					
-			</div> <!-- end of col -->
-			<div class="col-lg-2 col-md-1 col-sm-2 col-xs-0"></div>
-			<div class="clearfix"></div>
-		</div>
-	<!-- end of description about prices  -->
-		<div class="contacts row">
-					<h2>Контакты</h2>
-					<hr class="black-bg">
-					<p>Мы готовы создать условия для роста Вашего бизнеса в интернете.<br> Позвоните нам.</p>
-					<div class="clearfix"></div>
-					<div class="row">
-						<div class="col-sm-6 col-xs-12">
-							<h3>Закажите обратный звонок</h3>
-							<input type="tel" placeholder="+38(___)___-___-___"><br><br>
-							<div class="button button-black">Отправить</div><br>
-							<h3>Почта</h3>
-							<p>jhjhjhjh@gmail.com</p>
-						</div>
-						<div class="col-sm-6 col-xs-12 write-us">
-							<form>
-							<h3>Напишите нам</h3>
-								<div class="form-group">
-									<label for="clientName" >Имя:</label><br>
-									<input type="textarea" id="clientName" placeholder="Name">
-								</div>
-								<div class="form-group">
-									<label for="clientPhone" >Телефон:</label><br>
-									<input type="tel" id="clientPhone" placeholder="+38(___)___-___-___">
-								</div>
-								<div class="form-group">
-									<label for="clientMail" >E-mail:</label><br>
-									<input type="email" id="clientMail" placeholder="sdsdsd@gmail.com">
-								</div>
-								<div class="form-group">
-									<label for="clientInquiry" >Запрос:</label><br>
-									<input type="text" id="clientInquiry" placeholder="ссвававава">
-								</div>
-								<br>
-								<img src="img/plus.png" id="plus">&nbsp&nbsp&nbspПрикрепить файл<br><br>
-								
-							</form>
-							<div class="button button-black" id="sendInfo">Отправить</div>
+        </div>
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="clearfix"></div>
+        <!-- end of nav -->
+        <!-- row with logo -->
+        <div class="col-lg-4 col-sm-3 col-xs-1"></div>
+        <div class="col-lg-4 col-sm-6 col-xs-10">
+            <div id="logo">
+                <p id="pre-name">Студия веб-дизайна
+                <p>
+                <h1 id='name' class="bold">WEBEX</h1>
+                <hr class="white">
+                <p>Мы - креативная студия дизайна в Киеве.<br>
+                    Специализируемся на разработке веб-дизайна и визульной айдентики.<br>
+                    Приглашаем Вас посмотреть наше портфолио.
+                </p>
+                <div class='button'>Посмотреть портфолио</div>
+            </div>
 
-						</div>
-					</div> <!-- end of row with contacts -->
-				</div>
-<!-- footer -->
-		<footer class="row">
-			<div class="col-xs-1"></div>
-			<div class="col-xs-10">
-				<div id="upArr"></div>
-				<h3>WEBEX</h3>
-				<hr>
-				<small>@2016 Gregor Zamza</small>
-				<small class="pull-right">Be</small>
-			</div>
-			<div class="col-xs-1"></div>
-		</footer>
-	</div> <!-- end of container -->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src = "js/bootstrap.min.js"></script>
+        </div>
+        <div class="col-lg-4 col-sm-3 col-xs-1"></div>
+        <div class="clearfix"></div>
+        <!-- end of row with logo -->
+    </header>
+    <!-- end of header -->
+    <!-- about us -->
+    <div class="row about">
+        <div class="col-lg-3 col-md-1 col-sm-2 col-xs-0">
+        </div>
+        <div class="col-lg-6 col-md-10 col-sm-8 col-xs-12">
+            <div class="white-realm">
+                <h2>Портфолио</h2>
+                <hr class="black-bg">
+                <p>
+                    Мы не просто создаем сайты.Мы решаем бизнес-задачи клаента.<br>
+                    Приглашаем Вас посмореть примеры готовых продуктов.
+                </p>
+                <div class="clearfix"></div>
+                <!-- slider -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="active item"><img src="img/project.png"></div>
+                        <div class="item"><img src="img/project.png"></div>
+                        <div class="item"><img src="img/project.png"></div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <!-- end of slider -->
+                <!-- portfolio <1200px -->
+                <div class="row" id="staticPortfolio">
+                    <div class="col-xs-12"><img class="project" src="img/project.png"></div>
+                    <div class="col-xs-12"><img class="project" src="img/project.png"></div>
+                    <div class="col-xs-12"><img class="project" src="img/project.png"></div>
+                </div>
 
-	<script src = "js/script.js"></script>
+                <!-- end of  portfolio <1200px -->
+                <div class="button button-black">Большое проектов</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-1 col-sm-2 col-xs-0">
+        </div>
+        <div class="clearfix"></div>
+        <!-- row with team -->
+        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+        <div class="col-md-8 col-sm-8 col-xs-12">
+            <div id="team">
+                <h2>Команда</h2>
+                <hr class="black-bg">
+                <p>Мы - команда профессионалов, которые любят свою работу и получают удовольствие от совместной
+                    работы.</p>
+                <!-- photos -->
+                <div class="row" id="entire-team">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 photo" id="oleg">
+                        <div class="about_person">
+                            <p class="name bold">Олег <br>Суворов</p>
+                            <hr class="white">
+                            <p class="position">Project manager</p>
+                            <div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 photo" id="andriy">
+                        <div class="about_person">
+                            <p class="name bold">Андрей <br>Штыка</p>
+                            <hr class="white">
+                            <p class="position">UI/UX Design</p>
+                            <div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 photo" id="vitaliy">
+                        <div class="about_person">
+                            <p class="name bold">Виталий <br> Беск</p>
+                            <hr class="white">
+                            <p class="position">Front-end Developer</p>
+                            <div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 photo" id="alex">
+                        <div class="about_person">
+                            <p class="name bold">Александр <br>Шпикуляк</p>
+                            <hr class="white">
+                            <p class="position">Back-end Developer</p>
+                            <div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 photo" id="tetiana">
+                        <div class="about_person">
+                            <p class="name bold">Татьяна <br>Карпенко</p>
+                            <hr class="white">
+                            <p class="position">Front-end Developer</p>
+                            <div class="fb"></div>
+                        </div>
+                    </div>
+                </div> <!-- end of row -->
+                <!-- carousel with team -->
+                <div class="col-xs-12">
+                    <div id="myTeamCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myTeamCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myTeamCarousel" data-slide-to="1"></li>
+                            <li data-target="#myTeamCarousel" data-slide-to="2"></li>
+                            <li data-target="#myTeamCarousel" data-slide-to="3"></li>
+                            <li data-target="#myTeamCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="active item"><img src="img/oleg.jpg"></div>
+                            <div class="item">
+                                <img src="img/andrii.jpg">
+                            </div>
+                            <div class="item"><img src="img/vetal.jpg"></div>
+                            <div class="item"><img src="img/sanya.jpg"></div>
+                            <div class="item"><img src="img/tanya.jpg"></div>
+                        </div>
+                        <a class="left carousel-control" href="#myTeamCarousel" role="button" data-slide="prev">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myTeamCarousel" role="button" data-slide="next">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- end of carousel with team -->
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+        <div class='clearfix'></div>
+        <!-- prices -->
+        <div class="col-lg-3  col-md-1 col-sm-2 col-xs-0">
+        </div>
+        <div class="col-lg-6 col-md-10 col-sm-8 col-xs-12">
+            <div class="white-realm price-table">
+                <h2>Услуги и цены</h2>
+                <hr class="black-bg">
+                <p>Мы разрабатываем сайты для компаний любого масштаба.<br>Просто выберите нужный Вам формат</p>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 breeds">
+                        <h3>Лендинг пейдж</h3>
+                        <p class="breedsDescr">Лучший способ запустить продажу товаров или услуг в интернете.</p>
+                        <p class="price">от 30 дней<br> от 300$<br></p>
+                        <div class="button button-black">Заказать</div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 breeds">
+                        <h3>Корпоративный сайт</h3>
+                        <p class="breedsDescr">Ваше лица в интернете.От него зависит имидж и визульное восприятие
+                            компании.</p>
+                        <p class="price">от 30 дней<br> от 1000$<br></p>
+                        <div class="button button-black">Заказать</div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 breeds">
+                        <h3>Сайт-каталог</h3>
+                        <p class="breedsDescr">Перенесите свой бизнес в онлайн среду.Покажите миру свой продукт.</p>
+                        <p class="price">от 30 дней<br> от 1200$<br></p>
+                        <div class="button button-black">Заказать</div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 breeds">
+                        <h3>Интернет-магазин</h3>
+                        <p class="breedsDescr">Продавайте товары в интернете.Выйдите на новый уровень прибыли</p>
+                        <p class="price">от 30 дней<br> от 1500$<br></p>
+                        <div class="button button-black">Заказать</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <hr class="greyHr">
+                <p>За разработку адаптивной и мобильной версии +30% к цене</p>
+                <hr class="greyHr">
+                <div class="button button-black">Узнать больше</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-1 col-sm-2 col-xs-0">
+        </div>
+        <div class="clearfix"></div>
+    </div> <!-- end of row about -->
+    <!-- description about prices -->
+    <div class="row descript">
+        <div class="col-lg-2 col-md-1 col-sm-2 col-xs-0"></div>
+        <div class="col-lg-8 col-md-10 col-sm-8 col-xs-12">
+            <h2>Из чего состоит стоимость сайта?</h2>
+            <hr class="black-bg">
+            <p class="center">Качественный сайт - это работа профессионалов, которые вкладывают в сайт свое драгоценное
+                время</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 worker">
+                    <h3>Copywriter</h3>
+                    <p>Создает основной контент, наполняет сайт уникальной информацией.Он грамотно формулирует текстовый
+                        посыл, ориентированный на ЦА сайта.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 worker">
+                    <h3>UI/UX Design</h3>
+                    <p>Разрабатывает визуальную оболочку сайта.Вначале создает прототип сайта, на основе которого рисует
+                        мокап для дальнейшей передачи его Front-end разработчику.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 worker">
+                    <h3>Front-end Developer</h3>
+                    <p>Занимается верткой сайта, нарисованного веб-дизайнером.Проводит послудеющее тестирование продукта
+                        на различных платформах - от смартфонов до полноценных десктопов.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 worker">
+                    <h3>Back-end Developer</h3>
+                    <p>Пишет содержательную часть сайта - прорабатывает логику взаимодействий его активных
+                        элементов.</p>
+                </div>
+                <div class="clearfix hidden-lg hidden-md visible-sm visible-xs"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 worker">
+                    <h3>Project Manager</h3>
+                    <p>Контролирует процесс разработки сайта на всех этапах. Взаимодействует между учасниками команды
+                        разработчиков. Контактирует с заказчиком от имени студии.</p>
+                </div>
+            </div> <!-- end of row -->
+
+        </div> <!-- end of col -->
+        <div class="col-lg-2 col-md-1 col-sm-2 col-xs-0"></div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- end of description about prices  -->
+    <div class="contacts row">
+        <h2>Контакты</h2>
+        <hr class="black-bg">
+        <p>Мы готовы создать условия для роста Вашего бизнеса в интернете.<br> Позвоните нам.</p>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <h3>Закажите обратный звонок</h3>
+                <input type="tel" placeholder="+38(___)___-___-___"><br><br>
+                <div class="button button-black">Отправить</div>
+                <br>
+                <h3>Почта</h3>
+                <p>jhjhjhjh@gmail.com</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 write-us">
+                <form>
+                    <h3>Напишите нам</h3>
+                    <div class="form-group">
+                        <label for="clientName">Имя:</label><br>
+                        <input type="textarea" id="clientName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="clientPhone">Телефон:</label><br>
+                        <input type="tel" id="clientPhone" placeholder="+38(___)___-___-___">
+                    </div>
+                    <div class="form-group">
+                        <label for="clientMail">E-mail:</label><br>
+                        <input type="email" id="clientMail" placeholder="sdsdsd@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="clientInquiry">Запрос:</label><br>
+                        <input type="text" id="clientInquiry" placeholder="ссвававава">
+                    </div>
+                    <br>
+                    <img src="img/plus.png" id="plus">&nbsp&nbsp&nbspПрикрепить файл<br><br>
+
+                </form>
+                <div class="button button-black" id="sendInfo">Отправить</div>
+
+            </div>
+        </div> <!-- end of row with contacts -->
+    </div>
+    <!-- footer -->
+    <footer class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <div id="upArr"></div>
+            <h3>WEBEX</h3>
+            <hr>
+            <small>@2016 Gregor Zamza</small>
+            <small class="pull-right">Be</small>
+        </div>
+        <div class="col-xs-1"></div>
+    </footer>
+</div> <!-- end of container -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
