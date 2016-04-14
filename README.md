@@ -4,13 +4,16 @@ Kiev, 2016
 
 # Team:
 - Oleg Suvorov (manager, lead)
-- Vitali Braychuk (front-end developer)
+- Vitalii Besklubyi (front-end developer)
+- Tetiana Karpenko (front-end developer)
 - Andrei Shtyka (designer)
 - Alexandr Shpikulyak (back-end developer)
 
 # Config local machine:
 
 - npm install
+- 'gulp' for compilation *scss into *css
+- 'gulp css-min' for minify *css
 
 In case of 128 error:
 - git config --global user.email "you@example.com"
