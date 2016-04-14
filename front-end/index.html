@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body onResize="make_sqrt()">
+
+<body>
     <div class="container">
         <!-- header -->
         <header class="row">
@@ -33,7 +34,7 @@
                 </nav>
                 <!-- uncollapsed menu -->
                 <div id="uncol-menu" class="toggle-menu">
-                    
+                    <p class="bold">Меню</p>
                     <img src="img/close-menu.png" class="pull-right close-menu" id="close-menu">
                     <br>
                     <ul>
@@ -83,6 +84,8 @@
                         </p>
                     </div>
                     <!-- slider -->
+                    <br class="hidden-xs">
+                    <br class="hidden-xs">
                     <div class="swiper-container hidden-xs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -109,8 +112,6 @@
                         <div class=" portfolio-static"><img class="img-responsive" src="img/project.png">
                         </div>
                     </div>
-
-
                     <div class="breeds-xs">
                         <a class="button button-black button-full-width-xs" href="">Большое проектов</a>
                     </div>
@@ -122,13 +123,16 @@
                 <div id="team" class="team">
                     <h2>Команда</h2>
                     <hr class="black-bg">
-                    <p>Мы - команда профессионалов, которые любят свою работу и получают удовольствие от совместной работы.
-                    </p>
+                    <div class="container">
+                        <p>Мы - команда профессионалов, которые любят свою работу и получают удовольствие от совместной работы.
+                        </p>
+                    </div>
                     <br class="visible-xs">
                     <!-- photos -->
                     <div class="row entire-team hidden-xs" id="entire-team">
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="oleg">
-                            <div class="about_person">
+                        <div class="col-lg-6 col-sm-6 col-md-6 photo" id="oleg">
+                            <img class="img-responsive pull-right" src="img/oleg.jpg" alt="oleg">
+                            <div class="about_person position-right">
                                 <p class="name bold">Олег
                                     <br>Суворов</p>
                                 <hr class="white">
@@ -136,8 +140,9 @@
                                 <div class="fb"></div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="andriy">
-                            <div class="about_person">
+                        <div class="col-lg-6 col-sm-6 col-md-6 photo" id="andriy">
+                            <img class="img-responsive pull-left" src="img/andrii.jpg" alt="andrii">
+                            <div class="about_person position-left">
                                 <p class="name bold">Андрей
                                     <br>Штыка</p>
                                 <hr class="white">
@@ -145,8 +150,9 @@
                                 <div class="fb"></div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="vitaliy">
-                            <div class="about_person">
+                        <div class="col-lg-6 col-sm-6 col-md-6 photo" id="vitaliy">
+                            <img class="img-responsive pull-right" src="img/vetal.jpg" alt="vetal">
+                            <div class="about_person position-right">
                                 <p class="name bold">Виталий
                                     <br> Бесклубый</p>
                                 <hr class="white">
@@ -154,8 +160,9 @@
                                 <div class="fb"></div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="alex">
-                            <div class="about_person">
+                        <div class="col-sm-6 col-lg-6 col-md-6 photo" id="alex">
+                            <img class="img-responsive pull-left" src="img/sanya.jpg" alt="sanya">
+                            <div class="about_person position-left">
                                 <p class="name bold">Александр
                                     <br>Шпикуляк</p>
                                 <hr class="white">
@@ -163,8 +170,9 @@
                                 <div class="fb"></div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 photo" id="tetiana">
-                            <div class="about_person">
+                        <div class="col-lg-6 col-sm-6 col-md-6 photo" id="tetiana">
+                            <img class="img-responsive pull-right" src="img/tanya.jpg" alt="tanya">
+                            <div class="about_person position-right">
                                 <p class="name bold">Татьяна
                                     <br>Карпенко</p>
                                 <hr class="white">
@@ -176,7 +184,6 @@
                     <!-- end of row -->
                     <!-- carousel with team -->
                     <div class="col-xs-12 visible-xs swiper-customize-team">
-
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -218,7 +225,6 @@
                     <!-- end of carousel with team -->
                 </div>
             </div>
-
 
             <!-- prices -->
             <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-8  col-sm-offset-2 col-xs-12">
@@ -296,6 +302,8 @@
         <!-- description about prices -->
         <div class="container">
             <div class="row descript">
+                <br>
+                <br>
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
                     <h2 class="cost-title">Из чего состоит стоимость сайта?</h2>
                     <hr class="black-bg">

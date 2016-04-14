@@ -223,11 +223,16 @@ hr {
 .team {
     text-align: center;
 }
-.photo {
-    background-size: contain !important;
-    padding: 0;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.entire-team {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .col-lg-6,
+    .col-md-6,
+    .col-sm-6,
+    img {
+        margin: 0;
+        padding: 0;
+    }
 }
 .photo:hover .about_person {
     display: block;
@@ -249,10 +254,16 @@ hr {
 .swiper-slide:hover .hidden-img {
     display: block;
 }
+.position-left{
+    left: 0;
+}
+.position-right{
+    right: 0;
+}
 .about_person {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 300px;
     height: 100%;
     display: none;
     background-color: rgba(33, 33, 33, 0.7);
@@ -289,21 +300,6 @@ hr {
     width: 40px;
     height: 40px;
     margin: 10% auto;
-}
-#oleg {
-    background-image: url(../img/oleg.jpg);
-}
-#andriy {
-    background-image: url(../img/andrii.jpg);
-}
-#tetiana {
-    background-image: url(../img/tanya.jpg);
-}
-#alex {
-    background-image: url(../img/sanya.jpg);
-}
-#vitaliy {
-    background-image: url(../img/vetal.jpg);
 }
 .swiper-customize-team {
     background-color: white;
@@ -506,7 +502,6 @@ footer .behance {
         margin-top: 15px;
         cursor: pointer;
     }
-
     .toggle-menu {
         background-color: white;
         position: absolute;
