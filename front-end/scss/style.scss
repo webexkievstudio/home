@@ -12,9 +12,6 @@
     src: url(../fonts/PFDinTextCondPro-Bold.ttf);
     /* Путь к файлу со шрифтом */
 }
-html {
-    min-width: 481px;
-}
 body {
     overflow-x: hidden;
     font-family: pfd, 'Verdana', cursive;
@@ -96,14 +93,13 @@ nav ul li {
         display: none;
     }
 }
-
-    .menu a {
-        position: relative;
-        font-size: 13px;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: auto;
-    }
+.menu a {
+    position: relative;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: auto;
+}
 .menu a:after {
     content: '';
     position: absolute;
@@ -118,8 +114,6 @@ nav ul li {
 .menu a:active:after {
     width: 100%;
 }
-
-
 .lead-text {
     width: 100%;
     background-size: contain;
@@ -149,7 +143,6 @@ nav ul li {
         right: 46%;
     }
 }
-
 .button {
     display: inline-block;
     font-family: pfd-Bold;
@@ -201,9 +194,6 @@ hr {
         margin-top: 11%;
     }
 }
-
-
-
 .about {
     background: #eeeeee;
 }
@@ -259,7 +249,6 @@ hr {
 .swiper-slide:hover .hidden-img {
     display: block;
 }
-
 .about_person {
     position: absolute;
     top: 0;
@@ -341,7 +330,6 @@ hr {
     margin: auto;
     display: block;
 }
-
 .breeds {
     text-align: left;
     padding: 5% 10%;
@@ -396,7 +384,7 @@ hr {
     font-size: 1.7em;
     margin-bottom: 10%;
 }
-.contacts .mail-title{
+.contacts .mail-title {
     margin-bottom: 0;
 }
 .contacts {
@@ -435,7 +423,6 @@ form .plus i {
     background-size: 26px;
     position: absolute;
 }
-
 input,
 textarea {
     border-left: none;
@@ -507,7 +494,6 @@ footer .behance {
         font-size: 14px;
     }
 }
-
 @media (max-width: 767px) {
     nav ul {
         display: none;
@@ -556,6 +542,9 @@ footer .behance {
     }
     a {
         font-size: 24px;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     .breeds-xs {
         padding: 5%;
@@ -573,14 +562,23 @@ footer .behance {
     .lead-text {
         margin: 10% 0 25% 0;
         padding: 10% 0;
+        @include breakpoint (max-width 420px) {
+            padding: 0 0 10%;
+        }
     }
     .lead-text p {
         font-size: 24px;
         line-height: 1.167;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     .lead-text .pre-main-title {
         line-height: 1.1;
         font-size: 40px;
+        @include breakpoint (max-width 460px) {
+            font-size: 26px;
+        }
     }
     .lead-text .arrow-button {
         margin-top: 25px;
@@ -591,28 +589,52 @@ footer .behance {
         height: 27px;
         position: absolute;
         right: 45%;
+        @include breakpoint (max-width 380px) {
+            right: 41%;
+        }
+        @include breakpoint ( 645px 768px) {
+            right: 46%;
+        }
     }
     span {
         font-size: 24px;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     .cost-title {
         font-size: 40px;
         font-weight: normal;
+        @include breakpoint (max-width 358px) {
+            font-size: 30px;
+        }
     }
     .main-title {
         font-size: 100px;
         letter-spacing: 10px;
+        @include breakpoint (max-width 440px) {
+            font-size: 60px;
+        }
     }
     h2 {
         font-size: 60px;
         text-align: center;
+        @include breakpoint (max-width 358px) {
+            font-size: 40px;
+        }
     }
     h3 {
         font-size: 40px;
         margin-bottom: 10px !important;
+        @include breakpoint (max-width 358px) {
+            font-size: 30px;
+        }
     }
     p {
         font-size: 24px;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     .breeds h3,
     .breeds p {
@@ -623,19 +645,31 @@ footer .behance {
     }
     .breeds .price {
         font-size: 36px;
+        @include breakpoint (max-width 358px) {
+            font-size: 20px;
+        }
     }
     .black-bg {
         background: #2196f3;
     }
     .button {
         font-size: 24px;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     .worker h3 {
         font-size: 30px;
+        @include breakpoint (max-width 358px) {
+            font-size: 22px;
+        }
     }
     .contacts h3 {
         font-size: 34px;
         text-align: center;
+        @include breakpoint (max-width 358px) {
+            font-size: 24px;
+        }
     }
     .contacts {
         padding: 2% 1%;
@@ -655,14 +689,23 @@ footer .behance {
     form textarea {
         font-size: 40px;
         color: black;
+        @include breakpoint (max-width 358px) {
+            font-size: 30px;
+        }
     }
     form label {
         font-size: 24px;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     form .plus span {
         font-size: 24px;
         margin-left: 50px;
         color: black;
+        @include breakpoint (max-width 358px) {
+            font-size: 17px;
+        }
     }
     form .plus i {
         background: url(../img/plus.png);
@@ -695,5 +738,8 @@ footer .behance {
     }
     footer h2 {
         font-size: 60px;
+        @include breakpoint (max-width 358px) {
+            font-size: 40px;
+        }
     }
 }

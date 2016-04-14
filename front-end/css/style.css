@@ -11,9 +11,6 @@
   src: url(../fonts/PFDinTextCondPro-Bold.ttf);
   /* Путь к файлу со шрифтом */ }
 
-html {
-  min-width: 481px; }
-
 body {
   overflow-x: hidden;
   font-family: pfd, 'Verdana', cursive;
@@ -523,7 +520,12 @@ footer .behance {
   .toggle-menu ul li a {
     color: black; }
   a {
-    font-size: 24px; }
+    font-size: 24px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    a {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   .breeds-xs {
     padding: 5%; }
   .button-full-width-xs {
@@ -535,13 +537,28 @@ footer .behance {
     font-size: 50px; }
   .lead-text {
     margin: 10% 0 25% 0;
-    padding: 10% 0; }
+    padding: 10% 0; } }
+  @media (max-width: 767px) and (max-width: 420px) {
+    .lead-text {
+      padding: 0 0 10%; } }
+
+@media (max-width: 767px) {
   .lead-text p {
     font-size: 24px;
-    line-height: 1.167; }
+    line-height: 1.167; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    .lead-text p {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   .lead-text .pre-main-title {
     line-height: 1.1;
-    font-size: 40px; }
+    font-size: 40px; } }
+  @media (max-width: 767px) and (max-width: 460px) {
+    .lead-text .pre-main-title {
+      font-size: 26px; } }
+
+@media (max-width: 767px) {
   .lead-text .arrow-button {
     margin-top: 25px; }
   .lead-text .arrow-button i {
@@ -549,39 +566,97 @@ footer .behance {
     width: 46px;
     height: 27px;
     position: absolute;
-    right: 45%; }
+    right: 45%; } }
+  @media (max-width: 767px) and (max-width: 380px) {
+    .lead-text .arrow-button i {
+      right: 41%; } }
+  @media (max-width: 767px) and (min-width: 645px) and (max-width: 768px) {
+    .lead-text .arrow-button i {
+      right: 46%; } }
+
+@media (max-width: 767px) {
   span {
-    font-size: 24px; }
+    font-size: 24px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    span {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   .cost-title {
     font-size: 40px;
-    font-weight: normal; }
+    font-weight: normal; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    .cost-title {
+      font-size: 30px; } }
+
+@media (max-width: 767px) {
   .main-title {
     font-size: 100px;
-    letter-spacing: 10px; }
+    letter-spacing: 10px; } }
+  @media (max-width: 767px) and (max-width: 440px) {
+    .main-title {
+      font-size: 60px; } }
+
+@media (max-width: 767px) {
   h2 {
     font-size: 60px;
-    text-align: center; }
+    text-align: center; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    h2 {
+      font-size: 40px; } }
+
+@media (max-width: 767px) {
   h3 {
     font-size: 40px;
-    margin-bottom: 10px !important; }
+    margin-bottom: 10px !important; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    h3 {
+      font-size: 30px; } }
+
+@media (max-width: 767px) {
   p {
-    font-size: 24px; }
+    font-size: 24px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    p {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   .breeds h3,
   .breeds p {
     text-align: center; }
   .breeds p {
     margin: 0; }
   .breeds .price {
-    font-size: 36px; }
+    font-size: 36px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    .breeds .price {
+      font-size: 20px; } }
+
+@media (max-width: 767px) {
   .black-bg {
     background: #2196f3; }
   .button {
-    font-size: 24px; }
+    font-size: 24px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    .button {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   .worker h3 {
-    font-size: 30px; }
+    font-size: 30px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    .worker h3 {
+      font-size: 22px; } }
+
+@media (max-width: 767px) {
   .contacts h3 {
     font-size: 34px;
-    text-align: center; }
+    text-align: center; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    .contacts h3 {
+      font-size: 24px; } }
+
+@media (max-width: 767px) {
   .contacts {
     padding: 2% 1%; }
   .contacts p {
@@ -595,13 +670,29 @@ footer .behance {
   form input,
   form textarea {
     font-size: 40px;
-    color: black; }
+    color: black; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    form input,
+    form textarea {
+      font-size: 30px; } }
+
+@media (max-width: 767px) {
   form label {
-    font-size: 24px; }
+    font-size: 24px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    form label {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   form .plus span {
     font-size: 24px;
     margin-left: 50px;
-    color: black; }
+    color: black; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    form .plus span {
+      font-size: 17px; } }
+
+@media (max-width: 767px) {
   form .plus i {
     background: url(../img/plus.png);
     width: 26px;
@@ -627,3 +718,6 @@ footer .behance {
     margin-top: 5%; }
   footer h2 {
     font-size: 60px; } }
+  @media (max-width: 767px) and (max-width: 358px) {
+    footer h2 {
+      font-size: 40px; } }
