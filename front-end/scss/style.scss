@@ -576,8 +576,15 @@ footer .behance {
     .lead-text .pre-main-title {
         line-height: 1.1;
         font-size: 40px;
-        @include breakpoint (max-width 460px) {
+        @include breakpoint (max-width 450px) {
             font-size: 26px;
+        }
+    }
+    .main-title {
+        font-size: 100px;
+        letter-spacing: 10px;
+        @include breakpoint (max-width 450px) {
+            font-size: 60px;
         }
     }
     .lead-text .arrow-button {
@@ -607,13 +614,6 @@ footer .behance {
         font-weight: normal;
         @include breakpoint (max-width 358px) {
             font-size: 30px;
-        }
-    }
-    .main-title {
-        font-size: 100px;
-        letter-spacing: 10px;
-        @include breakpoint (max-width 440px) {
-            font-size: 60px;
         }
     }
     h2 {
