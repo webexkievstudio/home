@@ -4,7 +4,8 @@ Kiev, 2016
 
 # Team:
 - Oleg Suvorov (manager, lead)
-- Vitali Braychuk (front-end developer)
+- Vitaly Besklubyi (front-end developer)
+- Tetiana Karpenko (front-end developer)
 - Andrei Shtyka (designer)
 - Alexandr Shpikulyak (back-end developer)
 
