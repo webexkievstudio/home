@@ -64,7 +64,7 @@ span {
   padding: 2%; }
 
 nav {
-  background: transparent !important;
+  background: transparent;
   width: 100%; }
 
 nav ul {
@@ -489,7 +489,8 @@ footer .behance {
     font-size: 20px; }
   .bars {
     float: right;
-    margin-top: 15px; }
+    margin-top: 15px;
+    cursor: pointer; }
   .toggle-menu {
     background-color: white;
     position: absolute;

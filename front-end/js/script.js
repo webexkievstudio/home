@@ -13,7 +13,7 @@ function make_sqrt () {
 $(document).ready = make_sqrt();
 $(document).ready(function(){
 
- $('.carousel').carousel();
+
 // skroll top
 $('#upArr').click(function skroll () {
 	 $('html, body').animate({scrollTop: 0},1500);
