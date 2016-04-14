@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "VitalyBesk",
+  "author": "Webex studio",
   "license": "ISC",
   "devDependencies": {
     "breakpoint-sass": "^2.7.0",
@@ -17,5 +17,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "swiper": "^3.3.1"
   }
 }
