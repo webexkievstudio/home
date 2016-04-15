@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webex</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,51 +14,46 @@
 
 
 <body>
+    <!-- uncollapsed menu -->
+    <nav id="uncol-menu" class="toggle-menu hidden-sm hidden-md hidden-lg ">
+        <img src="img/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
+        <p class="bold">Меню</p>
+        <br>
+        <ul>
+            <li><a href="#portfolio">Портфолио</a>
+            </li>
+            <li><a href="#team">Команда</a>
+            </li>
+            <li><a href="#services">Услуги и цены</a>
+            </li>
+            <li><a href="#contacts">Контакты</a>
+            </li>
+            <li><a href="#">Все проекты</a>
+            </li>
+            <li><a href="#">Наши услуги</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end of uncollapsed menu -->
+
     <div class="container">
-        <!-- header -->
         <header class="row">
-            <!-- nav -->
             <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
-                <nav>
-                    <div id="logo-in-nav" class="logo-in-nav bold"><a href="#">Webex</a></div>
-                    <ul class="menu bold">
-                        <li><a href="#">Портфолио</a>
+                <nav class="static-menu">
+                    <div class="logo-in-nav bold"><a href="#">Webex</a></div>
+                    <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
+                    <ul class="menu bold" id="menu">
+                        <li><a href="#contacts">Контакты</a>
                         </li>
-                        <li><a href="#">Команда</a>
+                        <li><a href="#services">Услуги и цены</a>
                         </li>
-                        <li><a href="#">Услуги и цены</a>
+                        <li><a href="#team">Команда</a>
                         </li>
-                        <li><a href="#">Контакты</a>
+                        <li><a href="#portfolio">Портфолио</a>
                         </li>
                     </ul>
-                    <div id="open-menu" class="bars visible-xs"><img src="img/open-menu.png" alt="open-menu"></div>
                 </nav>
-                <!-- uncollapsed menu -->
-                <div id="uncol-menu" class="toggle-menu">
-                    <p class="bold">Меню</p>
-                    <img src="img/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
-                    <br>
-                    <ul>
-                        <li><a href="#">Портфолио</a>
-                        </li>
-                        <li><a href="#">Команда</a>
-                        </li>
-                        <li><a href="#">Услуги и цены</a>
-                        </li>
-                        <li><a href="#">Контакты</a>
-                        </li>
-                        <li><a href="#">Все проекты</a>
-                        </li>
-                        <li><a href="#">Наши услуги</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- end of uncollapsed menu -->
-
             </div>
-            <!-- end of nav -->
-            <!-- row with logo -->
             <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                 <div id="logo" class="lead-text">
                     <p id="pre-name" class="pre-main-title">Студия веб-дизайна</p>
@@ -65,25 +61,23 @@
                     <hr class="white">
                     <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио.
                     </p>
-                    <a class='button hidden-xs' href="">Посмотреть портфолио</a>
-                    <a href="" class="arrow-button"><i></i></a>
+                    <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
+                    <a href="#portfolio" class="arrow-button"><i></i></a>
                 </div>
             </div>
-            <!-- end of row with logo -->
         </header>
-        <!-- end of header -->
+
         <!-- about us -->
         <div class="row about">
             <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
                 <div class="white-realm">
                     <div class="container">
-                        <h2>Портфолио</h2>
+                        <h2 id="portfolio">Портфолио</h2>
                         <hr class="black-bg">
                         <p>
                             Мы не просто создаем сайты. Мы решаем бизнес-задачи клиента. Приглашаем Вас посмореть примеры готовых продуктов.
                         </p>
                     </div>
-                    <!-- slider -->
                     <br class="hidden-xs">
                     <br class="hidden-xs">
                     <div class="swiper-container hidden-xs">
@@ -118,17 +112,15 @@
                 </div>
             </div>
 
-            <!-- row with team -->
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-                <div id="team" class="team">
-                    <h2>Команда</h2>
+                <div class="team">
+                    <h2 id="team">Команда</h2>
                     <hr class="black-bg">
                     <div class="container">
                         <p>Мы - команда профессионалов, которые любят свою работу и получают удовольствие от совместной работы.
                         </p>
                     </div>
                     <br class="visible-xs">
-                    <!-- photos -->
                     <div class="row entire-team hidden-xs" id="entire-team">
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="oleg">
                             <img class="img-responsive pull-right" src="img/oleg.jpg" alt="oleg">
@@ -136,8 +128,13 @@
                                 <p class="name bold">Олег
                                     <br>Суворов</p>
                                 <hr class="white">
-                                <p class="position">Project manager</p>
-                                <div class="fb"></div>
+                                <p class="position">Project Manager</p>
+                                <a class="fb" href="">
+                                    <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="andriy">
@@ -147,7 +144,12 @@
                                     <br>Штыка</p>
                                 <hr class="white">
                                 <p class="position">UI/UX Design</p>
-                                <div class="fb"></div>
+                                <a class="fb" href="">
+                                    <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="vitaliy">
@@ -157,7 +159,12 @@
                                     <br> Бесклубый</p>
                                 <hr class="white">
                                 <p class="position">Front-end Developer</p>
-                                <div class="fb"></div>
+                                <a class="fb" href="">
+                                    <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span>
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-6 col-md-6 photo" id="alex">
@@ -167,7 +174,12 @@
                                     <br>Шпикуляк</p>
                                 <hr class="white">
                                 <p class="position">Back-end Developer</p>
-                                <div class="fb"></div>
+                                <a class="fb" href="">
+                                    <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="tetiana">
@@ -177,64 +189,80 @@
                                     <br>Карпенко</p>
                                 <hr class="white">
                                 <p class="position">Front-end Developer</p>
-                                <div class="fb"></div>
+                                <a class="fb" href="">
+                                    <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- end of row -->
-                    <!-- carousel with team -->
+
                     <div class="col-xs-12 visible-xs swiper-customize-team">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img class="img-responsive center-block" src="img/oleg.jpg" alt="oleg">
                                     <p class="name bold">Олег Суворов</p>
-                                    <p class="position">Project manager</p>
-                                    <a href=""><i class="facebook"></i></a>
+                                    <p class="position">Project Manager</p>
+                                    <a class="fb-visible-xs" href=""> <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="img-responsive center-block" src="img/andrii.jpg" alt="andreii">
                                     <p class="name bold">Андрей Штыка </p>
                                     <p class="position">UI/UX Designer</p>
-                                    <a href=""><i class="facebook"></i></a>
+                                    <a class="fb-visible-xs" href=""> <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="img-responsive center-block" src="img/vetal.jpg" alt="vetal">
                                     <p class="name bold">Виталий Бесклубый</p>
                                     <p class="position">Front-end Developer</p>
-                                    <a href=""><i class="facebook"></i></a>
+                                    <a class="fb-visible-xs" href="">
+                                        <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span>
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="img-responsive center-block" src="img/sanya.jpg" alt="sanya">
                                     <p class="name bold">Александр Шпикуляк</p>
                                     <p class="position">Back-end Developer</p>
-                                    <a href=""><i class="facebook"></i></a>
+                                    <a class="fb-visible-xs" href=""> <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="img-responsive center-block" src="img/tanya.jpg" alt="tanya">
                                     <p class="name bold">Татьяна Карпенко</p>
                                     <p class="position">Front-end Developer</p>
-                                    <a href=""><i class="facebook"></i></a>
+                                    <a class="fb-visible-xs" href=""> <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span></a>
                                 </div>
                             </div>
-
                             <div class="swiper-pagination"></div>
-
                         </div>
                     </div>
-                    <!-- end of carousel with team -->
                 </div>
             </div>
 
-            <!-- prices -->
             <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-8  col-sm-offset-2 col-xs-12">
                 <div class="white-realm price-table">
-                    <h2>Услуги и цены</h2>
+                    <h2 id="services">Услуги и цены</h2>
                     <hr class="black-bg">
                     <div class="container">
                         <p>Мы разрабатываем сайты для компаний любого масштаба. Просто выберите нужный Вам формат.</p>
                         <hr class="greyHr visible-xs">
-
                         <div class="row">
                             <div class="col-sm-6 col-xs-12 breeds">
                                 <h3>Лендинг пейдж</h3>
@@ -246,7 +274,6 @@
                                 <a class="button button-black" href="">Заказать</a>
                             </div>
                             <hr class="greyHr visible-xs">
-
                             <div class="col-sm-6 col-xs-12 breeds">
                                 <h3>Корпоративный сайт</h3>
                                 <p class="breedsDescr">Ваше лицо в интернете. От него зависит имидж и визульное восприятие компании.
@@ -257,10 +284,7 @@
                                 </p>
                                 <a class="button button-black" href="">Заказать</a>
                             </div>
-
                             <hr class="greyHr">
-
-
                             <div class="col-sm-6 col-xs-12 breeds">
                                 <h3>Сайт-каталог</h3>
                                 <p class="breedsDescr">Перенесите свой бизнес в онлайн среду. Покажите миру свой продукт.
@@ -272,7 +296,6 @@
                                 <a class="button button-black" href="">Заказать</a>
                             </div>
                             <hr class="greyHr visible-xs">
-
                             <div class="col-sm-6 col-xs-12 breeds">
                                 <h3>Интернет-магазин</h3>
                                 <p class="breedsDescr">Продавайте товары в интернете. Выйдите на новый уровень прибыли.</p>
@@ -282,7 +305,6 @@
                                 </p>
                                 <a class="button button-black" href="">Заказать</a>
                             </div>
-
                             <hr class="greyHr">
                             <div class="container">
                                 <p>За разработку адаптивной и мобильной версии +30% к цене</p>
@@ -290,7 +312,6 @@
                             <hr class="greyHr">
                             <div class="col-sm-6 col-sm-offset-3  col-xs-12 breeds">
                                 <a class="button button-black" href="">Узнать больше</a>
-
                             </div>
                         </div>
                     </div>
@@ -298,8 +319,6 @@
             </div>
         </div>
 
-        <!-- end of row about -->
-        <!-- description about prices -->
         <div class="container">
             <div class="row descript">
                 <br>
@@ -333,45 +352,34 @@
                             <p>Контролирует процесс разработки сайта на всех этапах. Взаимодействует между учасниками команды разработчиков. Контактирует с заказчиком от имени студии.</p>
                         </div>
                     </div>
-                    <!-- end of row -->
-
                 </div>
-                <!-- end of col -->
             </div>
         </div>
-        <!-- end of description about prices  -->
+
         <div class="container">
             <div class="contacts row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
                     <hr class="full-width gray-color">
-                    <h2>Контакты</h2>
+                    <h2 id="contacts">Контакты</h2>
                     <hr class="black-bg">
                     <p class="center">Мы готовы создать условия для роста Вашего бизнеса в интернете. Позвоните нам.</p>
                     <div class="row">
                         <div class="col-sm-6 col-xs-12 col-md-5 col-md-offset-1">
                             <h3>Закажите обратный звонок</h3>
-                            <form id="form-1">
+                            <form id="phoneUs" method="POST">
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xs-12">
-                                        <input type="tel" placeholder="+38(___)___-___-___">
-                                        <br>
-                                        <br>
+                                        <div class="form-group">
+                                            <input type="tel" id="phoneUsClientPhone" placeholder="+__(___)___-__-__">
+                                        </div>
                                     </div>
-                                    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xs-12">
-
-                                        <a class="button button-black" href="">Отправить</a>
-
-
-                                        <!--        <div class="form-group success">
-                                <p>Мы перезвоним вам в ближайшее время</p>
-                            </div>
-                            <div class="form-group error">
-                                <p>Что-то пошло не так... Попробуйте еще раз</p>
-                            </div>-->
+                                    <div id="phoneUsControl" class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="Отправить" class="button button-black sendInfo" id="sendFormPhoneUs">
+                                        </div>
                                     </div>
                                 </div>
                             </form>
-                            <br>
                             <div class="hidden-xs">
                                 <h3 class="mail-title">Почта</h3>
                                 <p class="mail-text">webex.kiev.ua@gmail.com</p>
@@ -379,63 +387,45 @@
                         </div>
                         <div class="col-sm-6 col-xs-12 col-md-5 write-us">
                             <h3>Напишите нам</h3>
-
-                            <form id="form-2">
+                            <form id="writeUs" method="POST" enctype="multipart/form-data">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
                                         <div class="form-group">
-                                            <label for="clientName">Имя:</label>
-                                            <br>
-                                            <input type="text" id="clientName" placeholder="Text">
+                                            <label for="writeUsClientName">Имя:</label>
+                                            <input type="text" id="writeUsClientName" placeholder="Enter your name" required="required">
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
-
                                         <div class="form-group">
-                                            <label for="clientPhone">Телефон:</label>
-                                            <br>
-                                            <input type="tel" id="clientPhone" placeholder="+38(___)___-___-___">
+                                            <label for="writeUsClientPhone">Телефон:</label>
+                                            <input type="tel" id="writeUsClientPhone" placeholder="+__(___)___-__-__">
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
-
                                         <div class="form-group">
-                                            <label for="clientMail">E-mail:</label>
-                                            <br>
-                                            <input type="email" id="clientMail" placeholder="abd123@gmail.com">
+                                            <label for="writeUsClientMail">E-mail:</label>
+                                            <input type="email" id="writeUsClientMail" placeholder="abd123@gmail.com" required="required">
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
-
                                         <div class="form-group">
-                                            <label for="clientInquiry">Запрос:</label>
-                                            <br>
-                                            <textarea id="clientInquiry" rows="1" placeholder="Хочу заказать интернет-магазин. Бабок у меня дохренище, влезать в работу не буду, сделай мне охеренный сайт.">
+                                            <label for="writeUsClientInquiry">Запрос:</label>
+                                            <textarea id="writeUsClientInquiry" rows="1" required="required">
                                             </textarea>
                                         </div>
-                                        <br>
                                     </div>
                                     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
-
-                                        <div class="form-group">
-                                            <a class="plus" href="" id="plus"><i></i><span>Прикрепить файл</span></a>
-                                            <br>
-                                            <br>
+                                        <div class="form-group plus">
+                                            <a href=""> <i></i><span>Прикрепить файл</span>
+                                            </a>
+                                            <!--Скрыл  инпут с отправкой файлов, ряд 428 в style.scss-->
+                                            <input type="file" id="addFileInput" class="addFile">
                                         </div>
                                     </div>
-                                    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
-
+                                    <div id="writeUsControl" class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-3 col-xs-12">
                                         <div class="form-group">
-                                            <a class="button button-black pull-left sendInfo" id="sendInfo" href="">Отправить</a>
-                                            <br>
+                                            <input type="submit" value="Отправить" class="button button-black pull-left sendInfo" id="sendFormWriteUs">
                                         </div>
-
-                                        <!--      <div class="form-group success">
-                                <p>Письмо успешно отправлено</p>
-                            </div>
-                            <div class="form-group error">
-                                <p>Что-то пошло не так... Попробуйте заполнить поля еще раз</p>
-</div>-->
                                     </div>
                                 </div>
                             </form>
@@ -444,20 +434,19 @@
                                 <hr class="hr-2">
                                 <h3>Почта</h3>
                                 <p>webex.kiev.ua@gmail.com</p>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end of row with contacts -->
             </div>
         </div>
     </div>
-    <!-- footer -->
+
 
     <footer>
         <div class="container">
-            <div class="upArr" id="upArr"></div>
+            <a class="upArr" id="upArr">
+                <i class="fa fa-chevron-up"></i></a>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12  col-xs-12">
                     <h2>WEBEX</h2>
@@ -477,6 +466,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

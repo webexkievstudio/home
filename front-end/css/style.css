@@ -12,7 +12,6 @@
   /* Путь к файлу со шрифтом */ }
 
 body {
-  overflow-x: hidden;
   font-family: pfd, 'Verdana', cursive;
   font-size: 17px;
   margin: 0;
@@ -62,21 +61,26 @@ span {
 
 .top {
   padding: 2%; }
+  @media (max-width: 767px) {
+    .top:hover {
+      background: white; }
+    .top:hover .fa-bars {
+      color: black; }
+    .top:hover .logo-in-nav a {
+      color: black; } }
 
-nav {
+.static-menu {
   background: transparent;
   width: 100%; }
-
-nav ul {
-  float: right;
-  padding: 0;
-  text-align: justify;
-  width: 80%; }
-
-nav ul li {
-  display: inline-block;
-  padding: 0 2%;
-  float: right; }
+  .static-menu ul {
+    float: right;
+    padding: 0;
+    text-align: justify;
+    width: 80%; }
+    .static-menu ul li {
+      display: inline-block;
+      padding: 0 2%;
+      float: right; }
 
 .logo-in-nav {
   float: left;
@@ -86,10 +90,6 @@ nav ul li {
   font-size: 33px;
   line-height: 0.424px;
   text-transform: uppercase; }
-
-@media (min-width: 768px) {
-  .toggle-menu {
-    display: none; } }
 
 .menu a {
   position: relative;
@@ -150,7 +150,8 @@ nav ul li {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 13px; }
 
 .button:focus {
   outline: none; }
@@ -162,7 +163,7 @@ nav ul li {
 .button:hover,
 .button:active,
 .button:focus {
-  color: #fff;
+  color: white;
   text-decoration: none;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
@@ -260,7 +261,13 @@ hr {
   display: none;
   background-color: rgba(33, 33, 33, 0.7);
   color: white;
-  padding: 20% 5%; }
+  padding: 30% 5%; }
+  @media (max-width: 899px) {
+    .about_person {
+      width: 100%; } }
+  @media (min-width: 1200px) {
+    .about_person {
+      padding-top: 70px; } }
 
 .name {
   font-size: 1.75em;
@@ -271,7 +278,7 @@ hr {
   .name {
     font-size: 2.5em; }
   .about_person {
-    padding: 20% 10%; } }
+    padding: 35% 10%; } }
 
 @media (max-width: 810px) {
   .name {
@@ -284,11 +291,21 @@ hr {
   font-size: 1.3em; }
 
 .fb {
-  background-image: url(../img/fb.png);
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  margin: 10% auto; }
+  position: absolute;
+  bottom: 10%;
+  left: 43%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  cursor: pointer; }
+  .fb .fa-circle {
+    color: white; }
+  .fb .fa-facebook {
+    color: black;
+    opacity: 0.902; }
+  @media (max-width: 1000px) {
+    .fb {
+      left: 42%; } }
 
 .swiper-customize-team {
   background-color: white;
@@ -307,13 +324,15 @@ hr {
 .swiper-customize-team img {
   box-shadow: 0px 10px 20px 0px rgba(27, 27, 27, 0.35); }
 
-.swiper-customize-team .facebook {
-  background-image: url(../img/facebook.png);
-  background-size: 46px;
-  width: 46px;
-  height: 46px;
+.swiper-customize-team .fb-visible-xs {
+  text-align: center;
+  cursor: pointer;
   margin: auto;
   display: block; }
+  .swiper-customize-team .fb-visible-xs .fa-circle {
+    color: black; }
+  .swiper-customize-team .fb-visible-xs .fa-facebook {
+    color: white; }
 
 .breeds {
   text-align: left;
@@ -395,6 +414,23 @@ hr {
   width: 100%;
   margin: 0; }
 
+form .success {
+  border-top: 1px solid #2196f3;
+  border-bottom: 1px solid #2196f3;
+  color: #2196f3; }
+
+form .error {
+  border-bottom: 1px solid #d50000;
+  border-top: 1px solid #d50000;
+  color: #d50000; }
+
+.success p,
+.error p {
+  margin: 15px auto; }
+
+form .plus .addFile {
+  display: none; }
+
 form .plus span {
   font-size: 24px;
   margin-left: 50px;
@@ -418,10 +454,6 @@ textarea {
 .write-us {
   text-align: left; }
 
-.sendInfo {
-  margin: 0 auto;
-  text-align: center; }
-
 label {
   margin-left: 0; }
 
@@ -433,17 +465,27 @@ footer {
   color: #616161;
   background: #212121; }
 
-footer .upArr {
+.upArr {
+  margin: auto;
   position: relative;
   top: -25px;
-  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background-size: contain;
   width: 70px;
   height: 70px;
-  background-image: url(../img/upArr.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align: center;
-  cursor: pointer; }
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 17px; }
+  .upArr:hover, .upArr:focus {
+    outline: none;
+    box-shadow: 0px 10px 20px 0px rgba(27, 27, 27, 0.35); }
+  .upArr .fa-chevron-up {
+    margin-top: 24px;
+    color: white; }
+  .upArr:hover .fa-chevron-up {
+    color: black; }
 
 footer hr {
   background: #616161;
@@ -478,7 +520,7 @@ footer .behance {
     font-size: 14px; } }
 
 @media (max-width: 767px) {
-  nav ul {
+  .static-menu ul {
     display: none; }
   body {
     font-size: 20px; }
@@ -486,18 +528,36 @@ footer .behance {
     float: right;
     margin-top: 15px;
     cursor: pointer; }
+    .bars i {
+      color: white;
+      font-size: 50px; }
+      .bars i:hover {
+        color: black; }
   .toggle-menu {
+    z-index: 100;
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
+    overflow-y: hidden;
     width: 100%;
+    height: 100%;
     color: black;
-    z-index: 100;
     text-align: center;
     font-size: 1.5em;
     padding-top: 25px;
     display: none; }
+    .toggle-menu .logo-in-nav a {
+      color: black; }
+    .toggle-menu ul li a,
+    .toggle-menu p {
+      font-size: 40px; } }
+    @media (max-width: 767px) and (max-width: 450px) {
+      .toggle-menu ul li a,
+      .toggle-menu p {
+        font-size: 26px; } }
+
+@media (max-width: 767px) {
   .close-menu {
     position: absolute;
     right: 15px;
@@ -507,9 +567,9 @@ footer .behance {
     padding: 0; }
   .toggle-menu ul li {
     list-style-type: none;
-    padding: 5% 0;
+    padding: 15px 30px;
     text-align: center;
-    width: 80%;
+    width: 85%;
     margin: 0 auto; }
   .toggle-menu ul li:hover {
     border: 1px solid black; }
@@ -517,7 +577,7 @@ footer .behance {
     color: black; }
   a {
     font-size: 24px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     a {
       font-size: 17px; } }
 
@@ -530,19 +590,27 @@ footer .behance {
     font-size: 50px; }
   .logo-in-nav a {
     line-height: 0.28;
-    font-size: 50px; }
+    font-size: 50px; } }
+  @media (max-width: 767px) and (max-width: 375px) {
+    .logo-in-nav a {
+      font-size: 35px; } }
+
+@media (max-width: 767px) {
   .lead-text {
     margin: 10% 0 25% 0;
     padding: 10% 0; } }
   @media (max-width: 767px) and (max-width: 420px) {
     .lead-text {
       padding: 0 0 10%; } }
+  @media (max-width: 767px) and (max-width: 375px) {
+    .lead-text {
+      margin: 10% 0 35% 0; } }
 
 @media (max-width: 767px) {
   .lead-text p {
     font-size: 24px;
     line-height: 1.167; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     .lead-text p {
       font-size: 17px; } }
 
@@ -571,9 +639,12 @@ footer .behance {
     height: 27px;
     position: absolute;
     right: 45%; } }
-  @media (max-width: 767px) and (max-width: 380px) {
+  @media (max-width: 767px) and (max-width: 370px) {
     .lead-text .arrow-button i {
       right: 41%; } }
+  @media (max-width: 767px) and (min-width: 370px) and (max-width: 450px) {
+    .lead-text .arrow-button i {
+      right: 43%; } }
   @media (max-width: 767px) and (min-width: 645px) and (max-width: 768px) {
     .lead-text .arrow-button i {
       right: 46%; } }
@@ -581,7 +652,7 @@ footer .behance {
 @media (max-width: 767px) {
   span {
     font-size: 24px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     span {
       font-size: 17px; } }
 
@@ -589,7 +660,7 @@ footer .behance {
   .cost-title {
     font-size: 40px;
     font-weight: normal; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     .cost-title {
       font-size: 30px; } }
 
@@ -597,7 +668,7 @@ footer .behance {
   h2 {
     font-size: 60px;
     text-align: center; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     h2 {
       font-size: 40px; } }
 
@@ -605,14 +676,14 @@ footer .behance {
   h3 {
     font-size: 40px;
     margin-bottom: 10px !important; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     h3 {
       font-size: 30px; } }
 
 @media (max-width: 767px) {
   p {
     font-size: 24px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     p {
       font-size: 17px; } }
 
@@ -624,7 +695,7 @@ footer .behance {
     margin: 0; }
   .breeds .price {
     font-size: 36px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     .breeds .price {
       font-size: 20px; } }
 
@@ -633,14 +704,14 @@ footer .behance {
     background: #2196f3; }
   .button {
     font-size: 24px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     .button {
       font-size: 17px; } }
 
 @media (max-width: 767px) {
   .worker h3 {
     font-size: 30px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     .worker h3 {
       font-size: 22px; } }
 
@@ -648,7 +719,7 @@ footer .behance {
   .contacts h3 {
     font-size: 34px;
     text-align: center; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     .contacts h3 {
       font-size: 24px; } }
 
@@ -667,7 +738,7 @@ footer .behance {
   form textarea {
     font-size: 40px;
     color: black; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     form input,
     form textarea {
       font-size: 30px; } }
@@ -675,7 +746,7 @@ footer .behance {
 @media (max-width: 767px) {
   form label {
     font-size: 24px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     form label {
       font-size: 17px; } }
 
@@ -684,28 +755,11 @@ footer .behance {
     font-size: 24px;
     margin-left: 50px;
     color: black; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     form .plus span {
       font-size: 17px; } }
 
 @media (max-width: 767px) {
-  form .plus i {
-    background: url(../img/plus.png);
-    width: 26px;
-    height: 26px;
-    background-size: 26px;
-    position: absolute; }
-  form .success {
-    border-top: 1px solid #2196f3;
-    border-bottom: 1px solid #2196f3;
-    color: #2196f3; }
-  form .error {
-    border-bottom: 1px solid #d50000;
-    border-top: 1px solid #d50000;
-    color: #d50000; }
-  .success p,
-  .error p {
-    margin: 15px auto; }
   .hr-2 {
     width: 100%;
     height: 1px;
@@ -714,6 +768,6 @@ footer .behance {
     margin-top: 5%; }
   footer h2 {
     font-size: 60px; } }
-  @media (max-width: 767px) and (max-width: 358px) {
+  @media (max-width: 767px) and (max-width: 375px) {
     footer h2 {
       font-size: 40px; } }
