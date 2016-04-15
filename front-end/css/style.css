@@ -63,7 +63,10 @@ span {
   padding: 2%; }
   @media (max-width: 767px) {
     .top:hover {
-      background: white; }
+      background: white;
+      box-shadow: 0 0 10px silver;
+      -webkit-transition: all 0.4s ease-out;
+      transition: all 0.4s ease-out; }
     .top:hover .fa-bars {
       color: black; }
     .top:hover .logo-in-nav a {
@@ -536,10 +539,9 @@ footer .behance {
   .toggle-menu {
     z-index: 100;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    overflow-y: hidden;
     width: 100%;
     height: 100%;
     color: black;
