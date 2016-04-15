@@ -18,29 +18,29 @@ $(document).ready(function () {
         });
     }
 
-    $('#menu').on('click', "a[href^='#']", function (e) {
+    $("#menu").on('click', "a[href^='#']", function (e) {
         e.preventDefault();
         var hash = this.hash;
-        $('html, body').animate({
+        $("html, body").animate({
                 scrollTop: $(hash).offset().top
-            }, 500),
+            }, 500,
             function () {
                 window.location.hash = hash;
-            };
+            });
     });
     
-    $('#upArr').click(function scroll() {
-        $('html, body').animate({
+    $("#upArr").click(function scroll() {
+        $("html, body").animate({
             scrollTop: 0
         }, 500);
     });
 
 
-    $('#open-menu, #close-menu, #uncol-menu li').on('click', function () {
+    $("#open-menu, #close-menu, #uncol-menu li").on('click', function () {
         $('#uncol-menu').toggle();
     });
 
-    var mySwiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
@@ -50,18 +50,11 @@ $(document).ready(function () {
         loop: true
     });
 
-    $('#phoneUsClientPhone, #writeUsClientPhone').mask("+00 (000) 000-00-00");
+    $("#phoneUsClientPhone, #writeUsClientPhone").mask("+00 (000) 000-00-00");
 
-    $('#phoneUs').on('submit', function () {
-        var formData = new FormData($('#phoneUs')[0]);
+    $("#phoneUs, #writeUs").on('submit', function () {
         var $this = $(this);
-        sendForm($this, formData);
-        return false;
-    });
-
-    $('#writeUs').on('submit', function () {
-        var formData = new FormData($('#writeUs')[0]);
-        var $this = $(this);
+        var formData = new FormData($this);
         sendForm($this, formData);
         return false;
     });
