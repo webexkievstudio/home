@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+    function sendForm($this, formData) {
+        $.ajax({
+            type: "POST",
+            processData: false,
+            contentType: false,
+            url: '',
+            data: formData,
+            success: function () {
+                $this.hide();
+                $this.after('<div class="form-group success"><p>Письмо успешно отправлено</p></div>');
+            },
+            error: function () {
+                $this.hide();
+                $this.after('<div class="form-group error"><p>Что-то пошло не так... Попробуйте заполнить поля еще раз</p></div>');
+            }
+        });
+    }
+
     $('#menu').on('click', "a[href^='#']", function (e) {
         e.preventDefault();
         var hash = this.hash;
@@ -19,9 +37,8 @@ $(document).ready(function () {
 
 
     $('#open-menu, #close-menu, #uncol-menu li').on('click', function () {
-        $('#uncol-menu').slideToggle(0);
+        $('#uncol-menu').toggle();
     });
-
 
     var mySwiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -33,56 +50,19 @@ $(document).ready(function () {
         loop: true
     });
 
-    $('#phoneUsClientPhone').mask("+00 (000) 000-00-00");
-    $('#writeUsClientPhone').mask("+00 (000) 000-00-00");
+    $('#phoneUsClientPhone, #writeUsClientPhone').mask("+00 (000) 000-00-00");
 
-
-    $('#sendFormPhoneUs').on('click', function () {
+    $('#phoneUs').on('submit', function () {
         var formData = new FormData($('#phoneUs')[0]);
         var $this = $(this);
-        $.ajax({
-            type: "POST",
-            processData: false,
-            contentType: false,
-            url: '',
-            data: formData,
-            success: function () {
-                $this.remove();
-                $('#phoneUsControl').append("<div class=\"form-group success\">");
-                $('#phoneUsControl > .success').append("<p>Мы перезвоним вам в ближайшее время</p>");
-                $('#phoneUsControl').append("</div>");
-            },
-            error: function () {
-                $this.remove();
-                $('#phoneUsControl').append("<div class=\"form-group error\">");
-                $('#phoneUsControl > .error').append("<p>Что-то пошло не так... Попробуйте еще раз</p>");
-                $('#phoneUsControl').append("</div>");
-
-            }
-        });
+        sendForm($this, formData);
+        return false;
     });
-    $('#sendFormWriteUs').on('click', function () {
+
+    $('#writeUs').on('submit', function () {
         var formData = new FormData($('#writeUs')[0]);
         var $this = $(this);
-        $.ajax({
-            type: "POST",
-            processData: false,
-            contentType: false,
-            url: '',
-            data: formData,
-            success: function () {
-                $this.remove();
-                $('#writeUsControl').append("<div class=\"form-group success\">");
-                $('#writeUsControl > .success').append("<p>Письмо успешно отправлено</p>");
-                $('#writeUsControl').append("</div>");
-            },
-            error: function () {
-                $this.remove();
-                $('#writeUsControl').append("<div class=\"form-group error\">");
-                $('#writeUsControl > .error').append("<p>Что-то пошло не так... Попробуйте заполнить поля еще раз</p>");
-                $('#writeUsControl').append("</div>");
-
-            }
-        });
+        sendForm($this, formData);
+        return false;
     });
 });
