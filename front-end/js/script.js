@@ -47,7 +47,9 @@ $(document).ready(function () {
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
         spaceBetween: 60,
-        loop: true
+        loop: true,
+        autoplay: 2000,
+        autoplayDisableOnInteraction: false
     });
 
     $("#phoneUsClientPhone, #writeUsClientPhone").mask("+00 (000) 000-00-00");
