@@ -30,4 +30,5 @@ register_nav_menus(array(
     'toggle-menu' => 'toggle menu',
 	'bottom' => 'bottom menu'
 ));
+add_theme_support('title-tag');
 ?>
