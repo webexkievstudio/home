@@ -27,6 +27,7 @@ add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 register_nav_menus(array(
 	'top'    => 'top menu',
+    'toggle-menu' => 'toggle menu',
 	'bottom' => 'bottom menu'
 ));
 ?>

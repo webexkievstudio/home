@@ -23,26 +23,14 @@
             <img src="<?php bloginfo('template_url'); ?>/img/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
             <p class="bold">Меню</p>
             <br>
-            <ul>
-                <li>
-                    <a href="#portfolio">Портфолио</a>
-                </li>
-                <li>
-                    <a href="#team">Команда</a>
-                </li>
-                <li>
-                    <a href="#services">Услуги и цены</a>
-                </li>
-                <li>
-                    <a href="#contacts">Контакты</a>
-                </li>
-                <li>
-                    <a href="#">Все проекты</a>
-                </li>
-                <li>
-                    <a href="#">Наши услуги</a>
-                </li>
-            </ul>
+
+<?php $args = array(
+'theme_location' => 'toggle-menu',
+'container'=> false,
+'menu_id' => '',
+'menu_class' => ''
+);
+wp_nav_menu($args); ?>
         </nav>
         <div class="container">
             <header class="row">
@@ -56,6 +44,6 @@
 'menu_id' => 'menu',
 'menu_class' => 'menu bold'
 );
-wp_nav_menu($args); // выводим верхнее меню ?>
+wp_nav_menu($args);?>
  </nav>
                 </div>

@@ -12,11 +12,13 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12  col-xs-12">
                     <h2>WEBEX</h2>
-                    <ul class="footer-navigation hidden-xs">
-                        <li><a href="">Главная</a></li>
-                        <li><a href="">Все проекты</a></li>
-                        <li><a href="">Наши услуги</a></li>
-                    </ul>
+<?php $args = array(
+'theme_location' => 'bottom',
+'container'=> false,
+'menu_id' => '',
+'menu_class' => 'footer-navigation hidden-xs'
+);
+wp_nav_menu($args); ?>
                     <hr class="full-width">
                     <span>@2016 Webex</span>
                     <a class="pull-right behance" href="https://www.behance.net/andrii_shtyka"><i class="fa fa-behance" aria-hidden="true"></i></a>
