@@ -36,12 +36,12 @@ h2 {
     background: #e0e0e0;
     height: 1px;
 }
-header {
+.header-home-page {
     background: url(../img/header_bg_sqr.png) no-repeat center;
     background-size: cover;
 }
 a {
-    font-size: 13px;
+    font-size: 16px;
 }
 a,
 a:hover,
@@ -89,7 +89,7 @@ span {
 }
 .logo-in-nav {
     float: left;
-    padding-left: 2%;
+    margin-left: 2%;
 }
 .logo-in-nav a {
     font-size: 33px;
@@ -97,7 +97,7 @@ span {
 }
 .menu a {
     position: relative;
-    font-size: 13px;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -138,6 +138,7 @@ span {
     font-size: 4em;
     margin-top: 0;
     line-height: 0.9em;
+    text-transform: uppercase;
 }
 @media (min-width: 660px) and (max-width: 767px) {
     .lead-text .arrow-button i {
@@ -155,8 +156,8 @@ span {
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
-    font-size: 13px;
-    letter-spacing: 3px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .button:focus {
     outline: none;
@@ -216,13 +217,12 @@ hr {
 .white-realm .button {
     margin: 5% auto 0;
     color: black;
-    padding: 15px 30px;
     width: 100%;
 }
-.white-realm .btn-more-pj{
+.white-realm .btn-more-pj {
     margin: 15% auto 0;
-@include breakpoint (max-width 991px){
-        margin: 10% auto 0; 
+    @include breakpoint (max-width 991px) {
+        margin: 10% auto 0;
     }
 }
 .white-realm .button:hover,
@@ -391,17 +391,22 @@ hr {
 .breeds .button {
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
+}
+.additional-text {
+    margin: 40px 0 10px;
 }
 .greyHr {
     background: #e0e0e0;
     height: 1px;
     width: 90% !important;
+    margin-bottom: -10px;
 }
 .price-table {
     top: 50px;
 }
 .descript {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .descript h2 {
     font-family: pfd, sans-serif;
@@ -427,7 +432,10 @@ hr {
 }
 .contacts {
     text-align: center;
-    padding: 5% 0;
+    padding: 0;
+}
+.contacts .full-width {
+    margin-bottom: 40px;
 }
 .contacts .button {
     color: black;
@@ -510,9 +518,12 @@ label {
     text-decoration: underline;
 }
 footer {
+    margin-top: 40px;
     padding-bottom: 15px;
     color: #616161;
     background: #212121;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .upArr {
     margin: auto;
@@ -527,6 +538,7 @@ footer {
     border-radius: 50%;
     cursor: pointer;
     font-size: 17px;
+    margin-bottom: 15px;
 }
 .upArr:hover,
 .upArr:focus {
@@ -534,7 +546,7 @@ footer {
     box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
 }
 .upArr .fa-chevron-up {
-    margin-top: 24px;
+    margin-top: 25px;
     color: white;
 }
 .upArr:hover .fa-chevron-up {
@@ -553,12 +565,14 @@ footer h2 {
 }
 footer .behance {
     font-size: 24px;
-    color: #616161;
+    color: #616161 !important;
 }
 footer .behance:hover {
-    color: white;
+    color: white !important;
 }
 .footer-navigation {
+    position: absolute;
+    top: -30%;
     padding: 0;
 }
 .footer-navigation li {
@@ -573,7 +587,7 @@ footer .behance:hover {
 }
 @media (min-width: 768px) {
     footer span {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 @media (max-width: 767px) {
@@ -628,8 +642,11 @@ footer .behance:hover {
     .toggle-menu p {
         font-size: 40px;
     }
+    .descript {
+        padding-top: 0;
+    }
 }
-@media (max-width: 767px) and (max-width: 450px) {
+@media (max-width: 450px) {
     .toggle-menu ul li a,
     .toggle-menu p {
         font-size: 26px;
@@ -663,7 +680,7 @@ footer .behance:hover {
         font-size: 24px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     a,
     .mail-text-visible-xs {
         font-size: 17px;
@@ -684,7 +701,7 @@ footer .behance:hover {
         font-size: 50px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .logo-in-nav a {
         font-size: 35px;
     }
@@ -695,12 +712,12 @@ footer .behance:hover {
         padding: 10% 0;
     }
 }
-@media (max-width: 767px) and (max-width: 420px) {
+@media (max-width: 420px) {
     .lead-text {
         padding: 0 0 10%;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .lead-text {
         margin: 10% 0 35% 0;
     }
@@ -711,7 +728,7 @@ footer .behance:hover {
         line-height: 1.167;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .lead-text p {
         font-size: 17px;
     }
@@ -722,7 +739,7 @@ footer .behance:hover {
         font-size: 40px;
     }
 }
-@media (max-width: 767px) and (max-width: 450px) {
+@media (max-width: 450px) {
     .lead-text .pre-main-title {
         font-size: 26px;
     }
@@ -733,11 +750,12 @@ footer .behance:hover {
         letter-spacing: 10px;
     }
 }
-@media (max-width: 767px) and (max-width: 450px) {
+@media (max-width: 450px) {
     .main-title {
         font-size: 60px;
     }
 }
+
 /*@media (max-width: 767px) and (max-width: 320px) {
     .main-title {
         font-size: 50px;
@@ -748,10 +766,8 @@ footer .behance:hover {
     .swiper-customize-team .name, .position {
         font-size: 20px;
     }
-    .mail-text-visible-xs{
-        margin-bottom: 15px;
-    }
 }*/
+
 @media (max-width: 767px) {
     .lead-text .arrow-button {
         margin-top: 25px;
@@ -764,17 +780,17 @@ footer .behance:hover {
         right: 45%;
     }
 }
-@media (max-width: 767px) and (max-width: 370px) {
+@media (max-width: 370px) {
     .lead-text .arrow-button i {
         right: 41%;
     }
 }
-@media (max-width: 767px) and (min-width: 370px) and (max-width: 450px) {
+@media (min-width: 370px) and (max-width: 450px) {
     .lead-text .arrow-button i {
         right: 43%;
     }
 }
-@media (max-width: 767px) and (min-width: 645px) and (max-width: 768px) {
+@media (min-width: 645px) and (max-width: 768px) {
     .lead-text .arrow-button i {
         right: 46%;
     }
@@ -784,7 +800,7 @@ footer .behance:hover {
         font-size: 24px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     span {
         font-size: 17px;
     }
@@ -795,7 +811,7 @@ footer .behance:hover {
         font-weight: normal;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .cost-title {
         font-size: 30px;
     }
@@ -806,7 +822,7 @@ footer .behance:hover {
         text-align: center;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     h2 {
         font-size: 40px;
     }
@@ -817,7 +833,7 @@ footer .behance:hover {
         margin-bottom: 10px !important;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     h3 {
         font-size: 30px;
     }
@@ -827,7 +843,7 @@ footer .behance:hover {
         font-size: 24px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     p {
         font-size: 17px;
     }
@@ -843,8 +859,11 @@ footer .behance:hover {
     .breeds .price {
         font-size: 36px;
     }
+    .breeds .button {
+        margin-top: 20px;
+    }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .breeds .price {
         font-size: 20px;
     }
@@ -857,7 +876,7 @@ footer .behance:hover {
         font-size: 24px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .button {
         font-size: 17px;
     }
@@ -868,7 +887,7 @@ footer .behance:hover {
         min-height: 0;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .worker h3 {
         font-size: 22px;
     }
@@ -879,15 +898,12 @@ footer .behance:hover {
         text-align: center;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     .contacts h3 {
         font-size: 24px;
     }
 }
 @media (max-width: 767px) {
-    .contacts {
-        padding: 2% 1%;
-    }
     .contacts p {
         text-align: center;
     }
@@ -905,7 +921,7 @@ footer .behance:hover {
         color: black;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     form input,
     form textarea {
         font-size: 30px;
@@ -916,7 +932,7 @@ footer .behance:hover {
         font-size: 24px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     form label {
         font-size: 17px;
     }
@@ -927,8 +943,11 @@ footer .behance:hover {
         margin-left: 50px;
         color: black;
     }
+    .mail-text-visible-xs {
+        margin-bottom: 40px;
+    }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     form .plus span {
         font-size: 17px;
     }
@@ -938,16 +957,29 @@ footer .behance:hover {
         width: 100%;
         height: 1px;
         background: #e0e0e0;
+        margin: 0;
     }
     footer {
         margin-top: 5%;
+        .upArr {
+            margin-bottom: 0;
+        }
     }
     footer h2 {
         font-size: 60px;
     }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
     footer h2 {
         font-size: 40px;
+    }
+}
+.breeds .btn-more-info {
+    margin-bottom: 0px;
+    @include breakpoint(375px 767px) {
+        margin-bottom: -10px;
+    }
+    @include breakpoint(min-width 768px) {
+        margin-bottom: -20px;
     }
 }
