@@ -102,6 +102,11 @@
         .idea-block {
             margin-bottom: 50px;
         }
+        .idea-block {
+            @include breakpoint (max-width 767px) {
+                margin-top: 50px;
+            }
+        }
         .idea-block img {
             float: right;
             @include breakpoint (max-width 767px) {

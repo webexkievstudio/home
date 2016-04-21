@@ -85,6 +85,9 @@ header.row {
   .portfolio-page .project-description-block,
   .portfolio-page .idea-block {
     margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .portfolio-page .idea-block {
+      margin-top: 50px; } }
   .portfolio-page .idea-block img {
     float: right; }
     @media (max-width: 767px) {
