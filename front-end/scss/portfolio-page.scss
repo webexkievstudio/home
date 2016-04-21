@@ -91,7 +91,6 @@
             }
         }
         .button {
-            margin-bottom: 40px;
             @include breakpoint (max-width 767px) {
                 width: 100%;
             }

@@ -77,11 +77,9 @@ header.row {
       .portfolio-page p {
         margin-top: 0;
         text-align: center; } }
-  .portfolio-page .button {
-    margin-bottom: 40px; }
-    @media (max-width: 767px) {
-      .portfolio-page .button {
-        width: 100%; } }
+  @media (max-width: 767px) {
+    .portfolio-page .button {
+      width: 100%; } }
   .portfolio-page .project-description-block {
     margin-top: 10px; }
   .portfolio-page .project-description-block,
