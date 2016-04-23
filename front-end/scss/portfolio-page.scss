@@ -73,6 +73,7 @@
         h2 {
             font-size: 30px;
             margin-bottom: 0;
+            color: black;
         }
         hr {
             float: left;
@@ -85,6 +86,7 @@
         p {
             margin-top: 50px;
             margin-bottom: 30px;
+            color: black;
             @include breakpoint (max-width 767px) {
                 margin-top: 0;
                 text-align: center;

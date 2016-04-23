@@ -28,7 +28,7 @@ $(document).ready(function () {
                 window.location.hash = hash;
             });
     });
-    
+
     $("#upArr").click(function scroll() {
         $("html, body").animate({
             scrollTop: 0
@@ -46,10 +46,9 @@ $(document).ready(function () {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
-        spaceBetween: 60,
+        spaceBetween: 20,
         loop: true,
-        autoplay: 2000,
-        autoplayDisableOnInteraction: false
+        grabCursor: true
     });
 
     $("#phoneUsClientPhone, #writeUsClientPhone").mask("+00 (000) 000-00-00");

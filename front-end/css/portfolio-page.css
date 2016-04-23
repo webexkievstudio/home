@@ -62,7 +62,8 @@ header.row {
     margin-right: 5px; }
   .portfolio-page h2 {
     font-size: 30px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: black; }
   .portfolio-page hr {
     float: left;
     background: #2196f3;
@@ -72,7 +73,8 @@ header.row {
         float: none; } }
   .portfolio-page p {
     margin-top: 50px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: black; }
     @media (max-width: 767px) {
       .portfolio-page p {
         margin-top: 0;

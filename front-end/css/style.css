@@ -112,8 +112,6 @@ span {
 
 .lead-text {
   width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
   margin: 7% 0 22% 0;
   padding: 10%;
   text-align: center;
@@ -479,7 +477,8 @@ textarea {
   font-size: 20px; }
 
 .write-us {
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 30px; }
 
 label {
   margin-left: 0; }
@@ -885,3 +884,8 @@ footer .behance:hover {
   @media (min-width: 768px) {
     .breeds .btn-more-info {
       margin-bottom: -20px; } }
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: transparent;
+  color: transparent; }
