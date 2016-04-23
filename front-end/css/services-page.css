@@ -73,12 +73,16 @@ header.row {
 .offers-page h2 {
   font-size: 30px;
   margin-bottom: 40px; }
-  @media (max-width: 767px) {
+  @media (min-width: 376px) and (max-width: 767px) {
     .offers-page h2 {
       font-size: 40px; } }
 
 .offers-page hr {
   background-color: #2196f3; }
+
+.offers-page .full-width {
+  height: 1px;
+  background-color: #bdbdbd; }
 
 .offers-page .button {
   width: 100%;
@@ -86,7 +90,6 @@ header.row {
   margin-bottom: 50px; }
 
 .offers-page .tabs {
-  border-bottom: 1px solid #bdbdbd;
   margin-top: 40px;
   margin-bottom: 0;
   padding-left: 0;
@@ -115,7 +118,16 @@ header.row {
   text-transform: uppercase; }
   @media (max-width: 767px) {
     .offers-page .tabs a {
-      font-size: 40px; } }
+      font-size: 40px;
+      border-bottom: 5px solid #2196f3;
+      padding-bottom: 25px; } }
+  @media (max-width: 413px) {
+    .offers-page .tabs a {
+      font-size: 30px;
+      padding-bottom: 23px; } }
+  @media (max-width: 325px) {
+    .offers-page .tabs a {
+      font-size: 28px; } }
   .offers-page .tabs a:hover {
     color: #2196f3;
     -webkit-transition: 0.4s;
@@ -130,29 +142,47 @@ header.row {
 
 .offers-page .offers-page-description .terms-price {
   font-size: 30px; }
+  @media (max-width: 767px) {
+    .offers-page .offers-page-description .terms-price {
+      font-size: 24px; } }
 
 .offers-page .offers-page-description .pre-top {
   position: absolute;
   right: 165px;
   text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .offers-page .offers-page-description .pre-top {
+      right: 33px; } }
 
 .offers-page .offers-page-description .pre-bottom {
   position: absolute;
-  right: 165px;
+  right: 180px;
   top: 50px;
   text-transform: uppercase; }
   @media (max-width: 767px) {
     .offers-page .offers-page-description .pre-bottom {
-      line-height: 26px; } }
+      line-height: 26px;
+      top: 93px;
+      right: 45px; } }
 
 .offers-page .offers-page-description .after-top {
   position: absolute;
   right: 33px; }
+  @media (max-width: 767px) {
+    .offers-page .offers-page-description .after-top {
+      top: 44px; } }
+  @media (max-width: 390px) {
+    .offers-page .offers-page-description .after-top {
+      right: 5px; } }
 
 .offers-page .offers-page-description .after-bottom {
   position: absolute;
   right: 70px;
   top: 50px; }
+  @media (max-width: 767px) {
+    .offers-page .offers-page-description .after-bottom {
+      top: 133px;
+      right: 33px; } }
 
 .offers-page .offers-page-description .vertical-line {
   border-left: 1px solid #212121;
@@ -171,63 +201,6 @@ header.row {
   padding: 0; }
   .offers-page .offers-page-examples .img-group:hover .hidden-img {
     display: block; }
-
-.portfolio-page {
-  padding-left: 2%;
-  padding-right: 2%; }
-  @media (max-width: 767px) {
-    .portfolio-page {
-      padding-right: 0;
-      padding-left: 0; }
-      .portfolio-page .row {
-        margin-left: 0;
-        margin-right: 0; } }
-  .portfolio-page .arrow-previous {
-    text-transform: uppercase;
-    margin-top: 25px;
-    display: block; }
-    .portfolio-page .arrow-previous:hover,
-    .portfolio-page .arrow-previous :active,
-    .portfolio-page .arrow-previous :focus {
-      color: #00acee; }
-  .portfolio-page .fa-angle-left {
-    margin-right: 5px; }
-  .portfolio-page h2 {
-    font-size: 30px;
-    margin-bottom: 0; }
-  .portfolio-page hr {
-    float: left;
-    background: #2196f3;
-    width: 54px; }
-    @media (max-width: 767px) {
-      .portfolio-page hr {
-        float: none; } }
-  .portfolio-page p {
-    margin-top: 50px;
-    margin-bottom: 30px; }
-    @media (max-width: 767px) {
-      .portfolio-page p {
-        margin-top: 0;
-        text-align: center; } }
-  @media (max-width: 767px) {
-    .portfolio-page .button {
-      width: 100%; } }
-  .portfolio-page .project-description-block {
-    margin-top: 10px; }
-  .portfolio-page .project-description-block,
-  .portfolio-page .idea-block {
-    margin-bottom: 50px; }
-  @media (max-width: 767px) {
-    .portfolio-page .idea-block {
-      margin-top: 50px; } }
-  .portfolio-page .idea-block img {
-    float: right; }
-    @media (max-width: 767px) {
-      .portfolio-page .idea-block img {
-        float: none; } }
-  @media (max-width: 767px) {
-    .portfolio-page .img-responsive {
-      width: 100%; } }
 
 @media (max-width: 767px) {
   footer {
