@@ -1,73 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webex</title>
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-
-<body>
-       <!-- uncollapsed menu -->
-    <nav id="uncol-menu" class="toggle-menu hidden-sm hidden-md hidden-lg ">
-        <img src="img/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
-        <p class="bold">Меню</p>
-        <br>
-        <ul>
-            <li>
-                <a href="index.html#portfolio">Портфолио</a>
-            </li>
-            <li>
-                <a href="index.html#team">Команда</a>
-            </li>
-            <li>
-                <a href="index.html#services">Услуги и цены</a>
-            </li>
-            <li>
-                <a href="index.html#contacts">Контакты</a>
-            </li>
-            <li>
-                <a href="all-projects-page.html">Все проекты</a>
-            </li>
-            <li>
-                <a href="services-page.html">Наши услуги</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- end of uncollapsed menu -->
-
-    <div class="container">
-        <header class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
-                <nav class="static-menu">
-                    <div class="logo-in-nav bold"><a href="#">Webex</a></div>
-                    <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
-                    <ul class="menu bold" id="menu">
-                        <li>
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                        <li>
-                            <a href="#services">Услуги и цены</a>
-                        </li>
-                        <li>
-                            <a href="#team">Команда</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Портфолио</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+<?php
+/**
+ * index.php
+ * @package WordPress
+ * @subpackage Webex
+ */
+?>
+<?php get_header(); ?>
+                <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                 <div id="logo" class="lead-text">
                     <p id="pre-name" class="pre-main-title">Студия веб-дизайна</p>
-                    <h1 id='name' class="main-title bold">WEBEX</h1>
+                    <h1 id='name' class="main-title bold"><?php the_title(); ?></h1>
                     <hr class="white">
                     <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио.
                     </p>
@@ -93,16 +35,16 @@
                     <div class="swiper-container hidden-xs hidden-sm">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="img/usual.png" alt="portfolio">
+                                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/usual.png" alt="portfolio">
                                 <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
                             </div>
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="img/usual.png" alt="portfolio">
-                                <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
+                                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/usual.png" alt="portfolio">
+                                <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/portfolioHover.png" alt="portfolio-hover">
                             </div>
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="img/usual.png" alt="portfolio">
-                                <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
+                                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/usual.png" alt="portfolio">
+                                <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/portfolioHover.png" alt="portfolio-hover">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -111,13 +53,13 @@
                     </div>
                     <div class="visible-sm visible-xs" id="staticPortfolio">
                         <div class="portfolio-static">
-                            <img class="img-responsive" src="img/project.png" alt="img-project">
+                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/project.png" alt="img-project">
                         </div>
                         <div class="portfolio-static">
-                            <img class="img-responsive" src="img/project.png" alt="img-project">
+                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/project.png" alt="img-project">
                         </div>
                         <div class="portfolio-static">
-                            <img class="img-responsive" src="img/project.png" alt="img-project">
+                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/project.png" alt="img-project">
                         </div>
                     </div>
                     <div class="row">
@@ -141,7 +83,7 @@
                     <br class="visible-xs">
                     <div class="row entire-team hidden-xs" id="entire-team">
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="oleg">
-                            <img class="img-responsive pull-right" src="img/oleg.jpg" alt="oleg">
+                            <img class="img-responsive pull-right" src="<?php bloginfo('template_url'); ?>/img/oleg.jpg" alt="oleg">
                             <div class="about_person position-right">
                                 <p class="name bold">Олег
                                     <br>Суворов</p>
@@ -156,7 +98,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="andriy">
-                            <img class="img-responsive pull-left" src="img/andrii.jpg" alt="andrii">
+                            <img class="img-responsive pull-left" src="<?php bloginfo('template_url'); ?>/img/andrii.jpg" alt="andrii">
                             <div class="about_person position-left">
                                 <p class="name bold">Андрей
                                     <br>Штыка</p>
@@ -171,7 +113,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="vitaliy">
-                            <img class="img-responsive pull-right" src="img/vetal.jpg" alt="vetal">
+                            <img class="img-responsive pull-right" src="<?php bloginfo('template_url'); ?>/img/vetal.jpg" alt="vetal">
                             <div class="about_person position-right">
                                 <p class="name bold">Виталий
                                     <br> Бесклубый</p>
@@ -186,7 +128,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-6 col-md-6 photo" id="alex">
-                            <img class="img-responsive pull-left" src="img/sanya.jpg" alt="sanya">
+                            <img class="img-responsive pull-left" src="<?php bloginfo('template_url'); ?>/img/sanya.jpg" alt="sanya">
                             <div class="about_person position-left">
                                 <p class="name bold">Александр
                                     <br>Шпикуляк</p>
@@ -201,7 +143,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-md-6 photo" id="tetiana">
-                            <img class="img-responsive pull-right" src="img/tanya.jpg" alt="tanya">
+                            <img class="img-responsive pull-right" src="<?php bloginfo('template_url'); ?>/img/tanya.jpg" alt="tanya">
                             <div class="about_person position-right">
                                 <p class="name bold">Татьяна
                                     <br>Карпенко</p>
@@ -221,7 +163,7 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="img/oleg.jpg" alt="oleg">
+                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/oleg.jpg" alt="oleg">
                                     <p class="name bold">Олег Суворов</p>
                                     <p class="position">Project Manager</p>
                                     <a class="fb-visible-xs" href="https://www.facebook.com/oleg.suvorov"> <span class="fa-stack fa-lg">
@@ -230,7 +172,7 @@
                              </span></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="img/andrii.jpg" alt="andreii">
+                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/andrii.jpg" alt="andreii">
                                     <p class="name bold">Андрей Штыка </p>
                                     <p class="position">UI/UX Designer</p>
                                     <a class="fb-visible-xs" href="https://www.facebook.com/andrii.shtyka.5"> <span class="fa-stack fa-lg">
@@ -239,7 +181,7 @@
                              </span></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="img/vetal.jpg" alt="vetal">
+                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/vetal.jpg" alt="vetal">
                                     <p class="name bold">Виталий Бесклубый</p>
                                     <p class="position">Front-end Developer</p>
                                     <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100005953996298">
@@ -250,7 +192,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="img/sanya.jpg" alt="sanya">
+                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/sanya.jpg" alt="sanya">
                                     <p class="name bold">Александр Шпикуляк</p>
                                     <p class="position">Back-end Developer</p>
                                     <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100006135914765&fref=ts">
@@ -261,7 +203,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="img/tanya.jpg" alt="tanya">
+                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/tanya.jpg" alt="tanya">
                                     <p class="name bold">Татьяна Карпенко</p>
                                     <p class="position">Front-end Developer</p>
                                     <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100005356337879">
@@ -462,32 +404,4 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <a class="upArr" id="upArr">
-                <i class="fa fa-chevron-up"></i></a>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12  col-xs-12">
-                    <h2>WEBEX</h2>
-                    <ul class="footer-navigation hidden-xs">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="all-projects-page.html">Все проекты</a></li>
-                        <li><a href="services-page.html">Наши услуги</a></li>
-                    </ul>
-                    <hr class="full-width">
-                    <span>@2016 Webex</span>
-                    <a class="pull-right behance" href="https://www.behance.net/andrii_shtyka"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

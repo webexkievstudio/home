@@ -16,7 +16,8 @@ a:focus {
     padding-right: 0; } }
 
 header.row {
-  border-bottom: 1px solid #bdbdbd; }
+  border-bottom: 1px solid #bdbdbd;
+  background: white; }
   header.row:hover {
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;

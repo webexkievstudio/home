@@ -48,7 +48,14 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
-        grabCursor: true
+    });
+    new Swiper('.services-page .swiper-container', {
+         pagination: '.swiper-pagination',
+        slidesPerView: 'auto',
+                 centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: -30,
+          grabCursor: true
     });
 
     $("#phoneUsClientPhone, #writeUsClientPhone").mask("+00 (000) 000-00-00");

@@ -157,9 +157,7 @@
                 }
             }
         }
-        .services-page-main,
-        .services-page-description,
-        {
+        .services-page-main {
             margin-top: 40px;
         }
         .services-page-main {
@@ -167,68 +165,9 @@
                 text-align: center;
             }
         }
-        .services-page-description {
-            .terms-price {
-                font-size: 30px;
-                @include breakpoint(max-width 767px) {
-                    font-size: 20px;
-                }
-            }
-            .pre-top {
-                position: absolute;
-                right: 165px;
-                text-transform: uppercase;
-                @include breakpoint (max-width 767px) {
-                    right: 33px;
-                }
-            }
-            .pre-bottom {
-                position: absolute;
-                right: 180px;
-                top: 50px;
-                text-transform: uppercase;
-                @include breakpoint (max-width 767px) {
-                    line-height: 26px;
-                    top: 93px;
-                    right: 45px;
-                }
-            }
-            .after-top {
-                position: absolute;
-                right: 33px;
-                @include breakpoint (max-width 767px) {
-                    top: 44px;
-                    right: 12px;
-                }
-            }
-            .after-bottom {
-                position: absolute;
-                right: 70px;
-                top: 50px;
-                @include breakpoint (max-width 767px) {
-                    top: 133px;
-                    right: 25px;
-                }
-                &.less-1K {
-                    right: 70px;
-                    @include breakpoint (max-width 767px) {
-                        right: 33px;
-                    }
-                }
-            }
-            .vertical-line {
-                border-left: 1px solid #212121;
-                height: 100%;
-                p {
-                    font-size: 22px;
-                    margin-left: 20px;
-                    @include breakpoint(max-width 767px) {
-                        font-size: 24px;
-                    }
-                }
-            }
-        }
         .services-page-examples {
+            margin-top: 50px;
+            margin-bottom: 50px;
             h2 {
                 margin-top: 40px;
             }
