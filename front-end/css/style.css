@@ -454,14 +454,22 @@ form + .error {
   margin: 15px auto; }
 
 form .plus .addFile {
-  display: none; }
+  border-bottom: none;
+  opacity: 0;
+  cursor: pointer;
+  position: relative;
+  top: -30px;
+  height: 15px; }
 
-form .plus span {
+form .plus .wrapper-addFile span {
   font-size: 24px;
   margin-left: 50px;
   color: black; }
+  @media (min-width: 1200px) and (max-width: 1312px) {
+    form .plus .wrapper-addFile span {
+      font-size: 20px; } }
 
-form .plus i {
+form .plus .wrapper-addFile i {
   background: url(../img/plus.png);
   width: 26px;
   height: 26px;
