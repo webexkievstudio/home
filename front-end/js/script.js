@@ -40,22 +40,21 @@ $(document).ready(function () {
         $('#uncol-menu').toggle();
     });
 
-    new Swiper('.swiper-container', {
+    new Swiper('.about .swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
+        spaceBetween: 30
     });
+    
     new Swiper('.services-page .swiper-container', {
-         pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination',
         slidesPerView: 'auto',
-                 centeredSlides: true,
         paginationClickable: true,
-        spaceBetween: -30,
-          grabCursor: true
+        spaceBetween: -20,
+        freeMode: true
     });
 
     $("#phoneUsClientPhone, #writeUsClientPhone").mask("+00 (000) 000-00-00");

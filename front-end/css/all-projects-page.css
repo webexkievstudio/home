@@ -168,3 +168,18 @@ header.row {
     padding-right: 0; }
     footer .row {
       margin: 0 2%; } }
+
+.swiper-slide {
+  width: 60%; }
+
+.swiper-slide:nth-child(2n) {
+  width: 100%; }
+
+.swiper-slide:nth-child(3n) {
+  width: 100%; }
+
+.swiper-slide:nth-child(4n) {
+  width: 100%; }
+
+.swiper-slide:nth-child(5n) {
+  width: 100%; }

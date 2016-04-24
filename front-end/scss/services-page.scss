@@ -249,3 +249,21 @@
             }
         }
     }
+    .swiper-slide {
+        width: 95%;
+        @include breakpoint (375px 550px) {
+            width: 85%;
+        }
+        @include breakpoint (551px 767px) {
+            width: 65%;
+        }
+    }
+    .swiper-slide:nth-child(2n) {
+        width: 100%;
+    }
+    .swiper-slide:nth-child(3n) {
+        width: 100%;
+    }
+    .swiper-slide:nth-child(4n) {
+        width: 100%;
+    }
