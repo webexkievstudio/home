@@ -8,12 +8,12 @@ Version: 1.0.0
 */
 @font-face {
     font-family: pfd;
-    src: url(../fonts/PFDinTextCondPro-Regular.ttf);
+    src: url(./fonts/PFDinTextCondPro-Regular.ttf);
 }
 
 @font-face {
     font-family: pfd-Bold;
-    src: url(../fonts/PFDinTextCondPro-Bold.ttf);
+    src: url(./fonts/PFDinTextCondPro-Bold.ttf);
 }
 
 body {
@@ -52,7 +52,7 @@ h2 {
 }
 
 header {
-    background: url(../img/header_bg_sqr.png) no-repeat center;
+    background: url(./img/header_bg_sqr.png) no-repeat center;
     background-size: cover;
 }
 
@@ -926,7 +926,7 @@ footer .behance:hover {
     }
 
     .lead-text .arrow-button i {
-        background: url(../img/arrow.png);
+        background: url(./img/arrow.png);
         width: 46px;
         height: 27px;
         position: absolute;
