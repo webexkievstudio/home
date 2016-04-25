@@ -331,7 +331,7 @@ header.row:hover {
 }
 
 .swiper-slide {
-    width: 95%;
+    width: 100%;
 }
 
 @media (min-width: 375px) and (max-width: 550px) {

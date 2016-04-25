@@ -5,18 +5,18 @@
  * @subpackage Webex
  */
 ?>
-<?php get_header(); ?>
-                <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                <div class="lead-text">
-                    <p class="pre-main-title">Студия веб-дизайна</p>
-                    <h1 class="main-title bold"><?php the_title(); ?></h1>
-                    <hr class="white">
-                    <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио.
-                    </p>
-                    <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
-                    <a href="#portfolio" class="arrow-button"><i></i></a>
-                </div>
+    <?php get_header(); ?>
+        <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            <div class="lead-text">
+                <p class="pre-main-title">Студия веб-дизайна</p>
+                <h1 class="main-title bold"><?php the_title(); ?></h1>
+                <hr class="white">
+                <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио.
+                </p>
+                <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
+                <a href="#portfolio" class="arrow-button"><i></i></a>
             </div>
+        </div>
         </header>
 
         <!-- about us -->
@@ -51,7 +51,7 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-                    <div class="visible-sm visible-xs" id="staticPortfolio">
+                    <div class="visible-sm visible-xs">
                         <div class="portfolio-static">
                             <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/project.png" alt="img-project">
                         </div>
@@ -320,7 +320,7 @@
             </div>
         </div>
 
- <div class="container">
+        <div class="container">
             <div class="contacts row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
                     <hr class="full-width gray-color" id="contacts">
@@ -331,16 +331,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
                             <h3>Закажите обратный звонок</h3>
                             <form id="phoneUs" method="POST">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="tel" id="phoneUsClientPhone" placeholder="+__(___)___-__-__">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12" id="phoneUsControl">
-                                        <div class="form-group">
-                                            <input type="submit" value="Отправить" class="button button-black sendInfo" id="sendFormPhoneUs">
-                                        </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phoneUsClientPhone" placeholder="+__(___)___-__-__">
+                                </div>
+                                <div id="phoneUsControl">
+                                    <div class="form-group">
+                                        <input type="submit" value="Отправить" class="button button-black sendInfo" id="sendFormPhoneUs">
                                     </div>
                                 </div>
                             </form>
@@ -352,40 +348,28 @@
                         <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 write-us">
                             <h3>Напишите нам</h3>
                             <form id="writeUs" method="POST" enctype="multipart/form-data">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="writeUsClientName">Имя:</label>
-                                            <input type="text" id="writeUsClientName" placeholder="Enter your name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="writeUsClientPhone">Телефон:</label>
-                                            <input type="tel" id="writeUsClientPhone" placeholder="+__(___)___-__-__">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="writeUsClientMail">E-mail:</label>
-                                            <input type="email" id="writeUsClientMail" placeholder="abd123@gmail.com" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="writeUsClientInquiry">Запрос:</label>
-                                            <textarea id="writeUsClientInquiry" rows="1" required="required"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="file" id="addFileInput" class="addFileInput">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12" id="writeUsControl">
-                                        <div class="form-group">
-                                            <input type="submit" value="Отправить" class="button button-black pull-left sendInfo" id="sendFormWriteUs">
-                                        </div>
+                                <div class="form-group">
+                                    <label for="writeUsClientName">Имя:</label>
+                                    <input type="text" id="writeUsClientName" placeholder="Enter your name" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="writeUsClientPhone">Телефон:</label>
+                                    <input type="tel" id="writeUsClientPhone" placeholder="+__(___)___-__-__">
+                                </div>
+                                <div class="form-group">
+                                    <label for="writeUsClientMail">E-mail:</label>
+                                    <input type="email" id="writeUsClientMail" placeholder="abd123@gmail.com" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="writeUsClientInquiry">Запрос:</label>
+                                    <textarea id="writeUsClientInquiry" rows="1" required="required"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" id="addFileInput" class="addFileInput">
+                                </div>
+                                <div id="writeUsControl">
+                                    <div class="form-group">
+                                        <input type="submit" value="Отправить" class="button button-black pull-left sendInfo" id="sendFormWriteUs">
                                     </div>
                                 </div>
                             </form>
@@ -400,7 +384,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>

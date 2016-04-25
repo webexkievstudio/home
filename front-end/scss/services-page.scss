@@ -250,7 +250,7 @@
         }
     }
     .swiper-slide {
-        width: 95%;
+        width: 100%;
         @include breakpoint (375px 550px) {
             width: 85%;
         }
