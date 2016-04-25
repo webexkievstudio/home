@@ -649,7 +649,6 @@ footer {
 }
 
 .upArr {
-    margin: auto;
     position: relative;
     top: -25px;
     display: block;
@@ -661,7 +660,7 @@ footer {
     border-radius: 50%;
     cursor: pointer;
     font-size: 17px;
-    margin-bottom: 15px;
+    margin: auto auto 15px;
 }
 
 .upArr:hover,
@@ -1186,7 +1185,7 @@ footer .behance:hover {
 }
 
 .breeds .btn-more-info {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
