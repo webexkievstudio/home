@@ -65,7 +65,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                             <div class="breeds-xs">
-                                <a class="button button-black button-full-width-xs btn-more-pj" href="all-projects-page.html">Больше проектов</a>
+                                <a class="button button-black button-full-width-xs btn-more-pj" href="all-projects-page.html">Больше</a>
                             </div>
                         </div>
                     </div>
