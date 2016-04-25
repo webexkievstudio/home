@@ -470,23 +470,6 @@ form + .error {
 .error p {
     margin: 15px auto;
 }
-form .plus .addFile {
-    border-bottom: none;
-    opacity: 0;
-    cursor: pointer;
-    position: relative;
-    top: -30px;
-    height: 15px;
-}
-form .plus .wrapper-addFile {
-    span {
-        font-size: 24px;
-        margin-left: 50px;
-        color: black;
-        @include breakpoint(1200px 1312px) {
-            font-size: 20px;
-        }
-    }
     i {
         background: url(../img/plus.png);
         width: 26px;
@@ -535,7 +518,6 @@ footer {
     padding-right: 2%;
 }
 .upArr {
-    margin: auto;
     position: relative;
     top: -25px;
     display: block;
@@ -547,7 +529,7 @@ footer {
     border-radius: 50%;
     cursor: pointer;
     font-size: 17px;
-    margin-bottom: 15px;
+    margin:auto auto 15px;
 }
 .upArr:hover,
 .upArr:focus {
@@ -947,18 +929,8 @@ footer .behance:hover {
     }
 }
 @media (max-width: 767px) {
-    form .plus span {
-        font-size: 24px;
-        margin-left: 50px;
-        color: black;
-    }
     .mail-text-visible-xs {
         margin-bottom: 40px;
-    }
-}
-@media (max-width: 375px) {
-    form .plus span {
-        font-size: 17px;
     }
 }
 @media (max-width: 767px) {
@@ -984,7 +956,7 @@ footer .behance:hover {
     }
 }
 .breeds .btn-more-info {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     @include breakpoint(375px 767px) {
         margin-bottom: -10px;
     }

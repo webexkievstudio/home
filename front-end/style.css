@@ -1123,6 +1123,7 @@ footer .behance:hover {
     }
 }
 
+@media (max-width: 767px) {
     .mail-text-visible-xs {
         margin-bottom: 40px;
     }
