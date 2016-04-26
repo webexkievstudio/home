@@ -1,171 +1,103 @@
-@media (max-width: 767px) {
-    html,
-    body {
-        overflow-x: hidden;
-    }
-}
-
 a,
 a:hover,
 a:active,
 a:visited,
 a:focus {
-    color: black;
-}
+  color: black; }
 
 @media (max-width: 767px) {
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }
 
 header.row {
-    border-bottom: 1px solid #bdbdbd;
-    background: white;
-}
-
-header.row:hover {
+  border-bottom: 1px solid #bdbdbd;
+  background: white; }
+  header.row:hover {
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-    box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
-}
-
-@media (max-width: 767px) {
+    box-shadow: 0px 10px 20px 0px rgba(27, 27, 27, 0.35); }
+  @media (max-width: 767px) {
     header.row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
+      margin-left: 0;
+      margin-right: 0; } }
 
 .static-menu {
-    background-color: white;
-}
+  background-color: white; }
 
 @media (min-width: 1200px) {
-    .logo-in-nav {
-        margin-left: 0;
-    }
-}
+  .logo-in-nav {
+    margin-left: 0; } }
 
 .menu a:after {
-    border-bottom: 2px solid black;
-}
+  border-bottom: 2px solid black; }
 
 @media (max-width: 767px) {
-    .bars i {
-        color: black;
-    }
-}
+  .bars i {
+    color: black; } }
 
 .portfolio-page {
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-@media (max-width: 767px) {
+  padding-left: 2%;
+  padding-right: 2%; }
+  @media (max-width: 767px) {
     .portfolio-page {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .portfolio-page .row {
+      padding-right: 0;
+      padding-left: 0; }
+      .portfolio-page .row {
         margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-.portfolio-page .arrow-previous {
+        margin-right: 0; } }
+  .portfolio-page .arrow-previous {
     text-transform: uppercase;
     margin-top: 25px;
-    display: block;
-}
-
-.portfolio-page .arrow-previous:hover,
-.portfolio-page .arrow-previous :active,
-.portfolio-page .arrow-previous :focus {
-    color: #00acee;
-}
-
-.portfolio-page .fa-angle-left {
-    margin-right: 5px;
-}
-
-.portfolio-page h2 {
+    display: block; }
+    .portfolio-page .arrow-previous:hover,
+    .portfolio-page .arrow-previous :active,
+    .portfolio-page .arrow-previous :focus {
+      color: #00acee; }
+  .portfolio-page .fa-angle-left {
+    margin-right: 5px; }
+  .portfolio-page h2 {
     font-size: 30px;
     margin-bottom: 0;
-    color: black;
-}
-
-.portfolio-page hr {
+    color: black; }
+  .portfolio-page hr {
     float: left;
     background: #2196f3;
-    width: 54px;
-}
-
-@media (max-width: 767px) {
-    .portfolio-page hr {
-        float: none;
-    }
-}
-
-.portfolio-page p {
+    width: 54px; }
+    @media (max-width: 767px) {
+      .portfolio-page hr {
+        float: none; } }
+  .portfolio-page p {
     margin-top: 50px;
     margin-bottom: 30px;
-    color: black;
-}
-
-@media (max-width: 767px) {
-    .portfolio-page p {
+    color: black; }
+    @media (max-width: 767px) {
+      .portfolio-page p {
         margin-top: 0;
-        text-align: center;
-    }
-}
-
-@media (max-width: 767px) {
+        text-align: center; } }
+  @media (max-width: 767px) {
     .portfolio-page .button {
-        width: 100%;
-    }
-}
-
-.portfolio-page .project-description-block {
-    margin-top: 10px;
-}
-
-.portfolio-page .project-description-block,
-.portfolio-page .idea-block {
-    margin-bottom: 50px;
-}
-
-@media (max-width: 767px) {
+      width: 100%; } }
+  .portfolio-page .project-description-block {
+    margin-top: 10px; }
+  .portfolio-page .project-description-block,
+  .portfolio-page .idea-block {
+    margin-bottom: 50px; }
+  @media (max-width: 767px) {
     .portfolio-page .idea-block {
-        margin-top: 50px;
-    }
-}
-
-.portfolio-page .idea-block img {
-    float: right;
-}
-
-@media (max-width: 767px) {
-    .portfolio-page .idea-block img {
-        float: none;
-    }
-}
-
-@media (max-width: 767px) {
+      margin-top: 50px; } }
+  .portfolio-page .idea-block img {
+    float: right; }
+    @media (max-width: 767px) {
+      .portfolio-page .idea-block img {
+        float: none; } }
+  @media (max-width: 767px) {
     .portfolio-page .img-responsive {
-        width: 100%;
-    }
-}
+      width: 100%; } }
 
 @media (max-width: 767px) {
-    footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
+  footer {
+    padding-left: 0;
+    padding-right: 0; }
     footer .row {
-        margin: 0 2%;
-    }
-}
+      margin: 0 2%; } }
