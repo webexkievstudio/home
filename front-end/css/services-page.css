@@ -5,20 +5,15 @@ a:visited,
 a:focus {
   color: black; }
 
-@media (max-width: 767px) {
-  .container {
-    padding-left: 0;
-    padding-right: 0; } }
-
-header.row {
+header {
   border-bottom: 1px solid #bdbdbd;
   background: white; }
-  header.row:hover {
+  header:hover {
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35); }
   @media (max-width: 767px) {
-    header.row {
+    header {
       margin-left: 0;
       margin-right: 0; } }
 

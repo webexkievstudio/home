@@ -171,13 +171,6 @@ header {
   }
 }
 
-footer {
-  @include breakpoint(max-width 767px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .swiper-slide {
   width: 60%;
 }
