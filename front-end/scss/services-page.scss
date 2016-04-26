@@ -9,14 +9,7 @@ a:focus {
   color: black;
 }
 
-.container {
-  @include breakpoint (max-width 767px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-header.row {
+header {
   border-bottom: 1px solid #bdbdbd;
   background: white;
   &:hover {
