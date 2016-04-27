@@ -48,14 +48,6 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 30
     });
-    
-    new Swiper('.services-page .swiper-container', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        spaceBetween: -20,
-        freeMode: true
-    });
 
     $("#phoneUsClientPhone, #writeUsClientPhone").mask("+00 (000) 000-00-00");
 

@@ -1,103 +1,123 @@
-a,
-a:hover,
-a:active,
-a:visited,
-a:focus {
-  color: black; }
-
-header {
-  border-bottom: 1px solid #bdbdbd;
-  background: white; }
-  header:hover {
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35); }
-  @media (max-width: 767px) {
-    header {
-      margin-left: 0;
-      margin-right: 0; } }
-
-.static-menu {
-  background-color: white; }
-
-@media (min-width: 1200px) {
-  .logo-in-nav {
-    margin-left: 0; } }
-
-.menu a:after {
-  border-bottom: 2px solid black; }
-
-@media (max-width: 767px) {
-  .bars i {
-    color: black; } }
-
 .contacts {
-  padding-left: 2%;
-  padding-right: 2%; }
+    padding-left: 2%;
+    padding-right: 2%;
+}
 
 .portfolio-page {
-  padding-left: 2%;
-  padding-right: 2%; }
-  @media (max-width: 767px) {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+@media (max-width: 767px) {
     .portfolio-page {
-      padding-right: 0;
-      padding-left: 0; }
-      .portfolio-page .img-full-width {
-        width: 100%; } }
-  .portfolio-page .arrow-previous {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .portfolio-page .img-full-width {
+        width: 100%;
+    }
+}
+
+.portfolio-page .arrow-previous {
     text-transform: uppercase;
     margin-top: 25px;
-    display: block; }
-    .portfolio-page .arrow-previous:hover,
+    display: block;
+}
+
+.portfolio-page .arrow-previous:hover,
     .portfolio-page .arrow-previous :active,
     .portfolio-page .arrow-previous :focus {
-      color: #00acee; }
-  .portfolio-page .fa-angle-left {
-    margin-right: 5px; }
-  .portfolio-page h2 {
+    color: #00acee;
+}
+
+.portfolio-page .fa-angle-left {
+    margin-right: 5px;
+}
+
+.portfolio-page h2 {
     font-size: 30px;
     margin-bottom: 0;
-    color: black; }
-    @media (max-width: 767px) {
-      .portfolio-page h2 {
-        font-size: 60px; } }
-    @media (max-width: 375px) {
-      .portfolio-page h2 {
-        font-size: 40px; } }
-  .portfolio-page hr {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .portfolio-page h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio-page h2 {
+        font-size: 40px;
+    }
+}
+
+.portfolio-page hr {
     float: left;
     background: #2196f3;
-    width: 54px; }
-    @media (max-width: 767px) {
-      .portfolio-page hr {
+    width: 54px;
+}
+
+@media (max-width: 767px) {
+    .portfolio-page hr {
         float: none;
-        width: 70px; } }
-  .portfolio-page p {
+        width: 70px;
+    }
+}
+
+.portfolio-page p {
     margin-top: 50px;
     margin-bottom: 30px;
-    color: black; }
-    @media (max-width: 767px) {
-      .portfolio-page p {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .portfolio-page p {
         margin-top: 0;
-        text-align: center; } }
-  @media (max-width: 767px) {
-    .portfolio-page .button {
-      width: 100%;
-      margin-bottom: 40px; } }
-  .portfolio-page .project-description-block {
+        text-align: center;
+    }
+}
+
+.portfolio-page .button-black:hover {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .portfolio-page .button-black {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.portfolio-page .project-description-block {
     margin-top: 10px;
-    margin-bottom: 50px; }
-    @media (max-width: 767px) {
-      .portfolio-page .project-description-block .reset-pad {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .portfolio-page .project-description-block .reset-pad {
         padding-left: 0;
-        padding-right: 0; } }
-  .portfolio-page .idea-block {
-    margin-bottom: 20px; }
-  @media (max-width: 767px) {
+        padding-right: 0;
+    }
+}
+
+.portfolio-page .idea-block {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
     .portfolio-page .idea-block {
-      margin-top: 50px; } }
-  .portfolio-page .idea-block img {
-    float: right; }
-    @media (max-width: 767px) {
-      .portfolio-page .idea-block img {
-        float: none; } }
+        margin-top: 50px;
+    }
+}
+
+.portfolio-page .idea-block img {
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .portfolio-page .idea-block img {
+        float: none;
+    }
+}

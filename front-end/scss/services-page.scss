@@ -1,162 +1,12 @@
 @import "breakpoint";
 @charset "UTF-8";
-a,
-a:hover,
-a:active,
-a:visited,
-a:focus {
-    color: black;
-}
-header {
-    border-bottom: 1px solid #bdbdbd;
-    background: white;
-    &:hover {
-        transition: all 0.4s ease-out;
-        box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
-    }
-    @include breakpoint (max-width 767px) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-.static-menu {
-    background-color: white;
-}
-.logo-in-nav {
-    @include breakpoint (min-width 1200px) {
-        margin-left: 0;
-    }
-}
-.menu a:after {
-    border-bottom: 2px solid black;
-}
-.bars i {
-    @include breakpoint (max-width 767px) {
-        color: black;
-    }
-}
-.services-page {
-    h1,
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
-    }
-    h1,
-    h2,
-    p {
-        color: black;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    @media (max-width: 767px) {
-        h1 {
-            font-size: 60px;
-            text-align: center;
-        }
-    }
-    @media (max-width: 375px) {
-        h1 {
-            font-size: 40px;
-        }
-    }
-    h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-        @include breakpoint(376px 767px) {
-            font-size: 40px;
-        }
-    }
-    hr {
-        background-color: #2196f3;
-    }
-    .full-width {
-        height: 1px;
-        background-color: #bdbdbd;
-    }
-    .tabs {
-        margin-top: 40px;
-        margin-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        border-bottom: 1px solid #bdbdbd;
-        @include breakpoint (max-width 767px) {
+.services-page{
+    .services-page-description {
+            margin-top: 40px;
+
+        @include breakpoint(max-width 767px) {
             margin-top: 20px;
-            padding: 15px 0;
-            border: 1px solid black;
         }
-    }
-    .tabs li {
-        display: inline-block;
-        padding: 0 10px 0 0;
-        margin-left: 0;
-        margin-right: 8px;
-        &:last-child {
-            margin-right: 0;
-            padding-right: 0;
-        }
-        @include breakpoint (max-width 767px) {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-    }
-    .custom-dropdown-menu {
-        top: 130%;
-    }
-    .custom-dropdown-menu>.active>a,
-    .custom-dropdown-menu>.active>a:hover,
-    .custom-dropdown-menu>.active>a:focus,
-    {
-        background-color: transparent;
-    }
-    .active > a {
-        color: #2196f3 !important;
-        border-bottom: 2px solid #2196f3;
-        @include breakpoint (max-width 767px) {
-            border-bottom: none;
-        }
-    }
-    .tabs a {
-        text-decoration: none;
-        color: #bdbdbd;
-        font-size: 16px;
-        text-align: left;
-        text-transform: uppercase;
-        padding-bottom: 3px;
-        &.custom-dropdown-toggle{
-            color: black;
-        }
-        @include breakpoint (max-width 767px) {
-            font-size: 40px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-        @include breakpoint (max-width 413px) {
-            font-size: 30px;
-        }
-        @include breakpoint (max-width 325px) {
-            font-size: 28px;
-        }
-        &:hover {
-            color: #2196f3;
-            border-bottom: 2px solid #2196f3;
-            @include breakpoint (max-width 767px) {
-                border-bottom: none;
-            }
-        }
-    }
-    .services-page-main,
-    .services-page-description {
-        margin-top: 40px;
-    }
-    .services-page-main {
-        p {
-            text-align: center;
-        }
-    }
-    .services-page-description {
         .terms-price {
             font-size: 30px;
             @include breakpoint(max-width 767px) {
@@ -217,39 +67,14 @@ header {
             }
         }
     }
-    .services-page-examples {
-        h2 {
-            margin-top: 40px;
-        }
-        .img-group {
-            padding: 0;
-            &:hover .hidden-img {
-                display: block;
-            }
-        }
         .more-examples {
             margin: 50px 0;
+            &:hover{
+                color: white;
+            }
             @include breakpoint(max-width 767px) {
                 width: 100%;
             }
         }
-    }
-}
-.swiper-slide {
-    width: 100%;
-    @include breakpoint (375px 550px) {
-        width: 85%;
-    }
-    @include breakpoint (551px 767px) {
-        width: 65%;
-    }
-}
-.swiper-slide:nth-child(2n) {
-    width: 100%;
-}
-.swiper-slide:nth-child(3n) {
-    width: 100%;
-}
-.swiper-slide:nth-child(4n) {
-    width: 100%;
+    
 }
