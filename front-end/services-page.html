@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/services-page.css">
 </head>
 
@@ -43,7 +43,7 @@
     </nav>
     <!-- end of uncollapsed menu -->
 
-    <div class="container">
+    <div class="container-fluid">
         <header class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
                 <nav class="static-menu">
@@ -83,22 +83,27 @@
                                 <li role="presentation"> <a aria-controls="store" role="tab" href="#store" data-toggle="tab">Интернет-магазин</a>
                                 </li>
                             </ul>
-                            <div class="swiper-container visible-xs">
-                                <ul role="tablist" class="swiper-wrapper tabs">
-                                    <li role="presentation" class="swiper-slide active"><a aria-controls="landing" role="tab" href="#landing" data-toggle="tab">Лендинг-пейдж</a></li>
-                                    <li role="presentation" class="swiper-slide"><a aria-controls="corporative" role="tab" href="#corporative" data-toggle="tab">Корпоративный сайт</a></li>
-                                    <li role="presentation" class="swiper-slide"><a aria-controls="catalogue" role="tab" href="#catalogue" data-toggle="tab">Сайт-каталог</a></li>
-                                    <li role="presentation" class="swiper-slide"><a aria-controls="store" role="tab" href="#store" data-toggle="tab">Интернет-магазин</a></li>
+                            <div class="visible-xs">
+
+                                <ul role="tablist" class="tabs">
+                                    <li role="presentation" class="dropdown">
+                                        <a id="dLabel" class="dropdown-toggle custom-dropdown-toggle" href="#" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Выберите формат<span class="caret"></span></a>
+                                        <ul class="dropdown-menu custom-dropdown-menu" role="menu" aria-labelledby="dLabel" id="myTabDrop1-contents">
+                                            <li><a aria-controls="landing" role="tab" data-toggle="tab" href="#landing">Лендинг пейдж</a></li>
+                                            <li><a aria-controls="corporative" role="tab" data-toggle="tab" href="#corporative">Корпоративный сайт</a></li>
+                                            <li><a aria-controls="catalogue" role="tab" data-toggle="tab" href="#catalogue">Сайт-каталог</a></li>
+                                            <li><a aria-controls="store" role="tab" data-toggle="tab" href="#store">Интернет-магазин</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                                <hr class="full-width">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="tab-content">
-                <div class="tab-pane active row services-page-description" id="landing" role="tabpanel">
+                <div class="tab-pane row active services-page-description" id="landing" role="tabpanel">
                     <h2>Лендинг пейдж</h2>
                     <div class="col-xs-4 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 col-lg-offset-4 col-lg-2">
                         <p>
@@ -180,43 +185,43 @@
                 </div>
             </div>
 
-            <div class="row services-page-examples">
+            <div class="services-page-examples">
                 <h2>Примеры</h2>
-                <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-3 img-group">
-                    <a href="project-page.html">
-                        <img src="img/usual.png" alt="portfolio" class="img-responsive">
-                        <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-2 img-group">
-                    <a href="project-page.html">
-                        <img src="img/usual.png" alt="portfolio" class="img-responsive">
-                        <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-0  img-group">
-                    <a href="project-page.html">
-                        <img src="img/usual.png" alt="portfolio" class="img-responsive">
-                        <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-2 col-lg-offset-3 img-group hidden-lg">
-                    <a href="project-page.html">
-                        <img src="img/usual.png" alt="portfolio" class="img-responsive">
-                        <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
-                    </a>
-                </div>
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4  col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5">
-                        <a href="all-projects-page.html" class="button button-black">Больше</a>
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-2 img-group">
+                        <a href="project-page.html">
+                            <img src="img/usual.png" alt="portfolio" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
+                        </a>
                     </div>
+                    <div class="col-xs-12 col-sm-4 img-group">
+                        <a href="project-page.html">
+                            <img src="img/usual.png" alt="portfolio" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-2 img-group">
+                        <a href="project-page.html">
+                            <img src="img/usual.png" alt="portfolio" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 img-group">
+                        <a href="project-page.html">
+                            <img src="img/usual.png" alt="portfolio" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="img/portfolioHover.png" alt="portfolio-hover">
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="all-projects-page.html" class="button button-black more-examples">Больше примеров</a>
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <a class="upArr" id="upArr">
                 <i class="fa fa-chevron-up"></i></a>
             <div class="row">

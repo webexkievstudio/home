@@ -1,0 +1,124 @@
+@import "breakpoint";
+@charset "UTF-8";
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    color: black;
+}
+header {
+    border-bottom: 1px solid #bdbdbd;
+    background: white;
+    &:hover {
+        transition: all 0.4s ease-out;
+        box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
+    }
+    @include breakpoint (max-width 767px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.static-menu {
+    background-color: white;
+}
+.logo-in-nav {
+    @include breakpoint (min-width 1200px) {
+        margin-left: 0;
+    }
+}
+.menu a:after {
+    border-bottom: 2px solid black;
+}
+.bars i {
+    @include breakpoint (max-width 767px) {
+        color: black;
+    }
+}
+.contacts {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.portfolio-page {
+    padding-left: 2%;
+    padding-right: 2%;
+    @include breakpoint (max-width 767px) {
+        padding-right: 0;
+        padding-left: 0;
+        .img-full-width {
+            width: 100%;
+        }
+    }
+    .arrow-previous {
+        text-transform: uppercase;
+        margin-top: 25px;
+        display: block;
+        &:hover,
+        :active,
+        :focus {
+            color: rgb(0, 172, 238);
+        }
+    }
+    .fa-angle-left {
+        margin-right: 5px;
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        color: black;
+        @include breakpoint (max-width 767px) {
+            font-size: 60px;
+        }
+        @include breakpoint (max-width 375px) {
+            font-size: 40px;
+        }
+    }
+    hr {
+        float: left;
+        background: #2196f3;
+        width: 54px;
+        @include breakpoint (max-width 767px) {
+            float: none;
+            width: 70px
+        }
+    }
+    p {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color: black;
+        @include breakpoint (max-width 767px) {
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+    .button {
+        @include breakpoint (max-width 767px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    .project-description-block {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        @include breakpoint (max-width 767px) {
+            .reset-pad {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .idea-block {
+        margin-bottom: 20px;
+    }
+    .idea-block {
+        @include breakpoint (max-width 767px) {
+            margin-top: 50px;
+        }
+    }
+    .idea-block img {
+        float: right;
+        @include breakpoint (max-width 767px) {
+            float: none;
+        }
+    }
+}
