@@ -1287,7 +1287,6 @@ font-size: 20px;
 @media (max-width: 767px) {
     .services-page .tabs {
         margin-top: 20px;
-        padding: 15px 0 10px;
         border: 1px solid black;
     }
 }
@@ -1343,18 +1342,6 @@ font-size: 20px;
     text-align: left;
     text-transform: uppercase;
     padding-bottom: 3px;
-}
-
-.services-page .tabs a .custom-dropdown-toggle {
-    color: black;
-    float: left;
-    padding: 0 15px;
-}
-
-.services-page .tabs a .custom-dropdown-toggle .fa-angle-down {
-    position: absolute;
-    right: 15px;
-    font-size: 40px;
 }
 
 @media (max-width: 767px) {
