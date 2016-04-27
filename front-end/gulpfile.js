@@ -44,8 +44,8 @@ gulp.task('css-min', function () {
 // Watch
 gulp.task('watch', function () {
     gulp.watch(paths.sass.src, ['sass']);
+    gulp.src('./css/style.css').pipe(gulp.dest('./'));
 });
-
 
 // default
 gulp.task('default', ['sass', 'watch']);
