@@ -1312,7 +1312,7 @@ font-size: 20px;
 }
 
 .services-page .custom-dropdown-menu {
-    top: 135%;
+    top: 110%;
     border-radius: 0;
 }
 
@@ -1386,4 +1386,16 @@ font-size: 20px;
 
 .services-page .services-page-examples .img-group:hover .hidden-img {
     display: block;
+}
+
+.services-page .tabs .custom-dropdown-toggle {
+    color: black;
+    float: left;
+    padding: 15px 15px 10px;
+}
+
+.services-page .tabs .custom-dropdown-toggle .fa-angle-down {
+    position: absolute;
+    right: 15px;
+    font-size: 40px;
 }
