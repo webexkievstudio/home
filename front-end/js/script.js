@@ -57,5 +57,10 @@ $(document).ready(function () {
         sendForm($this, formData);
         return false;
     });
-    
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var target = $(e.target); // activated tab
+        var i = target.parents('ul').find('a.dropdown-toggle').find('i');
+        target.parents('ul').find('a.dropdown-toggle').html($(e.target).html()).append(i);
+    });
 });
