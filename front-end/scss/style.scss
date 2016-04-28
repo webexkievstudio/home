@@ -164,14 +164,17 @@
     .button:hover,
     .button:active,
     .button:focus {
-        color: white;
+        color: white !important;
         text-decoration: none;
         -webkit-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
         border-color: #2196f3;
         background-color: #2196f3;
     }
-    .white {
+    .btn-more-info {
+        padding: 15px 60px;
+    }
+    .white-bg {
         background-color: white;
     }
     hr {
@@ -212,18 +215,6 @@
     .white-realm .button {
         margin: 5% auto 0;
         color: black;
-        width: 100%;
-    }
-    .white-realm .btn-more-pj {
-        margin: 15% auto 0;
-        @include breakpoint (max-width 991px) {
-            margin: 10% auto 0;
-        }
-    }
-    .white-realm .button:hover,
-    .white-realm .button:active,
-    .white-realm .button:focus {
-        color: white;
     }
     .team {
         text-align: center;
@@ -232,14 +223,12 @@
         margin-top: 5%;
         margin-bottom: 5%;
     }
-    .entire-team .col-lg-6,
-    .entire-team .col-md-6,
-    .entire-team .col-sm-6,
+    .entire-team .member-team,
     .entire-team img {
         margin: 0;
         padding: 0;
     }
-    .photo:hover .about_person {
+    .member-team:hover .about-person {
         display: block;
     }
     .swiper-container {
@@ -265,50 +254,67 @@
     .position-right {
         right: 0;
     }
-    .about_person {
+    .about-person {
         position: absolute;
         top: 0;
-        width: 300px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
         display: none;
         background-color: rgba(33, 33, 33, 0.7);
         color: white;
         padding: 30% 5%;
-    }
-    @media (max-width: 899px) {
-        .about_person {
-            width: 100%;
-            height: 100%;
+        @include breakpoint (901px 1199px) {
+            width: 300px;
         }
-    }
-    @media (min-width: 1200px) {
-        .about_person {
-            padding-top: 70px;
+        @include breakpoint (min-width 1200px) {
+            padding-top: 40px;
+            hr {
+                width: 40px;
+            }
+            .name {
+                font-size: 20px;
+            }
+            .position {
+                font-size: 16px;
+            }
+            .fb {
+                bottom: 5%;
+                font-size: 10px;
+            }
+        }
+        @include breakpoint (min-width 1500px) {
+            .name {
+                font-size: 25px;
+            }
+            .position {
+                font-size: 22px;
+            }
+        }
+        @include breakpoint (min-width 1800px) {
+            .name {
+                font-size: 30px;
+            }
+            .position {
+                font-size: 26px;
+            }
+            .fb {
+                font-size: 16px;
+                left: 40%;
+            }
         }
     }
     .name {
-        font-size: 1.75em;
+        font-size: 40px;
         text-transform: uppercase;
-        line-height: 1em;
+        line-height: 1.04;
+        letter-spacing: 1px;
     }
-    @media (max-width: 990px) {
-        .name {
-            font-size: 2.5em;
-        }
-        .about_person {
-            padding: 35% 10%;
-        }
-    }
-    @media (max-width: 810px) {
-        .name {
-            font-size: 1.7em;
-        }
-    }
-    .about_person hr {
+    .about-person hr {
         margin: 10% auto;
     }
     .position {
-        font-size: 1.3em;
+        font-size: 30px;
+        line-height: 1.067;
     }
     .fb {
         position: absolute;
@@ -341,6 +347,7 @@
     .swiper-customize-team .name {
         margin-top: 40px;
         font-size: 30px;
+        letter-spacing: 0;
     }
     .swiper-customize-team .position {
         font-size: 24px;
@@ -671,11 +678,12 @@
         }
     }
     @media (max-width: 767px) {
-        .breeds-xs {
+        .pad-xs {
             padding: 5%;
         }
-        .button-full-width-xs {
+        .btn-more-info {
             width: 100%;
+            padding: 15px 30px;
         }
         .logo-in-nav {
             font-size: 50px;
@@ -947,14 +955,14 @@ font-size: 20px;
             font-size: 40px;
         }
     }
-    .breeds .btn-more-info {
-        margin-bottom: 0;
-        @include breakpoint(375px 767px) {
-            margin-bottom: -10px;
-        }
-        @include breakpoint(min-width 768px) {
-            margin-bottom: -20px;
-        }
+    .price-table .btn-more-info {
+        margin-bottom: -10px;
+    }
+    .portfolio-static {
+        position: relative;
+    }
+    .portfolio-static:hover .hidden-img {
+        display: block;
     }
     .swiper-button-prev,
     .swiper-button-next {
@@ -1126,6 +1134,12 @@ font-size: 20px;
                 position: absolute;
                 right: 15px;
                 font-size: 40px;
+            }
+            @include breakpoint (max-width 375px) {
+                font-size: 26px;
+                .fa-angle-down {
+                    font-size: 36px;
+                }
             }
         }
     }
