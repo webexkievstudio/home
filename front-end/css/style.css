@@ -1,13 +1,9 @@
-/*  @font-face {
-        font-family: pfd;
-        src: url(../fonts/PFDinTextCondPro-Regular.ttf) format('truetype');
-    }*/
 @font-face {
     font-family: pfd-Bold;
-  src: url("../fonts/PFDinTextCondPro-Bold.eot");
-  src: url("../fonts/PFDinTextCondPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCondPro-Bold.woff") format("woff"), url("../fonts/PFDinTextCondPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    src: url("../fonts/PFDinTextCondPro-Bold.eot");
+    src: url("../fonts/PFDinTextCondPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCondPro-Bold.woff") format("woff"), url("../fonts/PFDinTextCondPro-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
@@ -617,11 +613,10 @@ label {
     margin-left: 0;
 }
 
-.mail-text-hidden-xs,
-.mail-text-visible-xs {
+.contacts .mail-text-hidden-xs,
+.contacts .mail-text-visible-xs {
     font-size: 20px;
     color: black;
-    text-decoration: none;
     text-align: center;
 }
 

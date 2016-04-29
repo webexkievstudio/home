@@ -22,7 +22,8 @@
 .portfolio-page .arrow-previous {
     text-transform: uppercase;
     margin-top: 25px;
-    display: block;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .portfolio-page .arrow-previous:hover,
