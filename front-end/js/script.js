@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
 
 
-    $("#open-menu, #close-menu, #uncol-menu li").on('click', function () {
+    $("#open-menu, #close-menu, #uncol-menu li a").on('click', function () {
         $('#uncol-menu').toggle();
     });
 
