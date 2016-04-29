@@ -106,6 +106,10 @@
     margin-bottom: 20px;
 }
 
+.portfolio-page .idea-block .img-shadow {
+    box-shadow: 0px 6px 14px 0px rgba(27, 27, 27, 0.2);
+}
+
 @media (max-width: 767px) {
     .portfolio-page .idea-block {
         margin-top: 50px;

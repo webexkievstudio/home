@@ -57,7 +57,7 @@
         }
     }
     .button-black {
-        &:hover{
+        &:hover {
             color: white;
         }
         @include breakpoint (max-width 767px) {
@@ -77,8 +77,9 @@
     }
     .idea-block {
         margin-bottom: 20px;
-    }
-    .idea-block {
+        .img-shadow {
+            box-shadow: 0px 6px 14px 0px rgba(27, 27, 27, 0.2);
+        }
         @include breakpoint (max-width 767px) {
             margin-top: 50px;
         }

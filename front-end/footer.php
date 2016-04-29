@@ -6,11 +6,11 @@
  */
 ?>
 <footer>
-        <div class="container">
+        <div class="container-fluid">
             <a class="upArr" id="upArr">
                 <i class="fa fa-chevron-up"></i></a>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12  col-xs-12">
+                <div class="col-lg-10 col-lg-offset-1 col-xs-12">
                     <h2>WEBEX</h2>
 <?php $args = array(
 'theme_location' => 'bottom',

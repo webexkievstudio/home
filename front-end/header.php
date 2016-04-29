@@ -29,7 +29,7 @@
 );
 wp_nav_menu($args); ?>
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             <header class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
                     <nav class="static-menu">

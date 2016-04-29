@@ -1,28 +1,39 @@
-@font-face {
-  font-family: pfd;
-  src: url("fonts/PFDinTextCondPro-Regular.ttf");
-}
+/*  @font-face {
+        font-family: pfd;
+        src: url(../fonts/PFDinTextCondPro-Regular.ttf) format('truetype');
+    }*/
 
 @font-face {
   font-family: pfd-Bold;
-  src: url("fonts/PFDinTextCondPro-Bold.ttf");
+  src: url("fonts/PFDinTextCondPro-Bold.eot");
+  src: url("fonts/PFDinTextCondPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/PFDinTextCondPro-Bold.woff") format("woff"), url("fonts/PFDinTextCondPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: pfd;
+  src: url("fonts/PFDinTextCondPro-Regular.eot");
+  src: url("fonts/PFDinTextCondPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/PFDinTextCondPro-Regular.woff") format("woff"), url("fonts/PFDinTextCondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  font-family: pfd, 'Verdana', "Helvetica Neue", Helvetica, Arial, sans-serif, cursive;
+  font-family: pfd, 'Helvetica Neue', Helvetica, Arial, sans-serif, cursive;
   font-size: 17px;
   margin: 0;
   word-wrap: break-word;
 }
 
 .bold {
-  font-family: pfd-Bold, 'Verdana', "Helvetica Neue", Helvetica, Arial, sans-serif, cursive;
+  font-family: pfd-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif, cursive;
 }
 
 h1,
 h2,
 h3 {
-  font-family: pfd-Bold, 'Verdana', "Helvetica Neue", Helvetica, Arial, sans-serif, cursive;
+  font-family: pfd-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif, cursive;
 }
 
 h2 {
@@ -291,6 +302,7 @@ hr {
   display: none;
   position: absolute;
   top: 0;
+  opacity: 0.9;
 }
 
 .swiper-slide:hover .hidden-img {
@@ -754,6 +766,7 @@ footer .behance:hover {
     z-index: 100;
     background-color: white;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100%;
