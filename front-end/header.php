@@ -17,7 +17,7 @@
     
     <body <?php body_class(); ?>>
         <nav id="uncol-menu" class="toggle-menu hidden-sm hidden-md hidden-lg ">
-            <img src="<?php bloginfo('template_url'); ?>/img/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
+            <img src="<?php bloginfo('template_url'); ?>/img/icons/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
             <p class="bold">Меню</p>
             <br>
 
@@ -33,7 +33,7 @@ wp_nav_menu($args); ?>
             <header class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
                     <nav class="static-menu">
-                        <div class="logo-in-nav bold"><a href="#">Webex</a></div>
+                        <div class="logo-in-nav bold"><a>Webex</a></div>
                         <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
 <?php $args = array(
 'theme_location' => 'top',

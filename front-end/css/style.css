@@ -50,7 +50,7 @@ h2 {
 }
 
 header {
-    background: url(../img/header_bg_sqr.png) no-repeat center;
+    background: url(../img/common/header_bg_sqr.png) no-repeat center;
     background-size: cover;
 }
 
@@ -940,7 +940,7 @@ font-size: 20px;
     }
 
     .lead-text .arrow-button i {
-        background: url(../img/arrow.png);
+        background: url(../img/icons/arrow.png);
         width: 46px;
         height: 27px;
         position: absolute;

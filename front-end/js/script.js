@@ -63,4 +63,9 @@ $(document).ready(function () {
         var i = target.parents('ul').find('a.dropdown-toggle').find('i');
         target.parents('ul').find('a.dropdown-toggle').html($(e.target).html()).append(i);
     });
+
 });
+
+function goBack() {
+    window.history.back();
+}

@@ -45,7 +45,7 @@
         height: 1px;
     }
     header {
-        background: url(../img/header_bg_sqr.png) no-repeat center;
+        background: url(../img/common/header_bg_sqr.png) no-repeat center;
         background-size: cover;
     }
     a {
@@ -777,7 +777,7 @@ font-size: 20px;
             margin-top: 25px;
         }
         .lead-text .arrow-button i {
-            background: url(../img/arrow.png);
+            background: url(../img/icons/arrow.png);
             width: 46px;
             height: 27px;
             position: absolute;
