@@ -1,71 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php
+/*
+Template Name: WM cash page
+*/
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WM Cash</title>
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/project-page.css">
-</head>
+ <?php get_header(); ?>
+ </header>
 
-
-<body class="singlePageProject">
-    <!-- uncollapsed menu -->
-    <nav id="uncol-menu" class="toggle-menu hidden-sm hidden-md hidden-lg ">
-        <img src="img/icons/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
-        <p class="bold">Меню</p>
-        <br>
-        <ul>
-            <li>
-                <a href="index.html#portfolio">Портфолио</a>
-            </li>
-            <li>
-                <a href="index.html#team">Команда</a>
-            </li>
-            <li>
-                <a href="index.html#services">Услуги и цены</a>
-            </li>
-            <li>
-                <a href="index.html#contacs">Контакты</a>
-            </li>
-            <li>
-                <a href="all-projects-page.html">Все проекты</a>
-            </li>
-            <li>
-                <a href="services-page.html">Наши услуги</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- end of uncollapsed menu -->
-
-    <div class="container-fluid">
-        <header class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
-                <nav class="static-menu">
-                    <div class="logo-in-nav bold"><a>Webex</a></div>
-                    <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
-                    <ul class="menu bold" id="menu">
-                        <li>
-                            <a href="services-page.html">Наши услуги</a>
-                        </li>
-                        <li>
-                            <a href="all-projects-page.html">Все проекты</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Главная</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-
-        <section class="portfolio-page">
+<section class="portfolio-page">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-2 col-sm-12">
                     <a onclick="goBack()" class="arrow-previous bold"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a>
@@ -79,8 +21,8 @@
                     <a class="button button-black" href="http://wmcash.org/">Перейти на сайт</a>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-lg-5 reset-pad">
-                    <img src="img/common/desktop%201.png" alt="desktop" class="pull-right hidden-xs img-responsive">
-                    <img src="img/common/desktop2.png" alt="desktop" class="visible-xs img-responsive img-full-width">
+                    <img src="<?php bloginfo('template_url'); ?>/img/common/desktop%201.png" alt="desktop" class="pull-right hidden-xs img-responsive">
+                    <img src="<?php bloginfo('template_url'); ?>/img/common/desktop2.png" alt="desktop" class="visible-xs img-responsive img-full-width">
                 </div>
             </div>
             <div class="row idea-block">
@@ -90,10 +32,10 @@
                     <p>Создать удобный в использовании сайт-обменник, который позволяет производить выгодные для пользователя транзакции и отображает актуальную информацию на рынке валют.</p>
                 </div>
                 <div class="col-sm-8 col-lg-5">
-                    <img src="img/common/1.png" alt="1" class="img-responsive img-full-width">
-                    <img src="img/common/2.png" alt="2" class="img-responsive img-full-width">
-                    <img src="img/common/3.png" alt="3" class="img-responsive img-full-width">
-                    <img src="img/common/4.png" alt="4" class="img-responsive img-full-width">
+                    <img src="<?php bloginfo('template_url'); ?>/img/common/1.png" alt="1" class="img-responsive img-full-width">
+                    <img src="<?php bloginfo('template_url'); ?>/img/common/2.png" alt="2" class="img-responsive img-full-width">
+                    <img src="<?php bloginfo('template_url'); ?>/img/common/3.png" alt="3" class="img-responsive img-full-width">
+                    <img src="<?php bloginfo('template_url'); ?>/img/common/4.png" alt="4" class="img-responsive img-full-width">
                 </div>
             </div>
         </section>
@@ -158,32 +100,6 @@
             </div>
         </section>
     </div>
-
-    <footer>
-        <div class="container-fluid">
-            <a class="upArr" id="upArr">
-                <i class="fa fa-chevron-up"></i></a>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-xs-12">
-                    <h2>WEBEX</h2>
-                    <ul class="footer-navigation hidden-xs">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="all-projects-page.html">Все проекты</a></li>
-                        <li><a href="services-page.html">Наши услуги</a></li>
-                    </ul>
-                    <hr class="full-width">
-                    <span>@2016 Webex</span>
-                    <a class="pull-right behance" href="https://www.behance.net/andrii_shtyka"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
-</html>
+    
+<?php get_footer(); ?>
+    

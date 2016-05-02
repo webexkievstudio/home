@@ -1,25 +1,23 @@
 <?php
-
 /**
  * index.php
  * @package WordPress
  * @subpackage Webex
  */
-
 ?>
 
     <?php get_header(); ?>
-            <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                <div class="lead-text">
-                    <p class="pre-main-title">Студия веб-дизайна</p>
-                    <h1 class="main-title bold"><?php the_title(); ?></h1>
-                    <hr class="white-bg">
-                    <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио
-                    </p>
-                    <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
-                    <a href="#portfolio" class="arrow-button"><i></i></a>
-                </div>
+        <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            <div class="lead-text">
+                <p class="pre-main-title">Студия веб-дизайна</p>
+                <h1 class="main-title bold"><?php the_title(); ?></h1>
+                <hr class="white-bg">
+                <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио
+                </p>
+                <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
+                <a href="#portfolio" class="arrow-button"><i></i></a>
             </div>
+        </div>
         </header>
 
         <!-- about us -->
@@ -433,6 +431,6 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>

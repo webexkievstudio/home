@@ -1,73 +1,16 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php
+/*
+Template Name: Services page
+*/
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webex services</title>
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/services-page.css">
-</head>
+ <?php get_header(); ?>
+ </header>
 
-
-<body class="pageOffersServices">
-    <!-- uncollapsed menu -->
-    <nav id="uncol-menu" class="toggle-menu hidden-sm hidden-md hidden-lg ">
-        <img src="img/icons/close-menu.png" class="pull-right close-menu" id="close-menu" alt="close-menu">
-        <p class="bold">Меню</p>
-        <br>
-        <ul>
-            <li>
-                <a href="index.html#portfolio">Портфолио</a>
-            </li>
-            <li>
-                <a href="index.html#team">Команда</a>
-            </li>
-            <li>
-                <a href="index.html#services">Услуги и цены</a>
-            </li>
-            <li>
-                <a href="index.html#contacts">Контакты</a>
-            </li>
-            <li>
-                <a href="all-projects-page.html">Все проекты</a>
-            </li>
-            <li>
-                <a href="services-page.html">Наши услуги</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- end of uncollapsed menu -->
-
-    <div class="container-fluid">
-        <header class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
-                <nav class="static-menu">
-                    <div class="logo-in-nav bold"><a>Webex</a></div>
-                    <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
-                    <ul class="menu bold" id="menu">
-                        <li>
-                            <a href="services-page.html">Наши услуги</a>
-                        </li>
-                        <li>
-                            <a href="all-projects-page.html">Все проекты</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Главная</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <section class="services-page">
+  <section class="services-page">
             <div class="row services-page-main">
                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                    <h1>Наши услуги</h1>
+                    <h1><?php the_title(); ?></h1>
                     <hr>
                     <p>Мы разрабатываем сайты для компаний любого масштаба.
                         <br class="hidden-xs"> Просто выберите нужный Вам формат</p>
@@ -189,26 +132,26 @@
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-3 img-group">
                         <a href="project-page.html">
-                            <img src="img/common/wm.jpg" alt="wm" class="img-responsive">
-                            <img class="img-responsive hidden-img" src="img/common/wm-hover.jpg" alt="wm-hover">
+                            <img src="<?php bloginfo('template_url'); ?>/img/common/wm.jpg" alt="wm" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/wm-hover.jpg" alt="wm-hover">
                         </a>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-2 img-group">
                         <a href="project-page2.html">
-                            <img src="img/common/forex.jpg" alt="forex" class="img-responsive">
-                            <img class="img-responsive hidden-img" src="img/common/forex-hover.jpg" alt="forex-hover">
+                            <img src="<?php bloginfo('template_url'); ?>/img/common/forex.jpg" alt="forex" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/forex-hover.jpg" alt="forex-hover">
                         </a>
                     </div>
                     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-0 img-group">
                         <a href="project-page3.html">
-                            <img src="img/common/ameria.jpg" alt="ameria" class="img-responsive">
-                            <img class="img-responsive hidden-img" src="img/common/ameria-hover.jpg" alt="ameria-hover">
+                            <img src="<?php bloginfo('template_url'); ?>/img/common/ameria.jpg" alt="ameria" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/ameria-hover.jpg" alt="ameria-hover">
                         </a>
                     </div>
                     <div class="col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-2 col-lg-offset-3 img-group hidden-xs">
                         <a href="project-page4.html">
-                            <img src="img/common/front.jpg" alt="front" class="img-responsive">
-                            <img class="img-responsive hidden-img" src="img/common/front-hover.jpg" alt="front-hover">
+                            <img src="<?php bloginfo('template_url'); ?>/img/common/front.jpg" alt="front" class="img-responsive">
+                            <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/front-hover.jpg" alt="front-hover">
                         </a>
                     </div>
                 </div>
@@ -219,31 +162,4 @@
         </section>
     </div>
 
-    <footer>
-        <div class="container-fluid">
-            <a class="upArr" id="upArr">
-                <i class="fa fa-chevron-up"></i></a>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-xs-12">
-                    <h2>WEBEX</h2>
-                    <ul class="footer-navigation hidden-xs">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="all-projects-page.html">Все проекты</a></li>
-                        <li><a href="services-page.html">Наши услуги</a></li>
-                    </ul>
-                    <hr class="full-width">
-                    <span>@2016 Webex</span>
-                    <a class="pull-right behance" href="https://www.behance.net/andrii_shtyka"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>
