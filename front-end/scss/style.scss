@@ -256,19 +256,18 @@ hr {
     width: 100%;
     height: 100%;
 }
-@media (min-width: 2060px) {
-    .swiper-container {
-        width: 1000px;
-    }
-}
+
 .hidden-img {
     display: none;
     position: absolute;
     top: 0;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 .swiper-slide:hover .hidden-img {
     display: block;
+}
+.swiper-slide img{
+    width: 100%;
 }
 .position-left {
     left: 0;
