@@ -147,7 +147,7 @@ span {
 
 .menu a:hover:after,
 .menu a:active:after {
-  width: 100%;
+  min-width: 100%;
 }
 
 .main-bg {

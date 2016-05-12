@@ -20,8 +20,15 @@ $(document).ready(function () {
 
     var headerHeight = window.innerWidth > 1 ? $('header').outerHeight() : 0;
 
-    $("#menu, #main-bg, #services").on('click', "a[href^='#']", function (e) {
+    $("#menu, #main-bg, #services").on('click', "a", function (e) {
+        var scrollTo = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(scrollTo).offset().top - headerHeight
+        }, 500);
         e.preventDefault();
+    });
+    
+ $("#uncol-menu li a").on('click', function () {
         var hash = this.hash;
         $("html, body").animate({
                 scrollTop: $(hash).offset().top - headerHeight
@@ -30,17 +37,7 @@ $(document).ready(function () {
                 window.location.hash = hash;
             });
     });
-
-    $("#uncol-menu li a").on('click', function () {
-        var hash = this.hash;
-        $("html, body").animate({
-                scrollTop: $(hash).offset().top - headerHeight
-            }, 500,
-            function () {
-                window.location.hash = hash;
-            });
-    });
-
+    
     $("#upArr").on('click', function scroll() {
         $("html, body").animate({
             scrollTop: 0
