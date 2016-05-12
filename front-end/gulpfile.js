@@ -23,7 +23,7 @@ gulp.task('sass', function () {
         .pipe(plumber())
         .pipe(sass({
             includePaths: [
-         '../node_modules/breakpoint-sass/stylesheets'
+         'node_modules/breakpoint-sass/stylesheets'
      ]
         }))
         .pipe(autoprefixer())

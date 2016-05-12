@@ -8,6 +8,7 @@ Kiev, 2016
 - Tetiana Karpenko (front-end developer)
 - Andrei Shtyka (designer)
 - Alexandr Shpikulyak (back-end developer)
+- Anna Danyk (QA Engineer)
 
 # Config local machine:
 

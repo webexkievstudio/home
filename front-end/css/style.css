@@ -961,6 +961,10 @@ footer .behance:hover {
         font-size: 24px;
     }
 
+    form + .success, form + .error {
+        margin-top: 40px;
+    }
+
     .mail-text-visible-xs {
         margin-bottom: 40px;
     }
