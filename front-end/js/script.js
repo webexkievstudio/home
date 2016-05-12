@@ -5,7 +5,7 @@ $(document).ready(function () {
             type: "POST",
             processData: false,
             contentType: false,
-            url: '',
+            'url': '/some/url.json',
             data: formData,
             success: function () {
                 $this.hide();
@@ -18,18 +18,28 @@ $(document).ready(function () {
         });
     }
 
-    $("#menu").on('click', "a[href^='#']", function (e) {
+    $("#menu, #main-bg, #services").on('click', "a[href^='#']", function (e) {
         e.preventDefault();
         var hash = this.hash;
         $("html, body").animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: $(hash).offset().top - 120
+            }, 500,
+            function () {
+                window.location.hash = hash;
+            });
+    });
+    
+    $("#uncol-menu li a").on('click', function () {
+        var hash = this.hash;
+        $("html, body").animate({
+                scrollTop: $(hash).offset().top - 100
             }, 500,
             function () {
                 window.location.hash = hash;
             });
     });
 
-    $("#upArr").click(function scroll() {
+    $("#upArr").on('click', function scroll() {
         $("html, body").animate({
             scrollTop: 0
         }, 500);
@@ -37,10 +47,20 @@ $(document).ready(function () {
 
 
     $("#open-menu, #close-menu, #uncol-menu li a").on('click', function () {
-        $('#uncol-menu').toggle();
+        $('#uncol-menu, header').toggle();
     });
 
-    new Swiper('.about .swiper-container', {
+    var $menu = $("header");
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1 && $menu.hasClass("default")) {
+            $menu.removeClass("default").addClass("shadow");
+        } else if ($(this).scrollTop() <= 1 && $menu.hasClass("shadow")) {
+            $menu.removeClass("shadow").addClass("default");
+        }
+    });
+
+
+  new Swiper('.about .swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
@@ -63,7 +83,7 @@ $(document).ready(function () {
         var i = target.parents('ul').find('a.dropdown-toggle').find('i');
         target.parents('ul').find('a.dropdown-toggle').html($(e.target).html()).append(i);
     });
-
+    
 });
 
 function goBack() {

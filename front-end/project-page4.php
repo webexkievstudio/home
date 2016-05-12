@@ -5,8 +5,7 @@ Template Name: Front-end dev page
 ?>
 
  <?php get_header(); ?>
- </header>
-
+ 
 <section class="portfolio-page">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-2 col-sm-12">
@@ -45,7 +44,7 @@ Template Name: Front-end dev page
                         <h3>Закажите обратный звонок</h3>
                         <form id="phoneUs" method="POST">
                             <div class="form-group">
-                                <input type="tel" id="phoneUsClientPhone" placeholder="+">
+                                <input type="tel" id="phoneUsClientPhone" placeholder="+" required="required">
                             </div>
                             <div id="phoneUsControl">
                                 <div class="form-group">

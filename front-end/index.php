@@ -7,6 +7,7 @@
 ?>
 
     <?php get_header(); ?>
+        <div class="row main-bg" id="main-bg">
         <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
             <div class="lead-text">
                 <p class="pre-main-title">Студия веб-дизайна</p>
@@ -18,7 +19,7 @@
                 <a href="#portfolio" class="arrow-button"><i></i></a>
             </div>
         </div>
-        </header>
+        </div>
 
         <!-- about us -->
         <div class="row about">

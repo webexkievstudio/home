@@ -5,7 +5,6 @@ Template Name: Ameria page
 ?>
 
  <?php get_header(); ?>
- </header>
 
 <section class="portfolio-page">
             <div class="row">
@@ -45,7 +44,7 @@ Template Name: Ameria page
                         <h3>Закажите обратный звонок</h3>
                         <form id="phoneUs" method="POST">
                             <div class="form-group">
-                                <input type="tel" id="phoneUsClientPhone" placeholder="+">
+                                <input type="tel" id="phoneUsClientPhone" placeholder="+" required="required">
                             </div>
                             <div id="phoneUsControl">
                                 <div class="form-group">

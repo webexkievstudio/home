@@ -5,8 +5,7 @@ Template Name: All projects
 ?>
 
     <?php get_header(); ?>
-        </header>
-
+    
         <section class="services-page">
             <div class="row services-page-main">
                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">

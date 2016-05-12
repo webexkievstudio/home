@@ -6,14 +6,22 @@
     padding-right: 2%;
 }
 .portfolio-page {
+    padding-top: 10%;
     padding-left: 2%;
     padding-right: 2%;
     @include breakpoint (max-width 767px) {
+        padding-top: 15%;
         padding-right: 0;
         padding-left: 0;
         .img-full-width {
             width: 100%;
         }
+    }
+    @media (max-width: 555px) {
+        padding-top: 20%;
+    }
+    @media (max-width: 375px) {
+        padding-top: 25%;
     }
     .arrow-previous {
         text-transform: uppercase;

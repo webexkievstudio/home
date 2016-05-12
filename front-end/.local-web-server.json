@@ -1,0 +1,15 @@
+{
+    "port": 8100,
+    "mocks": [
+        {
+            "route": "/some/url.json",
+            "response": {
+                "status": 200,
+                "body": {
+                    "success": true,
+                    "something": "Whatever you want to receive"
+                }
+            }
+        }
+    ]
+}

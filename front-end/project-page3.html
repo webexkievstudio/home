@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ameria</title>
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/project-page.css">
 </head>
@@ -43,10 +43,10 @@
     <!-- end of uncollapsed menu -->
 
     <div class="container-fluid">
-        <header class="row">
+        <header class="row default">
             <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
                 <nav class="static-menu">
-                    <div class="logo-in-nav bold"><a>Webex</a></div>
+                    <div class="logo-in-nav bold"><a href="index.html">Webex</a></div>
                     <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
                     <ul class="menu bold" id="menu">
                         <li>
@@ -102,7 +102,7 @@
                         <h3>Закажите обратный звонок</h3>
                         <form id="phoneUs" method="POST">
                             <div class="form-group">
-                                <input type="tel" id="phoneUsClientPhone" placeholder="+">
+                                <input type="tel" id="phoneUsClientPhone" placeholder="+" required="required">
                             </div>
                             <div id="phoneUsControl">
                                 <div class="form-group">
@@ -175,11 +175,12 @@
         </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

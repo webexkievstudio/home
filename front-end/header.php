@@ -30,10 +30,10 @@
 wp_nav_menu($args); ?>
         </nav>
         <div class="container-fluid">
-            <header class="row">
+            <header class="row default">
                 <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
                     <nav class="static-menu">
-                        <div class="logo-in-nav bold"><a>Webex</a></div>
+                        <div class="logo-in-nav bold"><a href="index.html">Webex</a></div>
                         <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
 <?php $args = array(
 'theme_location' => 'top',
@@ -44,3 +44,4 @@ wp_nav_menu($args); ?>
 wp_nav_menu($args);?>
  </nav>
 </div>
+</header>

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webex</title>
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -42,10 +42,10 @@
     <!-- end of uncollapsed menu -->
 
     <div class="container-fluid">
-        <header class="row">
+        <header class="row default">
             <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 top">
                 <nav class="static-menu">
-                    <div class="logo-in-nav bold"><a>Webex</a></div>
+                    <div class="logo-in-nav bold"><a href="index.html">Webex</a></div>
                     <div id="open-menu" class="bars visible-xs"><i class="fa fa-bars"></i></div>
                     <ul class="menu bold" id="menu">
                         <li>
@@ -63,6 +63,9 @@
                     </ul>
                 </nav>
             </div>
+        </header>
+           
+            <div class="row main-bg" id="main-bg">
             <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                 <div class="lead-text">
                     <p class="pre-main-title">Студия веб-дизайна</p>
@@ -71,10 +74,10 @@
                     <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио
                     </p>
                     <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
-                    <a href="#portfolio" class="arrow-button"><i></i></a>
+                    <a class="arrow-button"><i></i></a>
                 </div>
             </div>
-        </header>
+        </div>
 
         <!-- about us -->
         <div class="row about">
@@ -435,7 +438,7 @@
                             <h3>Закажите обратный звонок</h3>
                             <form id="phoneUs" method="POST">
                                 <div class="form-group">
-                                    <input type="tel" id="phoneUsClientPhone" placeholder="+">
+                                    <input type="tel" id="phoneUsClientPhone" placeholder="+" required="required">
                                 </div>
                                 <div id="phoneUsControl">
                                     <div class="form-group">
@@ -509,11 +512,12 @@
         </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 
 </html>

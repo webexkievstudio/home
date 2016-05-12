@@ -22,6 +22,9 @@ function enqueue_styles() {
     wp_enqueue_style( 'bs', get_template_directory_uri().'/node_modules/bootstrap/dist/css/bootstrap.min.css' ); 
     wp_enqueue_style( 'swiper', get_template_directory_uri().'/node_modules/swiper/dist/css/swiper.min.css' ); 
 	wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); 
+    wp_enqueue_style( 'services-page', get_template_directory_uri().'/css/services-page.css' ); 
+    wp_enqueue_style( 'project-page', get_template_directory_uri().'/css/project-page.css' ); 
+    wp_enqueue_style( 'all-projects-page', get_template_directory_uri().'/css/all-projects-page.css' ); 
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles'); 
 
