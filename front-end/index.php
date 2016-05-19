@@ -34,7 +34,7 @@
                     </div>
                     <br class="hidden-xs">
                     <br class="hidden-xs">
-                    <div class="hidden-xs hidden-sm">
+                    <div class="visible-lg">
                         <div class="portfolio-slider" id="portfolio-slider">
                             <div class="portfolio-slide">
                                 <a href="project-page.php">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="visible-sm visible-xs">
+                    <div class="hidden-lg">
                         <div class="portfolio-static">
                             <a href="project-page.php">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/wm2.png" alt="wm">
