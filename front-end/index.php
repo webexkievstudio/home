@@ -8,17 +8,17 @@
 
     <?php get_header(); ?>
         <div class="row main-bg" id="main-bg">
-        <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-            <div class="lead-text">
-                <p class="pre-main-title">Студия веб-дизайна</p>
-                <h1 class="main-title bold"><?php the_title(); ?></h1>
-                <hr class="white-bg">
-                <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио
-                </p>
-                <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
-                <a href="#portfolio" class="arrow-button"><i></i></a>
+            <div class="col-lg-4  col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="lead-text">
+                    <p class="pre-main-title">Студия веб-дизайна</p>
+                    <h1 class="main-title bold">Webex</h1>
+                    <hr class="white-bg">
+                    <p>Мы - креативная студия дизайна в Киеве. Мы специализируемся на разработке веб-дизайна и визульной айдентики. Приглашаем Вас посмотреть наше портфолио
+                    </p>
+                    <a class='button hidden-xs' href="#portfolio">Посмотреть портфолио</a>
+                    <a href="#portfolio" class="arrow-button"><i></i></a>
+                </div>
             </div>
-        </div>
         </div>
 
         <!-- about us -->
@@ -34,53 +34,50 @@
                     </div>
                     <br class="hidden-xs">
                     <br class="hidden-xs">
-                    <div class="swiper-container hidden-xs hidden-sm">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="project-page.html">
+                    <div class="hidden-xs hidden-sm">
+                        <div class="portfolio-slider" id="portfolio-slider">
+                            <div class="portfolio-slide">
+                                <a href="project-page.php">
                                     <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/wm.jpg" alt="wm">
                                     <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/wm-hover.jpg" alt="wm-hover">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="project-page3.html">
+                            <div class="portfolio-slide">
+                                <a href="project-page3.php">
                                     <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/ameria.jpg" alt="ameria">
                                     <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/ameria-hover.jpg" alt="ameria-hover">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="project-page2.html">
+                            <div class="portfolio-slide">
+                                <a href="project-page2.php">
                                     <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/forex.jpg" alt="forex">
                                     <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/forex-hover.jpg" alt="forex-hover">
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                     <div class="visible-sm visible-xs">
                         <div class="portfolio-static">
-                            <a href="project-page.html">
+                            <a href="project-page.php">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/wm2.png" alt="wm">
                                 <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/wm2-hover.png" alt="wm-hover">
                             </a>
                         </div>
                         <div class="portfolio-static">
-                            <a href="project-page3.html">
+                            <a href="project-page3.php">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/ameria2.png" alt="ameria">
                                 <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/ameria2-hover.png" alt="ameria-hover">
                             </a>
                         </div>
                         <div class="portfolio-static">
-                            <a href="project-page2.html">
+                            <a href="project-page2.php">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/common/forex2.png" alt="forex">
                                 <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/forex2-hover.png" alt="forex-hover">
                             </a>
                         </div>
                     </div>
                     <div class="text-center pad-xs">
-                        <a class="button button-black btn-more-info" href="all-projects-page.html">Больше проектов</a>
+                        <a class="button button-black btn-more-info" href="all-projects-page.php">Больше проектов</a>
                     </div>
                 </div>
             </div>
@@ -187,73 +184,70 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-12 visible-xs swiper-customize-team">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/oleg.jpg" alt="oleg">
-                                    <p class="name bold">Олег Суворов</p>
-                                    <p class="position">Project Manager</p>
-                                    <a class="fb-visible-xs" href="https://www.facebook.com/oleg.suvorov"> <span class="fa-stack fa-lg">
+                    <div class="col-xs-12 visible-xs team-slider">
+                        <div class="team-slide-wrapper" id="team-slider">
+                            <div class="team-slide">
+                                <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/oleg.jpg" alt="oleg">
+                                <p class="name bold">Олег Суворов</p>
+                                <p class="position">Project Manager</p>
+                                <a class="fb-visible-xs" href="https://www.facebook.com/oleg.suvorov"> <span class="fa-stack fa-lg">
                              <i class="fa fa-circle fa-stack-2x"></i>
                              <i class="fa fa-stack-1x fa-facebook"></i>
                              </span></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/andrii.jpg" alt="andreii">
-                                    <p class="name bold">Андрей Штыка </p>
-                                    <p class="position">UI/UX Designer</p>
-                                    <a class="fb-visible-xs" href="https://www.facebook.com/andrii.shtyka.5"> <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa fa-stack-1x fa-facebook"></i>
-                             </span></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/vetal.jpg" alt="vetal">
-                                    <p class="name bold">Виталий Бесклубый</p>
-                                    <p class="position">Front-end Developer</p>
-                                    <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100005953996298">
-                                        <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-stack-1x fa-facebook"></i>
-                                    </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/sanya.jpg" alt="sanya">
-                                    <p class="name bold">Александр Шпикуляк</p>
-                                    <p class="position">Back-end Developer</p>
-                                    <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100006135914765&fref=ts">
-                                        <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-stack-1x fa-facebook"></i>
-                                    </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/tanya.jpg" alt="tanya">
-                                    <p class="name bold">Татьяна Карпенко</p>
-                                    <p class="position">Front-end Developer</p>
-                                    <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100005356337879">
-                                        <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-stack-1x fa-facebook"></i>
-                                    </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/anna.png" alt="anna">
-                                    <p class="name bold">Анна Даник</p>
-                                    <p class="position">QA Engineer</p>
-                                    <a class="fb-visible-xs" href="https://www.facebook.com/danykau">
-                                        <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-stack-1x fa-facebook"></i>
-                                    </span>
-                                    </a>
-                                </div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="team-slide">
+                                <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/andrii.jpg" alt="andreii">
+                                <p class="name bold">Андрей Штыка </p>
+                                <p class="position">UI/UX Designer</p>
+                                <a class="fb-visible-xs" href="https://www.facebook.com/andrii.shtyka.5"> <span class="fa-stack fa-lg">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-stack-1x fa-facebook"></i>
+                             </span></a>
+                            </div>
+                            <div class="team-slide">
+                                <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/vetal.jpg" alt="vetal">
+                                <p class="name bold">Виталий Бесклубый</p>
+                                <p class="position">Front-end Developer</p>
+                                <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100005953996298">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="team-slide">
+                                <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/sanya.jpg" alt="sanya">
+                                <p class="name bold">Александр Шпикуляк</p>
+                                <p class="position">Back-end Developer</p>
+                                <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100006135914765&fref=ts">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="team-slide">
+                                <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/tanya.jpg" alt="tanya">
+                                <p class="name bold">Татьяна Карпенко</p>
+                                <p class="position">Front-end Developer</p>
+                                <a class="fb-visible-xs" href="https://www.facebook.com/profile.php?id=100005356337879">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="team-slide">
+                                <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/img/team-img/anna.png" alt="anna">
+                                <p class="name bold">Анна Даник</p>
+                                <p class="position">QA Engineer</p>
+                                <a class="fb-visible-xs" href="https://www.facebook.com/danykau">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,7 +304,7 @@
                             </div>
                             <hr class="greyHr">
                             <div class="container-fluid">
-                                <p class="additional-text">За разработку адаптивной и мобильной версии +30% к цене</p>
+                                <p class="additional-text">за разработку адаптивной и мобильной версии +30% к цене</p>
                             </div>
                             <hr class="greyHr">
                             <div class="text-center pad-xs">
@@ -329,7 +323,7 @@
                 <div class="col-lg-6 col-lg-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
                     <h2 class="cost-title">Из чего состоит стоимость сайта?</h2>
                     <hr class="black-bg">
-                    <p class="center">Качественный сайт - это работа профессионалов, которые вкладывают в сайт свое драгоценное время</p>
+                    <p class="center">Качественный сайт - это работа профессионалов, которые вкладывают в разработку продукта весь свой профессионализм и драгоценное время</p>
                     <hr class="hr-2 visible-xs">
                     <div class="row">
                         <div class="col-lg-4 col-sm-6 col-xs-12 worker">

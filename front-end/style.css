@@ -7,6 +7,8 @@ Author URI: https://github.com/webexkievstudio/home
 Version: 1.0.0
 */
 
+/* STYLES FOR ALL PAGES*/
+
 @font-face {
   font-family: pfd-Bold;
   src: url("fonts/PFDinTextCondPro-Bold.eot");
@@ -58,7 +60,7 @@ header {
   background: transparent;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 
 .default {
@@ -66,8 +68,6 @@ header {
 }
 
 .shadow {
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
   background: white;
   box-shadow: 0 0 10px silver;
 }
@@ -307,9 +307,13 @@ hr {
   }
 }
 
-.swiper-container {
+.portfolio-slider {
   width: 100%;
-  height: 100%;
+}
+
+.portfolio-slide {
+  position: relative;
+  width: 100%;
 }
 
 .hidden-img {
@@ -321,19 +325,34 @@ hr {
   transition: opacity 0.3s, linear 0.3s;
 }
 
-.swiper-slide:hover .hidden-img {
+.portfolio-slide:hover .hidden-img {
   visibility: visible;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   opacity: 0.95;
 }
 
-.white-realm .swiper-slide img {
+.portfolio-slide img {
   width: 100%;
 }
 
 .position-left {
   left: 0;
+}
+
+.portfolio-static {
+  position: relative;
+}
+
+.portfolio-static img {
+  width: 100%;
+}
+
+.portfolio-static:hover .hidden-img {
+  visibility: visible;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  opacity: 0.95;
 }
 
 .position-right {
@@ -404,7 +423,7 @@ hr {
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 1800px) and (min-width: 2400px) {
   .about-person .fb {
     left: 43%;
   }
@@ -451,41 +470,41 @@ hr {
   }
 }
 
-.swiper-customize-team {
+.team-slider {
   background-color: white;
   box-shadow: 0 0 22px 3px rgba(0, 0, 0, 0.75);
 }
 
-.swiper-customize-team .swiper-slide {
-  padding: 50px;
+.team-slide {
+  padding: 50px 50px 0;
 }
 
-.swiper-customize-team .name {
+.team-slide .name {
   margin-top: 40px;
   font-size: 30px;
   letter-spacing: 0;
 }
 
-.swiper-customize-team .position {
+.team-slide .position {
   font-size: 24px;
 }
 
-.swiper-customize-team img {
+.team-slide img {
   box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
 }
 
-.swiper-customize-team .fb-visible-xs {
+.team-slide .fb-visible-xs {
   text-align: center;
   cursor: pointer;
   margin: auto;
   display: block;
 }
 
-.swiper-customize-team .fb-visible-xs .fa-circle {
+.team-slide .fa-circle {
   color: black;
 }
 
-.swiper-customize-team .fb-visible-xs .fa-facebook {
+.team-slide .fa-facebook {
   color: white;
 }
 
@@ -537,6 +556,10 @@ hr {
 
 .price-table {
   top: 50px;
+}
+
+.price-table .btn-more-info {
+  margin-bottom: -10px;
 }
 
 .descript {
@@ -674,7 +697,7 @@ footer {
 
 .upArr {
   position: relative;
-  top: -25px;
+  top: -35px;
   display: block;
   text-align: center;
   background-size: contain;
@@ -685,20 +708,16 @@ footer {
   cursor: pointer;
   font-size: 17px;
   margin: auto auto 15px;
-}
-
-.upArr:hover,
-.upArr:focus {
-  outline: none;
   box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
 }
 
-.upArr .fa-chevron-up {
-  margin-top: 25px;
+.upArr .fa-angle-up {
+  margin-top: 20px;
   color: white;
+  font-size: 26px;
 }
 
-.upArr:hover .fa-chevron-up {
+.upArr:hover .fa-angle-up {
   color: black;
 }
 
@@ -749,6 +768,8 @@ footer .behance:hover {
   }
 }
 
+/* STYLES FOR MOBILE DEVICES*/
+
 @media (max-width: 767px) {
   .static-menu ul {
     display: none;
@@ -792,6 +813,7 @@ footer .behance:hover {
   .toggle-menu ul li a,
   .toggle-menu p {
     font-size: 40px;
+    margin: 0;
   }
 
   .descript {
@@ -1099,26 +1121,7 @@ footer .behance:hover {
   }
 }
 
-.price-table .btn-more-info {
-  margin-bottom: -10px;
-}
-
-.portfolio-static {
-  position: relative;
-}
-
-.portfolio-static:hover .hidden-img {
-  visibility: visible;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-  opacity: 0.95;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  background: transparent;
-  color: transparent;
-}
+/*STYLES FOR NOT MAIN PAGE*/
 
 .pageOffersServices a,
 .pageOffersServices a:hover,
@@ -1369,4 +1372,71 @@ footer .behance:hover {
   .services-page .tabs .custom-dropdown-toggle .fa-angle-down {
     font-size: 36px;
   }
+}
+
+/* STYLES FOR SLICK SLIDER */
+
+@font-face {
+  font-family: 'slick-arr';
+  font-weight: normal;
+  font-style: normal;
+  src: url("node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.1");
+  src: url("node_modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("node_modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("node_modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("node_modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
+}
+
+.slick-prev,
+.slick-next {
+  border-radius: 50%;
+  background-size: 110px;
+  width: 110px;
+  height: 110px;
+  background: #212121;
+  box-shadow: 0px 10px 20px 0px rgba(27, 27, 27, 0.35);
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: #212121;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick-arr';
+  font-size: 30px;
+}
+
+.slick-prev {
+  left: -200px;
+}
+
+.slick-prev:before {
+  content: '\f104';
+}
+
+[dir='rtl'] .slick-prev:before {
+  content: '\f105';
+}
+
+.slick-next {
+  right: -200px;
+}
+
+.slick-next:before {
+  content: '\f105';
+}
+
+[dir='rtl'] .slick-next:before {
+  content: '\f104';
+}
+
+@media (min-width: 1200px) {
+  .slick-dots {
+    bottom: -45px;
+  }
+}
+
+.slick-dots li {
+  margin: 0px;
 }

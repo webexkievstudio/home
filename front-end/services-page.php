@@ -9,7 +9,7 @@ Template Name: Services page
   <section class="services-page">
             <div class="row services-page-main">
                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                    <h1><?php the_title(); ?></h1>
+                    <h1>Наши услуги</h1>
                     <hr>
                     <p>Мы разрабатываем сайты для компаний любого масштаба.
                         <br class="hidden-xs"> Просто выберите нужный Вам формат</p>
@@ -130,32 +130,32 @@ Template Name: Services page
                 <h2>Примеры</h2>
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-3 img-group">
-                        <a href="project-page.html">
+                        <a href="project-page.php">
                             <img src="<?php bloginfo('template_url'); ?>/img/common/wm.jpg" alt="wm" class="img-responsive">
                             <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/wm-hover.jpg" alt="wm-hover">
                         </a>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-2 img-group">
-                        <a href="project-page2.html">
+                        <a href="project-page2.php">
                             <img src="<?php bloginfo('template_url'); ?>/img/common/forex.jpg" alt="forex" class="img-responsive">
                             <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/forex-hover.jpg" alt="forex-hover">
                         </a>
                     </div>
                     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-0 img-group">
-                        <a href="project-page3.html">
+                        <a href="project-page3.php">
                             <img src="<?php bloginfo('template_url'); ?>/img/common/ameria.jpg" alt="ameria" class="img-responsive">
                             <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/ameria-hover.jpg" alt="ameria-hover">
                         </a>
                     </div>
                     <div class="col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-2 col-lg-offset-3 img-group hidden-xs">
-                        <a href="project-page4.html">
+                        <a href="project-page4.php">
                             <img src="<?php bloginfo('template_url'); ?>/img/common/front.jpg" alt="front" class="img-responsive">
                             <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/front-hover.jpg" alt="front-hover">
                         </a>
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="all-projects-page.html" class="button button-black more-examples btn-more-info">Больше примеров</a>
+                    <a href="all-projects-page.php" class="button button-black more-examples btn-more-info">Больше примеров</a>
                 </div>
             </div>
         </section>
