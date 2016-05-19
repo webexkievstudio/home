@@ -704,7 +704,6 @@ footer {
     background: #2196f3;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 17px;
     margin: auto auto 15px;
     box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
 }
@@ -1395,6 +1394,8 @@ footer .behance:hover {
 .slick-next:focus {
     background: #212121;
     box-shadow: 0px 15px 25px 0px rgba(27, 27, 27, 0.35);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
 }
 
 .slick-prev:before,
