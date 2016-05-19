@@ -127,7 +127,7 @@ Template Name: Services page
             </div>
 
             <div class="services-page-examples">
-                <h2>Примеры</h2>
+                <h2>Все проекты</h2>
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-3 img-group">
                         <a href="project-page.php">
@@ -153,9 +153,6 @@ Template Name: Services page
                             <img class="img-responsive hidden-img" src="<?php bloginfo('template_url'); ?>/img/common/front-hover.jpg" alt="front-hover">
                         </a>
                     </div>
-                </div>
-                <div class="text-center">
-                    <a href="all-projects-page.php" class="button button-black more-examples btn-more-info">Больше проектов</a>
                 </div>
             </div>
         </section>
