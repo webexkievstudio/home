@@ -155,7 +155,7 @@ Template Name: Services page
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="all-projects-page.php" class="button button-black more-examples btn-more-info">Больше примеров</a>
+                    <a href="all-projects-page.php" class="button button-black more-examples btn-more-info">Больше проектов</a>
                 </div>
             </div>
         </section>
