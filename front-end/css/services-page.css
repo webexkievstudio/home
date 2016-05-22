@@ -1,5 +1,6 @@
 .services-page .services-page-description {
     margin-top: 40px;
+    word-wrap: normal;
 }
 
 @media (max-width: 767px) {

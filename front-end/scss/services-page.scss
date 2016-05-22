@@ -1,9 +1,9 @@
 @import "breakpoint";
 @charset "UTF-8";
-.services-page{
+.services-page {
     .services-page-description {
-            margin-top: 40px;
-
+        margin-top: 40px;
+        word-wrap: normal;
         @include breakpoint(max-width 767px) {
             margin-top: 20px;
         }
@@ -67,14 +67,13 @@
             }
         }
     }
-        .more-examples {
-            margin: 50px 0;
-            &:hover{
-                color: white;
-            }
-            @include breakpoint(max-width 767px) {
-                width: 100%;
-            }
+    .more-examples {
+        margin: 50px 0;
+        &:hover {
+            color: white;
         }
-    
+        @include breakpoint(max-width 767px) {
+            width: 100%;
+        }
+    }
 }
