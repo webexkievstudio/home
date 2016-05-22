@@ -421,7 +421,7 @@ hr {
     }
 }
 
-@media (min-width: 1800px) and (min-width: 2400px) {
+@media (min-width: 2400px) {
     .about-person .fb {
         left: 43%;
     }
