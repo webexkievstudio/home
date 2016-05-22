@@ -308,7 +308,7 @@
                             </div>
                             <hr class="greyHr">
                             <div class="text-center pad-xs">
-                                <a class="button button-black btn-more-info" href="#contacts">Узнать больше</a>
+                                <a class="button button-black btn-more-info" href="services-page.php">Узнать больше</a>
                             </div>
                         </div>
                     </div>

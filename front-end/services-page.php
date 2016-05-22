@@ -78,7 +78,7 @@ Template Name: Services page
                         </p>
                     </div>
                     <div class="col-sm-4 vertical-line col-md-4 col-lg-3 col-xs-8">
-                        <p>Одностраничный сайт</p>
+                        <p>Многостраничный сайт</p>
                         <p>Панель управления</p>
                         <p>Индивидуальный дизайн</p>
                         <p>Домен и хостинг в подарок</p>
@@ -98,7 +98,7 @@ Template Name: Services page
                         </p>
                     </div>
                     <div class="col-sm-4 vertical-line col-md-4 col-lg-3 col-xs-8">
-                        <p>Одностраничный сайт</p>
+                        <p>Многостраничный сайт</p>
                         <p>Панель управления</p>
                         <p>Индивидуальный дизайн</p>
                         <p>Домен и хостинг в подарок</p>
@@ -118,7 +118,7 @@ Template Name: Services page
                         </p>
                     </div>
                     <div class="col-sm-4 vertical-line col-md-4 col-lg-3 col-xs-8">
-                        <p>Одностраничный сайт</p>
+                        <p>Многостраничный сайт</p>
                         <p>Панель управления</p>
                         <p>Индивидуальный дизайн</p>
                         <p>Домен и хостинг в подарок</p>
