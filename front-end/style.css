@@ -307,6 +307,10 @@ hr {
   }
 }
 
+.portfolio-text {
+  margin-bottom: 20px;
+}
+
 .portfolio-slider {
   width: 100%;
 }
@@ -563,7 +567,7 @@ hr {
 }
 
 .descript {
-  padding-top: 40px;
+  margin-top: 100px;
 }
 
 .descript h2 {
@@ -820,10 +824,6 @@ footer .behance:hover {
   .toggle-menu p {
     font-size: 40px;
     margin: 0;
-  }
-
-  .descript {
-    padding-top: 0;
   }
 
   .close-menu {
