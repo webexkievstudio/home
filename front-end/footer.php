@@ -5,6 +5,7 @@
  * @subpackage Webex
  */
 ?>
+    <!-- FOOTER-->
     <footer>
         <div class="container-fluid">
             <a class="upArr" id="upArr">
@@ -26,6 +27,8 @@ wp_nav_menu($args); ?>
             </div>
         </div>
     </footer>
+    <!-- END FOOTER-->
+
     <?php wp_footer(); ?>
         </body>
 

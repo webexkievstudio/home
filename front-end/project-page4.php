@@ -4,9 +4,9 @@ Template Name: Front-end dev page
 */
 ?>
 
- <?php get_header(); ?>
- 
-<section class="portfolio-page">
+    <?php get_header(); ?>
+        <!-- SECTION PORTFOLIO-PAGE-->
+        <section class="portfolio-page">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-2 col-sm-12">
                     <a onclick="goBack()" class="arrow-previous bold"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a>
@@ -35,7 +35,9 @@ Template Name: Front-end dev page
                 </div>
             </div>
         </section>
+        <!-- END SECTION PORTFOLIO-PAGE-->
 
+        <!-- SECTION CONTACTS-->
         <section class="contacts row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
                 <hr class="full-width gray-color">
@@ -58,6 +60,7 @@ Template Name: Front-end dev page
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4  col-sm-offset-2 write-us">
+                        <hr class="visible-xs hr-2">
                         <h3>Напишите нам</h3>
                         <form id="writeUs" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
@@ -85,8 +88,7 @@ Template Name: Front-end dev page
                                 </div>
                             </div>
                         </form>
-                        <br>
-                        <div class="visible-xs">
+                        <div class="visible-xs mail-vb-xs-block">
                             <hr class="hr-2">
                             <h3>Почта</h3>
                             <a class="mail-text-visible-xs center-block" href="mailto:webex.kiev.ua@gmail.com">webex.kiev.ua@gmail.com</a>
@@ -95,7 +97,7 @@ Template Name: Front-end dev page
                 </div>
             </div>
         </section>
-    </div>
-
-<?php get_footer(); ?>
-
+        <!-- END SECTION CONTACTS-->
+        </div>
+        <!-- END CONTAINER-FLUID-->
+        <?php get_footer(); ?>

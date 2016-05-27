@@ -62,6 +62,7 @@ header {
     box-shadow: none;
 }
 .shadow {
+    transition: all 0.4s ease-out;
     background: white;
     box-shadow: 0 0 10px silver;
     .logo-in-nav a,
@@ -187,7 +188,6 @@ span {
 .button:focus {
     color: white !important;
     text-decoration: none;
-    -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     border-color: #2196f3;
     background-color: #2196f3;
@@ -217,11 +217,11 @@ hr {
         margin-top: 11%;
     }
 }
-.about {
+.grey-bg {
     background: #eeeeee;
 }
-.white-realm {
-    width: 100%;
+.portfolio,
+.price-services {
     color: black;
     text-align: center;
     padding: 5% 0;
@@ -233,40 +233,18 @@ hr {
 .black-bg {
     background: black;
 }
-.white-realm .button {
+.portfolio .button,
+.price-services .button {
     margin: 5% auto 0;
     color: black;
 }
-.team {
-    text-align: center;
-}
-.entire-team {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.entire-team .member-team,
-.entire-team img {
-    margin: 0;
-    padding: 0;
-}
-.member-team:hover .about-person {
-    visibility: visible;
-    height: 100%;
-    transition: height 0.35s;
-    opacity: 1;
-}
-.member-team img {
-    @include breakpoint (min-width 2701px) {
-        width: 100%;
-    }
-}
-.portfolio-text{
+.portfolio-text {
     margin-bottom: 20px;
 }
 .portfolio-slider {
     width: 100%;
 }
-.portfolio-slide {
+.portfolio-slider-item {
     position: relative;
     width: 100%;
 }
@@ -277,32 +255,55 @@ hr {
     opacity: 0;
     transition: opacity 0.3s, linear 0.3s;
 }
-.portfolio-slide:hover .hidden-img {
+.portfolio-slider-item:hover .hidden-img {
     visibility: visible;
     transition: 0.3s ease-out;
     opacity: 0.95;
 }
-.portfolio-slide img {
+.portfolio-slider-item img {
     width: 100%;
 }
 .position-left {
     left: 0;
 }
-.portfolio-static {
+.portfolio-static-item {
     position: relative;
     img {
         width: 100%;
     }
 }
-.portfolio-static:hover .hidden-img {
+.portfolio-static-item:hover .hidden-img {
     visibility: visible;
     transition: 0.3s ease-out;
     opacity: 0.95;
 }
+.team {
+    text-align: center;
+}
+.entire-team {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.entire-team .team-item,
+.entire-team img {
+    margin: 0;
+    padding: 0;
+}
+.team-item:hover .about-team-item {
+    visibility: visible;
+    height: 100%;
+    transition: height 0.35s;
+    opacity: 1;
+}
+.team-item img {
+    @include breakpoint (min-width 2701px) {
+        width: 100%;
+    }
+}
 .position-right {
     right: 0;
 }
-.about-person {
+.about-team-item {
     visibility: hidden;
     position: absolute;
     bottom: 0;
@@ -359,7 +360,7 @@ hr {
     line-height: 1.04;
     letter-spacing: 1px;
 }
-.about-person hr {
+.about-team-item hr {
     margin: 10% auto;
 }
 .position {
@@ -391,56 +392,59 @@ hr {
     background-color: white;
     box-shadow: 0 0 22px 3px rgba(0, 0, 0, 0.75);
 }
-.team-slide {
+.team-slider-item {
     padding: 50px 50px 0;
 }
-.team-slide .name {
+.team-slider-item .name {
     margin-top: 40px;
     font-size: 30px;
     letter-spacing: 0;
 }
-.team-slide .position {
+.team-slider-item .position {
     font-size: 24px;
 }
-.team-slide img {
+.team-slider-item img {
     box-shadow: 0 10px 20px 0 rgba(27, 27, 27, 0.35);
 }
-.team-slide .fb-visible-xs {
+.team-slider-item .fb-visible-xs {
     text-align: center;
     cursor: pointer;
     margin: auto;
     display: block;
 }
-.team-slide .fa-circle {
+.team-slider-item .fa-circle {
     color: black;
 }
-.team-slide .fa-facebook {
+.team-slider-item .fa-facebook {
     color: white;
 }
-.breeds {
+.price-services {
+    top: 50px;
+}
+.price-services-item {
     text-align: left;
     padding: 5% 10%;
 }
 @media (max-width: 990px) {
-    .breeds {
+    .price-services-item {
         padding: 5% 5%;
     }
 }
-.breeds h3 {
+.price-services-item h3 {
     text-transform: uppercase;
     margin-bottom: 2%;
     min-height: 50px;
 }
-.breeds p {
+.price-services-item p {
     margin: 8% 0;
 }
-.breedsDescr {
+.price-services-item-descr {
     height: 5em;
 }
-.breeds .price {
+.price-services-item .price {
     font-size: 1.5em;
 }
-.breeds .button {
+.price-services-item .button {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -454,27 +458,21 @@ hr {
     width: 90% !important;
     margin-bottom: -10px;
 }
-.price-table {
-    top: 50px;
-}
-.price-table .btn-more-info {
+.price-services .btn-more-info {
     margin-bottom: -10px;
 }
-.descript {
+.position-descript {
     margin-top: 100px;
 }
-.descript h2 {
+.position-descript h2 {
     font-family: pfd, sans-serif;
     text-align: center;
 }
-.descript .center {
-    text-align: center;
-}
-.worker {
+.position-item {
     text-align: left;
     padding: 2% 1%;
 }
-.worker h3 {
+.position-item h3 {
     min-height: 60px;
     font-size: 1.7em;
 }
@@ -657,7 +655,7 @@ footer .behance:hover {
         z-index: 100;
         background-color: white;
         position: fixed;
-        overflow-y: scroll;
+        overflow-y: auto;
         top: 0;
         left: 0;
         width: 100%;
@@ -683,6 +681,7 @@ footer .behance:hover {
         width: 40px;
     }
     .toggle-menu ul {
+        margin-top: 20px;
         padding: 0;
     }
     .toggle-menu ul li {
@@ -760,17 +759,20 @@ footer .behance:hover {
     p {
         font-size: 24px;
     }
-    .breeds h3,
-    .breeds p {
+    .team {
+        margin-top: -20px;
+    }
+    .price-services-item h3,
+    .price-services-item p {
         text-align: center;
     }
-    .breeds p {
+    .price-services-item p {
         margin: 0;
     }
-    .breeds .price {
+    .price-services-item .price {
         font-size: 36px;
     }
-    .breeds .button {
+    .price-services-item .button {
         margin-top: 20px;
     }
     .black-bg {
@@ -779,7 +781,10 @@ footer .behance:hover {
     .button {
         font-size: 24px;
     }
-    .worker h3 {
+    .position-descript {
+        margin-top: 80px;
+    }
+    .position-item h3 {
         font-size: 30px;
         min-height: 0;
     }
@@ -798,6 +803,9 @@ footer .behance:hover {
     .contacts form {
         margin: 0;
     }
+    .write-us {
+        margin-top: 20px;
+    }
     form input,
     form textarea {
         font-size: 40px;
@@ -809,6 +817,9 @@ footer .behance:hover {
     form + .success,
     form + .error {
         margin-top: 40px;
+    }
+    .mail-vb-xs-block {
+        margin-top: 120px;
     }
     .mail-text-visible-xs {
         margin-bottom: 40px;
@@ -891,13 +902,13 @@ footer .behance:hover {
     p {
         font-size: 17px;
     }
-    .breeds .price {
+    .price-services-item .price {
         font-size: 20px;
     }
     .button {
         font-size: 17px;
     }
-    .worker h3 {
+    .position-item h3 {
         font-size: 22px;
     }
     .contacts h3 {
@@ -909,6 +920,9 @@ footer .behance:hover {
     }
     form label {
         font-size: 17px;
+    }
+    .mail-vb-xs-block {
+        margin-top: 100px;
     }
     footer h2 {
         font-size: 40px;
@@ -1118,7 +1132,7 @@ footer .behance:hover {
 .slick-next:focus {
     background: rgb(33, 33, 33);
     box-shadow: 0px 20px 30px 4px rgba(27, 27, 27, 0.35);
-    transition: 0.4s ease-out;
+    transition: all 0.4s ease-out;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -1130,7 +1144,7 @@ footer .behance:hover {
 }
 .slick-prev:before {
     content: '\f104';
-    margin-left: -3px;
+    margin-left: -3px
 }
 [dir='rtl'] .slick-prev:before {
     content: '\f105';

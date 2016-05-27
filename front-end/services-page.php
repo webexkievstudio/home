@@ -4,9 +4,9 @@ Template Name: Services page
 */
 ?>
 
- <?php get_header(); ?>
- 
-  <section class="services-page">
+    <?php get_header(); ?>
+        <!-- SECTION SERVICES-PAGE-->
+        <section class="services-page">
             <div class="row services-page-main">
                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
                     <h1>Наши услуги</h1>
@@ -14,7 +14,8 @@ Template Name: Services page
                     <p>Мы разрабатываем сайты для компаний любого масштаба.
                         <br class="hidden-xs"> Просто выберите нужный Вам формат</p>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
+                        <!--TABS-->
+                        <div class="col-xs-12">
                             <ul role="tablist" class="tabs hidden-xs" id="tabs">
                                 <li role="presentation" class="active"> <a aria-controls="landing" href="#landing" data-toggle="tab">Лендинг пейдж</a>
                                 </li>
@@ -26,6 +27,7 @@ Template Name: Services page
                                 </li>
                             </ul>
                             <div class="visible-xs">
+                                <!--TABS FOR XS-DEVICES-->
                                 <ul role="tablist" class="tabs">
                                     <li role="presentation" class="dropdown">
                                         <a id="dLabel" class="dropdown-toggle custom-dropdown-toggle" href="#" data-toggle="dropdown" aria-controls="TabDrop">Лендинг пейдж<i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -37,12 +39,14 @@ Template Name: Services page
                                         </ul>
                                     </li>
                                 </ul>
+                                <!-- END TABS FOR XS-DEVICES-->
                             </div>
                         </div>
+                        <!-- END TABS-->
                     </div>
                 </div>
             </div>
-
+            <!-- TAB-CONTENT-->
             <div class="tab-content">
                 <div class="tab-pane row active services-page-description" id="landing" role="tabpanel">
                     <h2>Лендинг пейдж</h2>
@@ -125,7 +129,7 @@ Template Name: Services page
                     </div>
                 </div>
             </div>
-
+            <!-- END TAB-CONTENT-->
             <div class="services-page-examples">
                 <h2>Все проекты</h2>
                 <div class="row">
@@ -156,6 +160,8 @@ Template Name: Services page
                 </div>
             </div>
         </section>
-    </div>
+        <!-- END SECTION SERVICES-PAGE-->
+        </div>
+        <!-- END CONTAINER-FLUID-->
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>

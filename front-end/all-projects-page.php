@@ -5,7 +5,7 @@ Template Name: All projects
 ?>
 
     <?php get_header(); ?>
-    
+        <!-- SECTION SERVICES-PAGE-->
         <section class="services-page">
             <div class="row services-page-main">
                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
@@ -15,7 +15,6 @@ Template Name: All projects
                         <br class="hidden-xs"> Приглашаем Вас посмотреть примеры готовых проектов</p>
                 </div>
             </div>
-
             <div class="services-page-examples">
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-3 img-group">
@@ -45,6 +44,8 @@ Template Name: All projects
                 </div>
             </div>
         </section>
+        <!-- END SECTION SERVICES-PAGE-->
         </div>
+        <!-- END CONTAINER-FLUID-->
 
         <?php get_footer(); ?>
